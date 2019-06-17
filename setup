@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+OS=`uname -r`
+
+case $OS in
+    "Darwin") sh @macos/init ;;
+    "Linux")  sh @linux/init ;;
+esac
+
+which antibody
+# installing antibody, if its not present
+if [[ $? -eq 1 ]]; then
+    curl -sL git.io/antibody | sh -s
+fi
+
+gh_usercontent="https://raw.githubusercontent.com"
+function completions {
+    curl -L ${gh_usercontent}/${1} > _completions/${2}
+}
+
+completions "docker/machine/master/contrib/completion/zsh/_docker-machine" "_docker-machine"
+completions "docker/compose/master/contrib/completion/zsh/_docker-compose" "_docker-compose"
+
+stow_dirs=`find . -maxdepth 1 -type d -not -name "@*" -not -name "_*" -not -name ".*"`
+for dir in $stow_dirs; do
+    stow $dir
+done
+
+source ~/.zshrc
+antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh
