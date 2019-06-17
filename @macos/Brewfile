@@ -1,0 +1,53 @@
+tap "bazelbuild/tap"
+tap "getantibody/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "kryptco/tap"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext", link: true
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Improved top (interactive process viewer)
+brew "htop"
+# Generic library support script
+brew "libtool"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Port scanning utility for large networks
+brew "nmap"
+# Platform built on V8 to build network applications
+brew "node"
+# Ruby version manager
+brew "rbenv"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# VPN based on IPsec
+brew "strongswan", link: false
+# Virtual Private Network (VPN) tool
+brew "tinc"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Internet file retriever
+brew "wget"
+# JavaScript package manager
+brew "yarn"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Bazel is a fast, scalable, multi-language and extensible build system
+brew "bazelbuild/tap/bazel"
+# The fastest shell plugin manager
+brew "getantibody/tap/antibody"
+# Krypton command-line client, daemon, and SSH integration
+brew "kryptco/tap/kr"
+cask "keybase"
+cask "tuntap"
+cask "wkhtmltopdf"
