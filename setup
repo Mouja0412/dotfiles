@@ -2,6 +2,8 @@
 
 OS=`uname -r`
 
+git submodule init --recursive
+
 case $OS in
     "Darwin") sh @macos/init ;;
     "Linux")  sh @linux/init ;;

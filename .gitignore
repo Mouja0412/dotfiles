@@ -1,8 +1,11 @@
-*.rsl*
-algo
 .DS_Store
 Icon?\r
 
+_bin/algo/configs
+
+# resilio-sync
+.sync
+*.rsl*
 
 # zsh
 zsh/history
