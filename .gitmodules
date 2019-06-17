@@ -7,9 +7,6 @@
 [submodule "_bin/kvm"]
 	path = _bin/kvm
 	url = git@github.com:ionlights/kvm
-[submodule "algo"]
-	path = algo
-	url = git@github.com:trailofbits/algo
-[submodule "_bin/algo"]
-	path = _bin/algo
+[submodule "_bin/algo-git"]
+	path = _bin/algo-git
 	url = git@github.com:trailofbits/algo
