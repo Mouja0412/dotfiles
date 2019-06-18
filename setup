@@ -9,6 +9,8 @@ case $OS in
     "Linux")  sh @linux/init ;;
 esac
 
+./_bin/update-stow
+
 which antibody
 # installing antibody, if its not present
 if [[ $? -eq 1 ]]; then

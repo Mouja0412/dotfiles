@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#: #############################################################################
+#: aliases
+#: #############################################################################
+alias srv="ssh srv.ionlights"
+alias nas="ssh nas.ionlights"
+alias mbp="ssh mbp"
+alias osx="ssh osx"
+alias srv.local="ssh 192.168.1.85"
+
+alias zrc="$EDITOR ~/.zshrc && . ~/.zshrc"
+alias plugins="$EDITOR ${plugs}.txt && antibody bundle < ${plugs}.txt > ${plugs}_${OS_}.sh"
+
+case $OS_ in
+    "linux")
+        alias ls="ls --color=always"
+    ;;
+    "macos")
+        export SINGULARITY_VM="sylabs/singularity-3.2-ubuntu-bionic64"
+        # alias singularity="vagrant ssh"
+    ;;
+esac
+alias ll="ls -lh"
+alias lr="ls -r"
+alias ld="ls -d */"
+
+ignoreRegex=".*\(Permission denied\)"
+ignoreRegex="${ignoreRegex}\|\(Operation not permitted\)"
+alias size="du -ch -d 1 2> >(grep -v \"${ignoreRegex}\") | sort -h"
+

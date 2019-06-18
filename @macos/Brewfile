@@ -4,10 +4,17 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "kryptco/tap"
+
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Color-highlighted diff(1) output
+brew "colordiff"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# GNU Emacs text editor
+brew "emacs"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GNU internationalization (i18n) and localization (l10n) library
@@ -16,6 +23,10 @@ brew "gettext", link: true
 brew "go"
 # Improved top (interactive process viewer)
 brew "htop"
+# Configurable static site generator
+brew "hugo"
+# Spell checker and morphological analyzer
+brew "hunspell"
 # Generic library support script
 brew "libtool"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -24,25 +35,35 @@ brew "neovim"
 brew "nmap"
 # Platform built on V8 to build network applications
 brew "node"
+# Open client for Cisco AnyConnect VPN
+brew "openconnect"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
+# File browser
+brew "ranger"
 # Ruby version manager
 brew "rbenv"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # VPN based on IPsec
-brew "strongswan", link: false
+brew "strongswan"
 # Virtual Private Network (VPN) tool
 brew "tinc"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Display word differences between text files
+brew "wdiff"
 # Internet file retriever
 brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Bazel is a fast, scalable, multi-language and extensible build system
+# Fast, scalable, multi-language and extensible build system
 brew "bazelbuild/tap/bazel"
 # The fastest shell plugin manager
 brew "getantibody/tap/antibody"
@@ -50,4 +71,7 @@ brew "getantibody/tap/antibody"
 brew "kryptco/tap/kr"
 cask "keybase"
 cask "tuntap"
+cask "vagrant"
+cask "vagrant-manager"
+cask "virtualbox"
 cask "wkhtmltopdf"

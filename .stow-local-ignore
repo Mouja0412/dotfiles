@@ -1,0 +1,9 @@
+LICENSE.*
+README.*
+readme.*
+\.git\w*
+
+antibody_\w*.txt
+history
+
+\.DS_Store
