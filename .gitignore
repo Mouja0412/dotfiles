@@ -2,6 +2,7 @@
 Icon?\r
 
 _bin/algo-git/configs
+.ssh
 
 # resilio-sync
 .sync
