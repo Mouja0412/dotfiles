@@ -1,7 +1,7 @@
 .DS_Store
 Icon?\r
 
-_bin/algo/configs
+_bin/algo-git/configs
 
 # resilio-sync
 .sync
