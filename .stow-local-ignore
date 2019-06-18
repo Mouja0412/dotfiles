@@ -1,7 +1,10 @@
 LICENSE.*
+license.*
 README.*
 readme.*
-\.git\w*
+
+\.git
+\.gitattributes
 
 antibody_\w*.txt
 history
