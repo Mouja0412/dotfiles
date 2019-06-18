@@ -17,8 +17,6 @@ case $OS_ in
         alias ls="ls --color=always"
     ;;
     "macos")
-        export SINGULARITY_VM="sylabs/singularity-3.2-ubuntu-bionic64"
-        # alias singularity="vagrant ssh"
     ;;
 esac
 alias ll="ls -lh"
