@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [[ $(basename ${SHELL}) == "bash" ]]; then
+    #: #########################################################################
+    #: shopt -ss - mostly for non-zsh systems
+    #: #########################################################################
+    shopt -s autocd               #: cd by typing dir name, if it\'s not a cmd
+    shopt -s autolist             #: auto-list choices on ambiguous completion
+    shopt -s automenu             #: auto use menu completion
+    shopt -s always_to_end        #: move cursor to end if word as one match
+    shopt -s hist_ignore_all_dups #: remove older duplicate entries from hist
+    shopt -s hist_reduce_blanks   #: remove blanks from hist
+    shopt -s inc_append_history   #: save hist entries as soon as they're entered
+    shopt -s share_history        #: share hist between diff instances
+    shopt -s correct_all          #: autocorrect cmds
+    shopt -s interactive_comments #: allow commends in interactive shells
+fi

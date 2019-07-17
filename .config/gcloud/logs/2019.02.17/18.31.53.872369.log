@@ -1,0 +1,5 @@
+2019-02-17 18:31:53,873 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth']
+2019-02-17 18:31:53,875 ERROR    root            (gcloud.auth) unrecognized arguments: -hj 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS

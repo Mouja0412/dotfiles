@@ -1,0 +1,8 @@
+2019-02-25 12:09:10,071 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute']
+2019-02-25 12:09:10,090 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'ssh']
+2019-02-25 12:09:10,093 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--zone: "us-east1-b", [USER@]INSTANCE: "tensorboard"]
+2019-02-25 12:09:13,262 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

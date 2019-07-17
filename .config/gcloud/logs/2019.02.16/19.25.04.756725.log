@@ -1,0 +1,122 @@
+2019-02-16 19:25:04,783 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute']
+2019-02-16 19:25:04,804 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'ssh']
+2019-02-16 19:25:04,807 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "golden-starcraft", --zone: "us-east1-c", [USER@]INSTANCE: "gs2-1"]
+2019-02-16 19:25:04,940 WARNING  root            The public SSH key file for gcloud does not exist.
+2019-02-16 19:25:04,940 WARNING  root            The private SSH key file for gcloud does not exist.
+2019-02-16 19:25:04,941 WARNING  root            You do not have an SSH key for gcloud.
+2019-02-16 19:25:04,941 WARNING  root            SSH keygen will be executed to generate a key.
+2019-02-16 19:25:04,941 DEBUG    root            Running command [/usr/bin/ssh-keygen -t rsa -f /Users/ionlights/.ssh/google_compute_engine].
+2019-02-16 19:25:04,941 DEBUG    root            Executing command: [u'/usr/bin/ssh-keygen', u'-t', u'rsa', u'-f', u'/Users/ionlights/.ssh/google_compute_engine']
+2019-02-16 19:25:08,333 DEBUG    root            SSH Known Hosts File [/Users/ionlights/.ssh/google_compute_known_hosts] could not be opened: Unable to read file [/Users/ionlights/.ssh/google_compute_known_hosts]: [Errno 2] No such file or directory: '/Users/ionlights/.ssh/google_compute_known_hosts'
+2019-02-16 19:25:08,333 DEBUG    root            Current SSH keys in project: []
+2019-02-16 19:25:08,334 INFO     ___FILE_ONLY___ Updating project ssh metadata...
+2019-02-16 19:25:09,102 DEBUG    root            Operations to inspect: [<Operation
+ id: 2412833103472301835
+ insertTime: u'2019-02-16T16:25:08.808-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ operationType: u'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft/global/operations/operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ startTime: u'2019-02-16T16:25:08.808-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 688725742296
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft'
+ user: u'j@ionlights.com'
+ warnings: []>]
+2019-02-16 19:25:09,448 DEBUG    root            Sleeping for 1s.
+2019-02-16 19:25:10,451 DEBUG    root            Operations to inspect: [<Operation
+ id: 2412833103472301835
+ insertTime: u'2019-02-16T16:25:08.808-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ operationType: u'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft/global/operations/operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ startTime: u'2019-02-16T16:25:08.808-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 688725742296
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft'
+ user: u'j@ionlights.com'
+ warnings: []>]
+2019-02-16 19:25:10,782 DEBUG    root            Sleeping for 2s.
+2019-02-16 19:25:12,786 DEBUG    root            Operations to inspect: [<Operation
+ id: 2412833103472301835
+ insertTime: u'2019-02-16T16:25:08.808-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ operationType: u'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft/global/operations/operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ startTime: u'2019-02-16T16:25:08.808-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 688725742296
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft'
+ user: u'j@ionlights.com'
+ warnings: []>]
+2019-02-16 19:25:13,136 DEBUG    root            Sleeping for 3s.
+2019-02-16 19:25:16,139 DEBUG    root            Operations to inspect: [<Operation
+ id: 2412833103472301835
+ insertTime: u'2019-02-16T16:25:08.808-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ operationType: u'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft/global/operations/operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ startTime: u'2019-02-16T16:25:08.808-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 688725742296
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft'
+ user: u'j@ionlights.com'
+ warnings: []>]
+2019-02-16 19:25:16,402 DEBUG    root            Sleeping for 4s.
+2019-02-16 19:25:20,406 DEBUG    root            Operations to inspect: [<Operation
+ id: 2412833103472301835
+ insertTime: u'2019-02-16T16:25:08.808-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ operationType: u'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft/global/operations/operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ startTime: u'2019-02-16T16:25:08.808-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 688725742296
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft'
+ user: u'j@ionlights.com'
+ warnings: []>]
+2019-02-16 19:25:20,712 DEBUG    root            Sleeping for 5s.
+2019-02-16 19:25:25,715 DEBUG    root            Operations to inspect: [<Operation
+ endTime: u'2019-02-16T16:25:18.248-08:00'
+ id: 2412833103472301835
+ insertTime: u'2019-02-16T16:25:08.808-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ operationType: u'compute.projects.setCommonInstanceMetadata'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft/global/operations/operation-1550363108344-5820c0a5880d4-d8379638-e29ed08d'
+ startTime: u'2019-02-16T16:25:08.808-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 688725742296
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/golden-starcraft'
+ user: u'j@ionlights.com'
+ warnings: []>]
+2019-02-16 19:25:25,716 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/golden-starcraft].
+
+2019-02-16 19:25:26,014 INFO     ___FILE_ONLY___ Waiting for SSH key to propagate.
+
+2019-02-16 19:25:26,015 DEBUG    root            Running command [/usr/bin/ssh -T -i /Users/ionlights/.ssh/google_compute_engine -o CheckHostIP=no -o HostKeyAlias=compute.5610335714454869856 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/ionlights/.ssh/google_compute_known_hosts ionlights@34.73.32.167 -- true].
+2019-02-16 19:25:26,016 DEBUG    root            Executing command: [u'/usr/bin/ssh', u'-T', u'-i', u'/Users/ionlights/.ssh/google_compute_engine', u'-o', u'CheckHostIP=no', u'-o', u'HostKeyAlias=compute.5610335714454869856', u'-o', u'IdentitiesOnly=yes', u'-o', u'StrictHostKeyChecking=no', u'-o', u'UserKnownHostsFile=/Users/ionlights/.ssh/google_compute_known_hosts', u'ionlights@34.73.32.167', u'--', u'true']
+2019-02-16 19:25:30,513 DEBUG    root            Running command [/usr/bin/ssh -t -i /Users/ionlights/.ssh/google_compute_engine -o CheckHostIP=no -o HostKeyAlias=compute.5610335714454869856 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/ionlights/.ssh/google_compute_known_hosts ionlights@34.73.32.167].
+2019-02-16 19:25:30,513 DEBUG    root            Executing command: [u'/usr/bin/ssh', u'-t', u'-i', u'/Users/ionlights/.ssh/google_compute_engine', u'-o', u'CheckHostIP=no', u'-o', u'HostKeyAlias=compute.5610335714454869856', u'-o', u'IdentitiesOnly=yes', u'-o', u'StrictHostKeyChecking=no', u'-o', u'UserKnownHostsFile=/Users/ionlights/.ssh/google_compute_known_hosts', u'ionlights@34.73.32.167']
+2019-02-16 19:33:03,007 DEBUG    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+Traceback (most recent call last):
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 795, in Run
+    resources = command_instance.Run(args)
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/surface/compute/ssh.py", line 256, in Run
+    return_code = cmd.Run(ssh_helper.env, force_connect=True)
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/ssh/ssh.py", line 1032, in Run
+    raise CommandError(args[0], return_code=status)
+CommandError: [/usr/bin/ssh] exited with return code [255].
+2019-02-16 19:33:03,017 ERROR    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].

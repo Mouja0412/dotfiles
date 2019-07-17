@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+
+# setup the algo environment
+conda activate algo
+if [[ $? -ne 0 ]]; then
+    conda env create -n algo
+    conda activate algo
+    pip install $DOTS/_bin/algo-git/requirements.txt
+fi
+
+ARGS=""
+case $1 in
+    "setup") ARGS="" ;;
+    "update") ARGS="update-users" ;;
+    *)
+        echo "Unrecognized command..."
+        exit -1
+        ;;
+esac
+
+conda activate algo
+$DOTS/_bin/algo-git/algo $ARGS

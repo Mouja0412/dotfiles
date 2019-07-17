@@ -55,7 +55,7 @@ zstyle ':completion:*' menu select
 #: group results by category
 zstyle ':completion:*' group-name ''
 #: enable approx matches for completion
-#zstyle ':completion:*' completer _expand _complete _ignored _approximate
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
 
 #: #############################################################################
 #: spaceship-prompt
@@ -85,3 +85,5 @@ bindkey '^[[B' history-substring-search-down
 bindkey '^[[3~' delete-char
 bindkey '^[3;5~' delete-char
 #: delete-key ~ https://blog.pilif.me/2004/10/21/delete-key-in-zsh/
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

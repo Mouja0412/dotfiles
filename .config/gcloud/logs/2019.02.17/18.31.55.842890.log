@@ -1,0 +1,22 @@
+2019-02-17 18:31:55,844 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth']
+2019-02-17 18:31:55,845 DEBUG    root            Running [gcloud.auth] with arguments: [-h: "None"]
+2019-02-17 18:31:55,850 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'activate_refresh_token']
+2019-02-17 18:31:55,856 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'revoke']
+2019-02-17 18:31:55,861 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'docker_helper']
+2019-02-17 18:31:55,863 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'print_refresh_token']
+2019-02-17 18:31:55,865 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'describe']
+2019-02-17 18:31:55,867 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'list']
+2019-02-17 18:31:55,871 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'git_helper']
+2019-02-17 18:31:55,876 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'activate_service_account']
+2019-02-17 18:31:55,880 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'login']
+2019-02-17 18:31:55,883 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'configure_docker']
+2019-02-17 18:31:55,885 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'print_access_token']
+2019-02-17 18:31:55,887 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'application_default']
+2019-02-17 18:31:55,889 INFO     ___FILE_ONLY___ Usage: gcloud auth [optional flags] <group | command>
+  group may be           application-default
+  command may be         activate-service-account | configure-docker | list |
+                         login | revoke
+
+For detailed information on this command and its flags, run:
+  gcloud auth --help
+

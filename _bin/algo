@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-source activate $DOTS/_bin/algo-git/env/bin/activate
-$DOTS/_bin/algo-git/algo "$@"

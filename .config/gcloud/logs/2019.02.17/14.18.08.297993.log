@@ -1,0 +1,18 @@
+2019-02-17 14:18:08,357 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute']
+2019-02-17 14:18:08,411 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'ssh']
+2019-02-17 14:18:08,414 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "golden-starcraft", --zone: "us-central1-a", [USER@]INSTANCE: "gs2-1"]
+2019-02-17 14:18:08,436 INFO     oauth2client.client Refreshing access_token
+2019-02-17 14:18:09,416 DEBUG    root            (gcloud.compute.ssh) Instance [gs2-1] in zone [us-central1-a] has not been allocated an external IP address yet. Try rerunning this command later.
+Traceback (most recent call last):
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 795, in Run
+    resources = command_instance.Run(args)
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/surface/compute/ssh.py", line 172, in Run
+    ip_address = ssh_utils.GetExternalIPAddress(instance)
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/compute/ssh_utils.py", line 160, in GetExternalIPAddress
+    network_interface = GetExternalInterface(instance_resource, no_raise=no_raise)
+  File "/Users/ionlights/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/compute/ssh_utils.py", line 131, in GetExternalInterface
+    path_simplifier.Name(instance_resource.zone)))
+UnallocatedIPAddressError: Instance [gs2-1] in zone [us-central1-a] has not been allocated an external IP address yet. Try rerunning this command later.
+2019-02-17 14:18:09,420 ERROR    root            (gcloud.compute.ssh) Instance [gs2-1] in zone [us-central1-a] has not been allocated an external IP address yet. Try rerunning this command later.

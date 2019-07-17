@@ -1,0 +1,296 @@
+nvim .config/rslsync/rslsync.conf
+mkdir dotfiles
+rm .stow-global-ignore
+rm .gitconfig
+rm .hype*
+rm -rf .hype*
+rm -rf .ICEauthority
+rm -rf .{ipython,jupyter,keras,lesshst,endgame}
+rm -rf .{pycharm_helpers,python_history,sudo_as_admin_successful,torch,Xauthority,xsession-errors*,nv,pki,npm}
+ll _bin
+_bin/update-stow
+yay -S stow
+zsh tmux
+stow i3
+echo $ANTIBODY_PLUGS
+yay -Syyu
+yay -S antibody
+antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh
+ll ${ANTIBODY_PLUGS}*
+gaa; gc -m "adding gitconfig and updating stow"
+yay -S direnv
+ssh 10.19.49.3
+src
+ping -c2 10.19.49.3
+ll ~/.ssh
+mkdir ssh_bkp
+rm ~/.ssh
+rm -rf ~/.ssh
+stow .ssh
+ssh srv.ionlights
+rm ~/{config,j@ionlights.com.pem*}
+mkdir ssh
+mv .ssh/ ssh
+ll ssh
+ll -a ssh
+ll ~ -a
+mkdir ssh/.ssh/tmp
+ssh srv
+ll -a ~
+mkdir ssh_kbp
+mv ssh_kbp ssh_bkp
+cp -r ~/.ssh/* ssh_bkp
+rm antibody_plugins_macos.sh
+ll go
+ll go/pkg
+zp _aliases
+nvim .zprofile
+projects
+mtom
+cd mtom
+nvim setup.py
+mv msrp mtom
+cd ~/projects
+~/projects
+toptal
+mkdir screening-ai
+mkdir screening-ds
+screening-ai
+sshcfg
+chmod u+rx go-rwx ~/.ssh/j@ionlights.com.pem
+chmod go-rwx ~/.ssh/j@ionlights.com.pem
+git clone git@git.toptal.com:screening/john-muchovej .
+../screening-ds
+less ~/.ssh/j@ionlights.com.pem.pub|pbcopy
+git clone git@git.toptal.com:screening/john-muchove-2j .
+git clone git@git.toptal.com:screening/john-muchovej-2 .
+git clone https://git.toptal.com/screening/john-muchovej-2 .
+projects/forage/web-app
+preproc
+../summary
+gaa; gc -m "initial commit for folder arch"
+gp origin master
+research/mtom
+mtom -h
+jupyter
+cd research/mtom
+pip install -e .
+jupyter lab --ip=46600
+jupyter lab --port=46600
+modprobe nvidia
+uname -r
+systemctl restart
+systemctl restart --now
+systemctl reboot
+tmux new -s mtom
+export CUDA_VISIBLE_DEVICES="0"
+watch -n5 nvidia-smi
+htop
+conda activate base
+projects/research/mtom
+conda install -c conda-forge jupyterlab
+jupyter lab --port=46600 --ip=10.19.49.3
+export CUDA_VISIBLE_DEVICES="1"
+conda activate mtom-gpu
+systemctl status rslsync.service
+systemctl restart rslsync.service --user
+systemctl status rslsync.service --user
+systemctl enable rslsync.service --user --now
+nvim ~/.config/rslsync/rslsync.conf
+nvim mtom/dm_reproduce/trainer.py
+rm logs/Expt2aSingleMDP-0032
+rm -r logs/Expt2aSingleMDP-0032
+tmux new -s forage
+tmux new -s kaggle
+.emacs.d
+bin/doom refresh
+bin/doom help
+bin/doom doc
+bin/doom install
+bin/doom autoloads
+projects/toptal
+screening-ds
+mkdir data
+mkdir notebooks
+git clone git@github.com:ionlights/data-science-tpl
+cp -r data-science-tpl/* toptal/screening-ds
+ranger
+toptal/screening-ds
+cp envs/cpu.yml envs/gpu.yml
+cp envs/cpu.yml envs/cpu-mac.yml
+nvim envs/gpu.yml
+nvim envs/cpu
+nvim envs/cpu.yml
+nvim envs/cpu-mac.yml
+conda env create -f envs/cpu-mac.yml
+tmux new -s screening-ds
+projects/toptal/screening-ds
+git init
+git remote add origin https://git.toptal.com/screening/john-muchovej-2
+git remote set-url origin https://git.toptal.com/screening/john-muchovej-2.git
+git remote -h
+git remote get-url --all
+git remote get-url --all origin
+git remote set-url -h
+git remote set-url --push origin https://git.toptal.com/screening/john-muchovej-2
+tmux new -s general
+mkdir org
+cat ~/.ssh/j@ionlights.com.pem
+cat ~/.ssh/j@ionlights.com.pem.pub
+tmux a -t screening-ds
+git remote set-url origin git@git.toptal.com:screening/john-muchovej-2
+git pull
+git pull origin master
+gaa; gc -m "initial commit for folder arch and ata"
+gaa; gc -m "initial commit for folder arch and data"
+git remote get-url origin
+git remote get-url origin --all
+git remote set-url --push origin git@git.toptal.com:screening/john-muchovej-2
+gp -u origin master
+tmux a -t mtom
+conda env list
+echo $HOME
+echo $DOTS
+source ~/.zprofile
+source ~/.zshrc
+which $SHELL
+source ~/.zprofile && source ~/.zshrc
+whoami
+tmux a -t general
+echo $PATH
+mkdir logs/Expt2aSingleMDP-0046
+rm logs/Expt2aSingleMDP-0046
+rmdir logs/Expt2aSingleMDP-0046
+nvim mtom/utils/logging.py
+ll mtom/observers
+nvim mtom/utils/visualize.py
+nvim mtom/observers/__init__.pyn
+nvim mtom/config.py
+nvim mtom/utils/__init__.py
+nvim mtom/observers/__init__.py
+nvim mtom/__init__.py
+nvim mtom/datagen/agent.py
+nvim mtom/observers/expt1_rand.py
+ipython
+nvim mtom/utils/trainer.py
+mtom -t 100 -e 1000 -1
+df -h
+python
+ll logs/Expt2aSingleMDP-0048
+ll logs/Expt2aSingleMDP-0048/echars
+mtom -t 100 -e 1000 -1 -n 48 --restore
+mtom -t 100 -e 1000 -1 -n 48 --restore 650
+mtom -t 100 -e 1000 -1 -c
+mkdir papers
+ll logs
+srv\
+\
+\
+\
+\
+\
+
+tmux a -t mtom\
+
+mtom -t 100 -e 1000 -1 -n stricly-success-rep
+hostname\
+\
+\
+\
+\
+
+projects/ionlights.com
+gaa; gc -m "adding cv"
+gp
+cd
+p
+hostname
+pwd
+emacs -nw --debug-init
+~/.emacs.d/bin/doom install -y
+~/.emacs.d/bin/doom install codna
+nvim ~/.doom.d/packages.el
+~/.emacs.d/bin/doom install
+~/.emacs.d/bin/doom help
+~/.emacs.d/bin/doom patch-macos
+tmux
+tmux kill-server
+tmux ls
+~/.emacs.d/bin/doom refresh
+zrc
+nvim ~/.zprofile
+zp aliases
+doom help
+doom update
+doom reload
+doom refresh
+emacs -nw
+echo $TERMINFO
+tic h-
+tic -h
+tic --help
+tic
+tic -x -o ~/.terminfo ~/dotfiles/terminfo-24bit.src
+ll ~
+ll ~/.terminfo
+ll ~/.terminfo/78/xterm-24bit
+$EDITOR ~/dotfiles/terminfo-24bit.src
+TERM=xterm-24bit emacs -nw
+echo $TERM
+srv
+stow
+dosfslabel
+dotfiles
+ll
+stow zsh
+stow tmux
+stow ssh
+stow git
+stow emacs
+emacs
+which emacs
+..
+yay -S emacs
+: 1561147905:0;emacs
+: 1561147844:0;srv
+: 1561147942:0;which emacs
+: 1561147946:0;ll ~/.emacs.d
+: 1561147954:0;doom help
+: 1561147970:0;doom qs
+: 1561148008:0;doom doctor
+: 1561148040:0;emacs
+: 1561148047:0;tmux
+: 1561148050:0;emacs
+: 1561148063:0;tmux
+: 1561148347:0;tmux kill -s 4
+: 1561148355:0;tmux kill-session 4
+: 1561148358:0;tmux kill-session -t 4
+: 1561148362:0;tmux kill-session -t 3
+: 1561148364:0;tmux ls
+: 1561148389:0;tmux a -t mtom
+: 1561148643:0;tmux new -s dotfiles
+: 1561148650:0;dotfiles
+: 1561148654:0;emacs
+: 1561148677:0;tmux new -s dotfiles
+: 1561148681:0;tmux a -t dotfiles
+: 1561148690:0;dotfiles
+: 1561148696:0;emacs -nw
+: 1561148719:0;tmux a -t dotfiles
+: 1561148819:0;tmux new -s dotfiles
+: 1561148826:0;doom re
+: 1561148837:0;doom help
+: 1561148852:0;doom doctor
+: 1561148908:0;doom qs
+: 1561148916:0;doom help env
+: 1561148974:0;doom env refresh
+: 1561148995:0;less dotfiles/emacs/.emacs.d/.local/env
+: 1561149011:0;doom env auto
+: 1561149218:0;doom update
+: 1561149237:0;doom upgrade
+: 1561149548:0;cd dotfiles
+: 1561149551:0;emacs -nw
+: 1561150735:0;env
+: 1561150742:0;env | grep -i zsh
+: 1561151027:0;dotfiles
+: 1561151028:0;ll
+: 1561151064:0;emacs -nw
