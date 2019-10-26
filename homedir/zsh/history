@@ -11,7 +11,6 @@ l osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0481-README.txt
 l osf/TA2\ inbox/Answers\ from\ TA1/Data/CDF/Instances/Instance0/Runs/run-0/
 open osf/TA2\ inbox/Answers\ from\ TA1/Data/
 less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0501-README.txt
-ssh bae
 z core
 e fa19/2019-10-23-rnns
 e fa19/2019-10-23-rnns/2019-10-23-rnns.solution.ipynb
@@ -49,7 +48,6 @@ rm kaggle.json.gpg.gpg
 gpg -d kaggle.json.gpg
 gpg kaggle.json.
 gpg kaggle.json.gpg
-e .gitignore
 gaa; gc -m "updating banner generation; adding kaggle json"
 unset KAGGLE_CONFIG_DIR
 git branch -h
@@ -69,10 +67,8 @@ gotop -psm
 rm *.{pid,txt}
 less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0521-README.txt
 l osf/TA2\ inbox/Answers\ from\ TA1/Data/
-ta ucfai
 ../core
 git pull
-ca ucfai-admin
 git branch -d ionlights-cnn-solutions-revised
 g branch
 gaa; g stash
@@ -85,10 +81,6 @@ autobot core make-notebooks --full-overwrite
 less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0511-README.txt
 less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0491-README.txt
 less osf/TA2\ inbox/Answers\ from\ TA1/Data/CDF/SimulationDefinition/RelationshipDefTable.tsv
-ta sys
-hop
-ssh nas
-tn sys-admin
 Downloads/gpu-burn
 ./gpu_burn 43200
 rm *.txt
@@ -108,111 +100,272 @@ tn gt
 z d g
 z r g
 z re g
-l
 ca ground-truth
 jupyter notebook .
 jupyter lab --ip 0.0.0.0 --port 46600 .
-: 1571928630:0;l
-: 1571937695:0;ta sys
-: 1571937698:0;tn sys-admin
-: 1571937701:0;hop
-: 1571937787:0;l
-: 1571937817:0;ta sys
-: 1571937823:0;tn sys-admin
-: 1571937825:0;ta sys
-: 1571938300:0;tmux kill-session -n sys-admin
-: 1571938303:0;tmux kill-session -t sys-admin
-: 1571938306:0;tn sys-admin
-: 1571938347:0;hop
-: 1571938354:0;ssh nas
-: 1571938361:0;hop
-: 1571938368:0;ssh bae
-: 1571944104:0;hop
-: 1571949041:0;ta ucfai
-: 1571949043:0;tn ucfai
-: 1571949045:0;z bo
-: 1571949047:0;l
-: 1571949053:0;ca ucfai-admin
-: 1571949058:0;autobot -h
-: 1571950144:0;l ~/.setup
-: 1571950149:0;l
-: 1571950151:0;l ~
-: 1571950155:0;l ~ | grep emacs
-: 1571950168:0;l ~/.config
-: 1571950186:0;doom
-: 1571950192:0;doom -h
-: 1571950210:0;doom re
-: 1571952670:0;ta ucfai
-: 1571952679:0;ca ucfai-admin
-: 1571952681:0;../
-: 1571952706:0;l
-: 1571952709:0;reader
-: 1571952709:0;l
-: 1571952712:0;python listener.py
-: 1572027865:0;l
-: 1572027884:0;git clone git@github.com:ionlights/dotfiles
-: 1572027888:0;l
-: 1572027895:0;dotfiles
-: 1572027895:0;l
-: 1572027979:0;less dots-no-xdg/zsh
-: 1572027985:0;less dots-no-xdg/zsh/zsh
-: 1572028001:0;l dots-no-xdg/zsh
-: 1572028015:0;sudo rm dots-no-xdg/zsh/zsh
-: 1572028027:0;rm dots-no-xdg/tmux
-: 1572028032:0;l dots-no-xdg/tmux
-: 1572028037:0;l -a dots-no-xdg/tmux
-: 1572028041:0;l tmux
-: 1572028042:0;l
-: 1572028055:0;l ~/.tmux.conf
-: 1572028085:0;rm .stow-local-ignore
-: 1572028086:0;l
-: 1572028092:0;l dots-xdg
-: 1572028100:0;ta sys-admin
-: 1572028109:0;dotfiles
-: 1572028114:0;~/.setup
-: 1572028115:0;l
-: 1572028198:0;rm .stow-local-ignore
-: 1572028210:0;l dots-no-xdg/zsh/
-: 1572028217:0;l -R dots-no-xdg
-: 1572028221:0;l -R dots-no-xdg/
-: 1572028235:0;tree -L 1
-: 1572028238:0;tree -L 1 dots-no-xdg
-: 1572028241:0;tree -L 2 dots-no-xdg
-: 1572028245:0;tree -L 3 dots-no-xdg
-: 1572028250:0;tree -L 3 dots-xdg
-: 1572028336:0;l
-: 1572028347:0;l .config
-: 1572028393:0;l
-: 1572028402:0;l ~/.con
-: 1572028403:0;l ~/.config
-: 1572028515:0;mkdir -p dots-xdg/{htop,nvim,rander,direnv}
-: 1572028542:0;touch dots-xdg/{htop,nvim,rander,direnv,doom,git}/.keep
-: 1572028543:0;l
-: 1572028556:0;mv dots-xdg/rander dots-xdg/ranger
-: 1572028558:0;l
-: 1572028581:0;cp -r ~/.config/ranger/* ./dots-xdg/ranger
-: 1572028627:0;cp -r ~/.config/nvim/* ./dots-xdg/nvim
-: 1572028640:0;cp -r ~/.config/htop/* ./dots-xdg/htop
-: 1572028655:0;cp -r ~/.config/direnv/* ./dots-xdg/direnv
-: 1572028657:0;l
-: 1572028661:0;rm -r .config
-: 1572028662:0;l
-: 1572028683:0;rm Icon$'\r'
-: 1572028683:0;l
-: 1572028687:0;l terminfo-24bit.src
-: 1572028690:0;l @linux
-: 1572028693:0;l @linux/preferences
-: 1572028697:0;l @macos
-: 1572028713:0;rm .vscode
-: 1572028717:0;rm -r .vscode
-: 1572028718:0;l
-: 1572028906:0;l .zshenv
-: 1572028910:0;e .zshenv
-: 1572028920:0;rm .zshenv
-: 1572028921:0;l
-: 1572028924:0;l bin
-: 1572028932:0;l dots-no-xdg/zsh/
-: 1572028961:0;l
-: 1572029024:0;cp -r dots-xdg config
-: 1572029030:0;l
-: 1572029045:0;cp -r dots-no-xdg homedir
+ta sys
+tmux kill-session -n sys-admin
+tmux kill-session -t sys-admin
+tn sys-admin
+ssh nas
+ssh bae
+hop
+tn ucfai
+z bo
+autobot -h
+l ~/.setup
+l ~
+l ~ | grep emacs
+doom
+doom -h
+doom re
+ta ucfai
+ca ucfai-admin
+reader
+python listener.py
+git clone git@github.com:ionlights/dotfiles
+less dots-no-xdg/zsh
+less dots-no-xdg/zsh/zsh
+l dots-no-xdg/zsh
+sudo rm dots-no-xdg/zsh/zsh
+rm dots-no-xdg/tmux
+l dots-no-xdg/tmux
+l -a dots-no-xdg/tmux
+l tmux
+l ~/.tmux.conf
+l dots-xdg
+ta sys-admin
+~/.setup
+rm .stow-local-ignore
+l -R dots-no-xdg
+l -R dots-no-xdg/
+tree -L 1
+tree -L 1 dots-no-xdg
+tree -L 2 dots-no-xdg
+tree -L 3 dots-no-xdg
+tree -L 3 dots-xdg
+l .config
+l ~/.con
+l ~/.config
+mkdir -p dots-xdg/{htop,nvim,rander,direnv}
+touch dots-xdg/{htop,nvim,rander,direnv,doom,git}/.keep
+mv dots-xdg/rander dots-xdg/ranger
+cp -r ~/.config/ranger/* ./dots-xdg/ranger
+cp -r ~/.config/nvim/* ./dots-xdg/nvim
+cp -r ~/.config/htop/* ./dots-xdg/htop
+cp -r ~/.config/direnv/* ./dots-xdg/direnv
+rm -r .config
+l terminfo-24bit.src
+l @linux
+l @linux/preferences
+l @macos
+rm .vscode
+rm -r .vscode
+l .zshenv
+e .zshenv
+rm .zshenv
+l bin
+l dots-no-xdg/zsh/
+cp -r dots-xdg config
+cp -r dots-no-xdg homedir
+ga dots*
+gaa dots*
+gaa tmux
+gaa -r dots*
+gaa dots-xdg
+gaa dots-no-xdg
+gaa zsh
+gaa .config
+ga .config
+ga .gitignore .gitmodules .stow-local-ignore
+ga setup
+ga @macos/Dracula.itermcolors
+g submodule
+g submodule git@github.com:gpakosz/.tmux homedir/tmux
+g submodule add git@github.com:gpakosz/.tmux homedir/tmux
+l configs/nvim
+l configs/nvim/init.vim
+e configs/nvim/init.vim
+touch configs/nvim/plugged/.keep
+e .gitignore
+gaa .gitignore
+ga configs
+ga configs/nvim/plugged/.keep
+ga -f configs/nvim/plugged/.keep
+ga Icon
+ga git
+ga @macos
+git rm --cached configs/nvim/plugged/{YouCompleteMe,bclose.vim,dracula,nerdtree,ranger.vim,ultisnips,vim-airline,vim-airline-themes,vim-autoformat,vim-conda,vim-multiple-cursors,vim-snippets}
+git rm --cached -f configs/nvim/plugged/{YouCompleteMe,bclose.vim,dracula,nerdtree,ranger.vim,ultisnips,vim-airline,vim-airline-themes,vim-autoformat,vim-conda,vim-multiple-cursors,vim-snippets}
+gaa bin
+gaa .gitconfig
+ga terminfo-24bit.src
+l bin/kvm
+bin/kvm
+rm -r .git .sync
+rm -rf .git .sync
+rm Icon$'\r'
+touch readme.md
+rm hopeful.rslsc
+..
+ga homedir
+mkdir -p bin/_completions
+touch bin/_completions/.keep
+g bin
+ga bin
+ga _completions
+g status
+g status | grep j@ionlights
+g rm --cached **/j@ionlights.com.pem
+l homedir/ssh/j@ionlights.com.pem
+git rm -h
+../
+./.setup/setup
+mv .setup dotfiles
+./dotfiles/setup
+dotfiles
+gc -m "restructured and setting up to use git for keys"
+gp origin master
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch **/j@ionlights.com.pem" HEAD
+gaa; gc -m "removing a mistake"
+gp -all
+gp --all
+gp -f --all
+l homedir/tmux
+e ~/.tmux.conf.local
+. ~/.zprofile
+zrc
+which e
+e ~/.zprofile
+man compinit
+compinit -h
+rm -f ~/.zcompdump
+l
+chmod -R g-w /usr/local/share
+l /usr/local/share
+compaudit
+chmod -R g-w /usr/local/Cellar/
+: 1572066436:0;l
+: 1572066452:0;g status
+: 1572066456:0;l tmux
+: 1572066536:0;homedir/tmux
+: 1572066537:0;l
+: 1572066578:0;g clone git@github.com:gpakosz/.tmux .tmux
+: 1572066638:0;l
+: 1572066700:0;l .tmux
+: 1572066708:0;l
+: 1572066716:0;rm .tmux.conf
+: 1572066716:0;l
+: 1572066735:0;ln -sf .tmux/.tmux.conf .tmux.conf
+: 1572066736:0;l
+: 1572066744:0;rm -rf .git
+: 1572066749:0;rm README.md LICENSE.*
+: 1572066749:0;l
+: 1572066753:0;../
+: 1572066754:0;cd
+: 1572066759:0;./dotfiles/setup
+: 1572066761:0;l
+: 1572066778:0;l | grep tmux
+: 1572066809:0;rm ..tmux.conf
+: 1572066810:0;rm ..tmux.conf.local
+: 1572066813:0;./dotfiles/setup
+: 1572066818:0;l | grep tmux
+: 1572066836:0;rm .ucfai
+: 1572066838:0;l
+: 1572066844:0;rm .logs
+: 1572066862:0;rm \.*
+: 1572066865:0;l
+: 1572066869:0;dotfiles
+: 1572066872:0;./setup
+: 1572066874:0;l
+: 1572066876:0;l ..
+: 1572066902:0;rm ../j@ionlights.com.pem
+: 1572066902:0;l
+: 1572066909:0;l ..
+: 1572066924:0;l
+: 1572066928:0;e setup
+: 1572066994:0;l
+: 1572067005:0;ll ~/.con
+: 1572067006:0;ll ~/.config
+: 1572067027:0;rm -r ~/.config
+: 1572067032:0;rm -rf ~/.config
+: 1572067035:0;l
+: 1572067038:0;l ~/.conda
+: 1572067042:0;l
+: 1572067047:0;l configs
+: 1572067054:0;nvim setup
+: 1572067093:0;./setup
+: 1572067096:0;nvim setup
+: 1572067103:0;./setup
+: 1572067106:0;l
+: 1572067109:0;l ~
+: 1572067116:0;l ~/.config
+: 1572067134:0;which e
+: 1572067135:0;e
+: 1572067145:0;doom qs
+: 1572067154:0;nvim setup
+: 1572067327:0;./setup
+: 1572067332:0;l
+: 1572067336:0;l configs
+: 1572067346:0;e .gitignore
+: 1572067366:0;nvim .gitignore
+: 1572067391:0;l
+: 1572067394:0;rm -r .sync
+: 1572067395:0;l
+: 1572067404:0;rm -r #.gitignore#
+: 1572067405:0;l
+: 1572067411:0;rm \#.gitignore\#
+: 1572067411:0;l
+: 1572067423:0;./setup
+: 1572067426:0;l
+: 1572067435:0;nvim setup
+: 1572067447:0;man git
+: 1572067462:0;man git-clone
+: 1572067506:0;nvim setup
+: 1572067531:0;./setup
+: 1572067540:0;doom -h
+: 1572067548:0;l ~/
+: 1572067554:0;nvim setup
+: 1572067570:0;l configs
+: 1572067574:0;l configs/emacs
+: 1572067581:0;./setup
+: 1572067586:0;l ~
+: 1572067596:0;nvim setup
+: 1572067629:0;ln -sf ~/.config/emacs ~/.emacs.d
+: 1572067632:0;l ~/.emacs.d
+: 1572067639:0;rm -r ~/.emacs.d
+: 1572067643:0;ln -sf ~/.config/emacs ~/.emacs.d
+: 1572067646:0;l ~
+: 1572067654:0;nvim setup
+: 1572067692:0;./setup
+: 1572067696:0;l
+: 1572067698:0;doom -h
+: 1572067711:0;doom install
+: 1572068040:0;e setup
+: 1572068364:0;rm -r configs/emacs
+: 1572068367:0;rm -rf configs/emacs
+: 1572068374:0;e setup
+: 1572068422:0;which e
+: 1572068425:0;nvim set
+: 1572068432:0;nvim setup
+: 1572068483:0;./setup
+: 1572068492:0;nvim setup
+: 1572068507:0;./setup
+: 1572068514:0;nvim setup
+: 1572068532:0;zp aliases
+: 1572068578:0;l ~
+: 1572068594:0;l ~/.config/emacs
+: 1572068602:0;rm -r ~/.emacs.d/emacs
+: 1572068603:0;l
+: 1572068606:0;l ~/.config/emacs
+: 1572068609:0;l ~/.config/emacs/bin
+: 1572068626:0;nvim setup
+: 1572068634:0;rm -r ~/.emacs.d/emacs
+: 1572068636:0;./setup
+: 1572068651:0;nvim setup
+: 1572068660:0;./setup
+: 1572068678:0;which doom
+: 1572068695:0;e setup
+: 1572068748:0;nvim setup
+: 1572068779:0;./setup
+: 1572068786:0;doom install

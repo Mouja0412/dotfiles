@@ -1,8 +1,16 @@
 #!/usr/bin/zsh
 
-export EDITOR="nvim"
-export DOTS="${HOME}/.setup"
-export ZSH="${DOTS}/dots-no-xdg/zsh"
+editors=("emacs" "nvim" "vim" "vi")
+for editor in ${editors[@]}; do
+    which $editor > /dev/null
+    if [[ $? == 0 ]]; then
+        export EDITOR=$editor
+        break
+    fi
+done
+
+export DOTS="${HOME}/dotfiles/"
+export ZSH="${DOTS}/homedir/zsh"
 
 OS=`uname -s`
 

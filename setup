@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+    
 export DOTFILES="$HOME/dotfiles"
 
 if [[ $(basename ${SHELL}) != "zsh" ]]; then
@@ -14,8 +14,6 @@ OS=`uname -r`
 cwd=`pwd`
 
 cd $DOTFILES
-
-# git submodule init --recursive .
 
 case $OS in
     "Darwin")
@@ -32,9 +30,10 @@ if [[ $? -ne 0 ]]; then
     curl -sL git.io/antibody | sh -s
 fi
 
-
 # region Applications which do support $XDG_CONFIG_HOME
+printf "Setting \`\${XDG_CONFIG_HOME}\` compliant configurations...\n"
 cd $DOTFILES/configs
+
 # apps that support $XDG_CONFIG_HOME
 supports_xdg_config=`find . -maxdepth 1 -type d -not -name .`
 
@@ -45,6 +44,7 @@ cd $DOTFILES
 # endregion
 
 # region Applications which don't support $XDG_CONFIG_HOME
+printf "Setting \`\${XDG_CONFIG_HOME}\` non-compliant configurations...\n"
 cd $DOTFILES/homedir
 assholes_xdg_config=`find . -maxdepth 1 -not -name .keep -not -name .`
 for dir in $assholes_xdg_config; do
@@ -69,6 +69,8 @@ done
 cd $DOTFILES
 # endregion
 
+# region ZSH configuration
+printf "Setting up \`zsh\` configuration...\n"
 source ~/.zprofile 2> /dev/null
 source ~/.zshrc 2> /dev/null
 
@@ -76,3 +78,16 @@ antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh
 
 source ~/.zprofile 2> /dev/null
 source ~/.zshrc 2> /dev/null
+# endregion
+
+# region Setup Doom / Emacs
+# store outside the repo since `emacs` configs differ by OS and version
+printf "Setting up \`doom-emacs\`...\n"
+
+rm -rf ${XDG_CONFIG_HOME}/emacs > /dev/null 2> /dev/null
+git clone https://github.com/hlissner/doom-emacs ${XDG_CONFIG_HOME}/emacs
+ln -sf ${XDG_CONFIG_HOME}/emacs ~/.emacs.d
+
+# TODO: allow for `doom install` to be run on installation
+# endregion
+

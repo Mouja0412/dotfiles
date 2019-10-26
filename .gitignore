@@ -3,12 +3,7 @@
 .DS_Store
 Icon?\r
 
-# resilio-sync
-.sync
-*.rsl*
+homedir/zsh/history
 
-# zsh
-zsh/history
-
-# nvim
+configs/emacs
 configs/nvim/plugged
