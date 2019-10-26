@@ -1,0 +1,218 @@
+man sleep
+sleep 2700; python unzip-osf.py
+z gr
+z r gr
+z res gr
+l osf/TA2\ inbox/CDF/Instances/Instance0/Runs/run-0/
+l osf/TA2\ inbox/Answers\ from\ TA1/Data/CDF/Instances/Instance0/Runs/run-0/R
+less osf/Complete/TA2A-TA1B-0481-RR-Context.md
+less osf/Complete/TA2A-TA1B-0481-RR.md
+l osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0481-README.txt
+l osf/TA2\ inbox/Answers\ from\ TA1/Data/CDF/Instances/Instance0/Runs/run-0/
+open osf/TA2\ inbox/Answers\ from\ TA1/Data/
+less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0501-README.txt
+ssh bae
+z core
+e fa19/2019-10-23-rnns
+e fa19/2019-10-23-rnns/2019-10-23-rnns.solution.ipynb
+export KAGGLE_CONFIG_DIR=/Users/ionlights/resilio/ucfai/bot
+fa19/2019-10-23-rnns
+kaggle k push
+hostname
+lsblk -f
+systemctl restart rslsync --user
+systemctl status rslsync --user
+less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0481-README.txt
+e ../syllabus.yml
+wkhtmltoimage -h
+wkhtmltoimage -H
+wkhtmltoimage -H | grep quiet
+wkhtmltoimage -H | grep java
+autobot intelligence make-notebooks --full-overwrite
+../../../ucfai.org
+gaa; gc -m "redoing banners for intelligence"
+gp origin release
+../bot
+cp kaggle.json kaggle.json.enc
+brew install gpg
+gpg -e kaggle.json
+gpg -n -i
+gpg -n -i -e kaggle.json
+gpg -n -i -er kaggle.json
+gpg -h
+gpg -c kaggle.json
+e kaggle.json.gpg
+gpg -d kaggle.json
+gpg -cd kaggle.json
+gpg -c kaggle.json.gpg
+rm kaggle.json.gpg.gpg
+gpg -d kaggle.json.gpg
+gpg kaggle.json.
+gpg kaggle.json.gpg
+e .gitignore
+gaa; gc -m "updating banner generation; adding kaggle json"
+unset KAGGLE_CONFIG_DIR
+git branch -h
+touch scripts/setup-kaggle
+chmod +x scripts/setup-kaggle
+chmod 644 kaggle.json.gpg
+e kaggle.json
+rm kaggle.json
+./scripts/setup-kaggle
+rm kaggle.json.enc
+gaa -n
+gaa; gc -m "setup kaggle kernels; will update every kernel"
+gaa; gc -m "add todo and remove debug"
+gp origin mistake
+sudo shutdown -h now
+gotop -psm
+rm *.{pid,txt}
+less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0521-README.txt
+l osf/TA2\ inbox/Answers\ from\ TA1/Data/
+ta ucfai
+../core
+git pull
+ca ucfai-admin
+git branch -d ionlights-cnn-solutions-revised
+g branch
+gaa; g stash
+g checkout origin/ionlights-cnn-solutions-revised
+g checkout -b origin/ionlights-cnn-solutions-revised
+g checkout -b ionlights-cnn-solutions-revised
+g pull
+g pull origin ionlights-cnn-solutions-revised
+autobot core make-notebooks --full-overwrite
+less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0511-README.txt
+less osf/TA2\ inbox/Answers\ from\ TA1/Data/TA2A-TA1B-0491-README.txt
+less osf/TA2\ inbox/Answers\ from\ TA1/Data/CDF/SimulationDefinition/RelationshipDefTable.tsv
+ta sys
+hop
+ssh nas
+tn sys-admin
+Downloads/gpu-burn
+./gpu_burn 43200
+rm *.txt
+rm mprime.pid
+mprime -s
+watch nvidia-smi
+ta gt
+man tmux
+tmux ls
+tmux new -s gt
+tn gr
+tmux -h
+tmux kill-server -n gt
+tmux kill-server
+tmux sl
+tn gt
+z d g
+z r g
+z re g
+l
+ca ground-truth
+jupyter notebook .
+jupyter lab --ip 0.0.0.0 --port 46600 .
+: 1571928630:0;l
+: 1571937695:0;ta sys
+: 1571937698:0;tn sys-admin
+: 1571937701:0;hop
+: 1571937787:0;l
+: 1571937817:0;ta sys
+: 1571937823:0;tn sys-admin
+: 1571937825:0;ta sys
+: 1571938300:0;tmux kill-session -n sys-admin
+: 1571938303:0;tmux kill-session -t sys-admin
+: 1571938306:0;tn sys-admin
+: 1571938347:0;hop
+: 1571938354:0;ssh nas
+: 1571938361:0;hop
+: 1571938368:0;ssh bae
+: 1571944104:0;hop
+: 1571949041:0;ta ucfai
+: 1571949043:0;tn ucfai
+: 1571949045:0;z bo
+: 1571949047:0;l
+: 1571949053:0;ca ucfai-admin
+: 1571949058:0;autobot -h
+: 1571950144:0;l ~/.setup
+: 1571950149:0;l
+: 1571950151:0;l ~
+: 1571950155:0;l ~ | grep emacs
+: 1571950168:0;l ~/.config
+: 1571950186:0;doom
+: 1571950192:0;doom -h
+: 1571950210:0;doom re
+: 1571952670:0;ta ucfai
+: 1571952679:0;ca ucfai-admin
+: 1571952681:0;../
+: 1571952706:0;l
+: 1571952709:0;reader
+: 1571952709:0;l
+: 1571952712:0;python listener.py
+: 1572027865:0;l
+: 1572027884:0;git clone git@github.com:ionlights/dotfiles
+: 1572027888:0;l
+: 1572027895:0;dotfiles
+: 1572027895:0;l
+: 1572027979:0;less dots-no-xdg/zsh
+: 1572027985:0;less dots-no-xdg/zsh/zsh
+: 1572028001:0;l dots-no-xdg/zsh
+: 1572028015:0;sudo rm dots-no-xdg/zsh/zsh
+: 1572028027:0;rm dots-no-xdg/tmux
+: 1572028032:0;l dots-no-xdg/tmux
+: 1572028037:0;l -a dots-no-xdg/tmux
+: 1572028041:0;l tmux
+: 1572028042:0;l
+: 1572028055:0;l ~/.tmux.conf
+: 1572028085:0;rm .stow-local-ignore
+: 1572028086:0;l
+: 1572028092:0;l dots-xdg
+: 1572028100:0;ta sys-admin
+: 1572028109:0;dotfiles
+: 1572028114:0;~/.setup
+: 1572028115:0;l
+: 1572028198:0;rm .stow-local-ignore
+: 1572028210:0;l dots-no-xdg/zsh/
+: 1572028217:0;l -R dots-no-xdg
+: 1572028221:0;l -R dots-no-xdg/
+: 1572028235:0;tree -L 1
+: 1572028238:0;tree -L 1 dots-no-xdg
+: 1572028241:0;tree -L 2 dots-no-xdg
+: 1572028245:0;tree -L 3 dots-no-xdg
+: 1572028250:0;tree -L 3 dots-xdg
+: 1572028336:0;l
+: 1572028347:0;l .config
+: 1572028393:0;l
+: 1572028402:0;l ~/.con
+: 1572028403:0;l ~/.config
+: 1572028515:0;mkdir -p dots-xdg/{htop,nvim,rander,direnv}
+: 1572028542:0;touch dots-xdg/{htop,nvim,rander,direnv,doom,git}/.keep
+: 1572028543:0;l
+: 1572028556:0;mv dots-xdg/rander dots-xdg/ranger
+: 1572028558:0;l
+: 1572028581:0;cp -r ~/.config/ranger/* ./dots-xdg/ranger
+: 1572028627:0;cp -r ~/.config/nvim/* ./dots-xdg/nvim
+: 1572028640:0;cp -r ~/.config/htop/* ./dots-xdg/htop
+: 1572028655:0;cp -r ~/.config/direnv/* ./dots-xdg/direnv
+: 1572028657:0;l
+: 1572028661:0;rm -r .config
+: 1572028662:0;l
+: 1572028683:0;rm Icon$'\r'
+: 1572028683:0;l
+: 1572028687:0;l terminfo-24bit.src
+: 1572028690:0;l @linux
+: 1572028693:0;l @linux/preferences
+: 1572028697:0;l @macos
+: 1572028713:0;rm .vscode
+: 1572028717:0;rm -r .vscode
+: 1572028718:0;l
+: 1572028906:0;l .zshenv
+: 1572028910:0;e .zshenv
+: 1572028920:0;rm .zshenv
+: 1572028921:0;l
+: 1572028924:0;l bin
+: 1572028932:0;l dots-no-xdg/zsh/
+: 1572028961:0;l
+: 1572029024:0;cp -r dots-xdg config
+: 1572029030:0;l
+: 1572029045:0;cp -r dots-no-xdg homedir

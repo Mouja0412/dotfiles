@@ -1,8 +1,7 @@
+*.pem
+
 .DS_Store
 Icon?\r
-
-_bin/algo-git/configs
-.ssh
 
 # resilio-sync
 .sync
@@ -10,3 +9,6 @@ _bin/algo-git/configs
 
 # zsh
 zsh/history
+
+# nvim
+configs/nvim/plugged

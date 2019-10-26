@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-#: #############################################################################
-#: aliases
-#: #############################################################################
+alias e="$EDITOR"
+
+alias hop="ssh srv.hop"
 alias srv="ssh srv.ionlights"
 alias nas="ssh nas.ionlights"
 alias mbp="ssh mbp"
 alias osx="ssh osx"
-alias srv.local="ssh 192.168.1.85"
-alias sshcfg="$EDITOR ~/.ssh/config"
 
-alias zrc="$EDITOR ~/.zshrc && . ~/.zshrc"
-alias plugins="$EDITOR ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh"
+alias sshcfg="e ~/.ssh/config"
+
+alias zrc="e ~/.zshrc && . ~/.zshrc"
+alias plugins="e ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh && . ~/.zshrc"
 
 alias doom="~/.emacs.d/bin/doom"
 
@@ -22,11 +22,20 @@ case $OS_ in
     "macos")
     ;;
 esac
-alias ll="ls -lh"
-alias lr="ls -r"
-alias ld="ls -d */"
+alias l="ls -lhAF"
+alias ll="l"
+alias lr="l -r"
+alias ld="l -d */"
+
 
 ignoreRegex=".*\(Permission denied\)"
 ignoreRegex="${ignoreRegex}\|\(Operation not permitted\)"
 alias size="du -ch -d 1 2> >(grep -v \"${ignoreRegex}\") | sort -h"
 
+alias ta="tmux a -t"
+alias tn="tmux new -s"
+
+alias ca="conda activate"
+
+# alias rm="rmtrash"
+# alias rmdir="rmdirtrash"

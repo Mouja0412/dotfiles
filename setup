@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 
+export DOTFILES="$HOME/dotfiles"
+
 if [[ $(basename ${SHELL}) != "zsh" ]]; then
     chsh -s `which zsh`
 fi
 
+# make the XDG_CONFIG_HOME directory if it doesn't exist
 export XDG_CONFIG_HOME="$HOME/.config"
 [[ -d $XDG_CONFIG_HOME ]] || mkdir -p $XDG_CONFIG_HOME
 
 OS=`uname -r`
 cwd=`pwd`
 
-if [[ $(basename $cwd) != ".setup" ]]; then
-    cd $HOME/.setup
-fi
+cd $DOTFILES
 
 # git submodule init --recursive .
 
@@ -32,17 +33,19 @@ if [[ $? -ne 0 ]]; then
 fi
 
 
-cd dots-xdg
+# region Applications which do support $XDG_CONFIG_HOME
+cd $DOTFILES/configs
 # apps that support $XDG_CONFIG_HOME
 supports_xdg_config=`find . -maxdepth 1 -type d -not -name .`
 
 for dir in $supports_xdg_config; do
     ln -sf $(pwd)/$(basename ${dir}) ${XDG_CONFIG_HOME}/${dir}
 done
-cd $HOME/.setup
+cd $DOTFILES
+# endregion
 
-cd dots-no-xdg
-# apps which don't support $XDG_CONFIG_HOME
+# region Applications which don't support $XDG_CONFIG_HOME
+cd $DOTFILES/homedir
 assholes_xdg_config=`find . -maxdepth 1 -not -name .keep -not -name .`
 for dir in $assholes_xdg_config; do
     dir_="$(basename ${dir})"
@@ -63,7 +66,8 @@ for dir in $assholes_xdg_config; do
         ln -sf "${path}" "${HOME}/.${dir_}"
     fi
 done
-cd $HOME/.setup
+cd $DOTFILES
+# endregion
 
 source ~/.zprofile 2> /dev/null
 source ~/.zshrc 2> /dev/null

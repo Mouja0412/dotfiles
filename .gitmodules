@@ -4,9 +4,9 @@
 [submodule "tmux"]
 	path = tmux
 	url = https://github.com/gpakosz/.tmux
-[submodule "_bin/kvm"]
-	path = _bin/kvm
+[submodule "bin/kvm"]
+	path = bin/kvm
 	url = git@github.com:ionlights/kvm
-[submodule "_bin/algo-git"]
-	path = _bin/algo-git
+[submodule "bin/algo-git"]
+	path = bin/algo-git
 	url = git@github.com:trailofbits/algo
