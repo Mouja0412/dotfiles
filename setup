@@ -2,36 +2,106 @@
     
 export DOTFILES="$HOME/dotfiles"
 
-if [[ $(basename ${SHELL}) != "zsh" ]]; then
-    chsh -s `which zsh`
-fi
-
 # make the XDG_CONFIG_HOME directory if it doesn't exist
 export XDG_CONFIG_HOME="$HOME/.config"
 [[ -d $XDG_CONFIG_HOME ]] || mkdir -p $XDG_CONFIG_HOME
 
-OS=`uname -r`
-cwd=`pwd`
+cwd=$(pwd)
 
-cd $DOTFILES
+function am_sudoable {
+    sudo -v 1> /dev/null
+    echo $?
+}
 
-case $OS in
-    "Darwin")
-        sh @macos/init
-        ;;
-    "Linux")
-        sh @linux/init
-        ;;
-esac
+# region Check for `sudo`
+echo -n "Checking for \`sudo\`... "
+if [[ $(am_sudoable) -ne 0 ]]; then
+    echo "Not able to \`sudo\`!"
+    if [[ $(uname -s) == "Linux" ]]; then
+        usermod -aG wheel $(whoami)
+    else
+        echo "Manually add \`wheel\` to existing groups..."
+    fi
+    echo "Logout to allow for group change."
+    exit 0
+fi
+echo "Passed!"
+# endregion
 
-which antibody > /dev/null
-# installing antibody, if its not present
+# region Install desired packages for system uniformity
+echo "Attempting to install preferred packages..."
+on_crux=$(uname -a | grep -iE "arch|manjaro"  | wc -l)
+on_debn=$(uname -a | grep -iE "debian|ubuntu" | wc -l)
+on_rhel=$(uname -a | grep -iE "fedora|centos" | wc -l)
+on_macs=$(uname -a | grep -iE "darwin"        | wc -l)
+
+if [[ $(am_sudoable) -eq 1 ]]; then
+    # the `xargs ...` command is thanks to: https://askubuntu.com/a/660906/585721
+    # Attempt to install packages semi-intelligently
+
+    if [[ ${on_crux} -eq 1 ]]; then
+        # Install `yay`, to avoid using Pacman
+        which yay /dev/null
+        if [[ $? -ne 0 ]]; then
+            git clone https://aur.archlinux.org/yay
+            cd yay && makepkg -sir; cd ..
+            rm -rf yay
+        fi
+        yay -Syyu
+        yay -Sy zsh
+        yay -Sy < @linux/arch
+        xargs -a <(awk "! /^ *(#|$)/" $(cat pkgs/arch)) -r -- yay -Sy
+
+    elif [[ ${on_debn} -eq 1 ]]; then
+        sudo apt-get update -y && suod apt-get upgrade -y
+        sudo apt-get install -y zsh
+        xargs -a <(awk "! /^ *(#|$)/" $(cat pkgs/debian)) -r -- sudo apt-get install -y
+
+    elif [[ ${on_rhel} -eq 1 ]]; then
+        sudo dnf update -y && sudo dnf upgrade -y
+        sudo dnf install -y zsh
+        xargs -a <(awk "! /^ *(#|$)/" $(cat pkgs/rhel)) -r -- sudo dnf install -y
+
+    elif [[ ${on_macs} -eq 1 ]]; then
+        # Setup to install Brew
+        # https://gist.github.com/brysgo/9007731#gistcomment-1468739
+        xcode-select -p 1> /dev/null
+        if [[ $? -ne 0 ]]; then
+            xcode-select --install
+            sleep 1
+            osascript <<EOD
+tell application "System Events"
+    tell process "Install Command Line Developer Tools"
+        keystroke return
+        click button "Agree" of window "License Agreement"
+    end tell
+end tell
+EOD
+        fi
+
+        which brew 1> /dev/null
+        if [[ $? -ne 0 ]]; then
+            /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        fi
+        brew update
+        brew bundle install --file=pkgs/macos
+    fi
+            
+    # change shell to ZSH
+    if [[ $(basename ${SHELL}) != "zsh" ]]; then
+        chsh -s `which zsh`
+    fi
+fi
+
+# check for `antibody`, install if not present
+which antibody 1> /dev/null
 if [[ $? -ne 0 ]]; then
     curl -sL git.io/antibody | sh -s
 fi
+# endregion
 
 # region Applications which do support $XDG_CONFIG_HOME
-printf "Setting \`\${XDG_CONFIG_HOME}\` compliant configurations...\n"
+echo "Setting \`\${XDG_CONFIG_HOME}\` compliant configurations..."
 cd $DOTFILES/configs
 
 # apps that support $XDG_CONFIG_HOME
@@ -44,7 +114,7 @@ cd $DOTFILES
 # endregion
 
 # region Applications which don't support $XDG_CONFIG_HOME
-printf "Setting \`\${XDG_CONFIG_HOME}\` non-compliant configurations...\n"
+echo "Setting \`\${XDG_CONFIG_HOME}\` non-compliant configurations..."
 cd $DOTFILES/homedir
 assholes_xdg_config=`find . -maxdepth 1 -not -name .keep -not -name .`
 for dir in $assholes_xdg_config; do
@@ -70,11 +140,11 @@ cd $DOTFILES
 # endregion
 
 # region ZSH configuration
-printf "Setting up \`zsh\` configuration...\n"
+echo "Setting up \`zsh\` configuration..."
 source ~/.zprofile 2> /dev/null
 source ~/.zshrc 2> /dev/null
 
-antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh
+antibody bundle < ${ANTIBODY_PLUGS}.txt 1> ${ANTIBODY_PLUGS}_${OS_}.sh
 
 source ~/.zprofile 2> /dev/null
 source ~/.zshrc 2> /dev/null
@@ -82,12 +152,13 @@ source ~/.zshrc 2> /dev/null
 
 # region Setup Doom / Emacs
 # store outside the repo since `emacs` configs differ by OS and version
-printf "Setting up \`doom-emacs\`...\n"
+echo "Setting up \`doom-emacs\`..."
 
-rm -rf ${XDG_CONFIG_HOME}/emacs > /dev/null 2> /dev/null
+rm -rf ${XDG_CONFIG_HOME}/emacs 1> /dev/null
 git clone https://github.com/hlissner/doom-emacs ${XDG_CONFIG_HOME}/emacs
 ln -sf ${XDG_CONFIG_HOME}/emacs ~/.emacs.d
 
 # TODO: allow for `doom install` to be run on installation
+# FIX: currently hard-coding the fqp to the `doom` cmd
+yes | ~/.config/emacs/bin/doom install
 # endregion
-

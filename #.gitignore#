@@ -1,0 +1,9 @@
+j:q*.pem
+
+.DS_Store
+Icon?\r
+
+homedir/zsh/history
+
+configs/emacs
+configs/nvim/plugged
