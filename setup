@@ -108,6 +108,7 @@ cd $DOTFILES/configs
 supports_xdg_config=`find . -maxdepth 1 -type d -not -name .`
 
 for dir in $supports_xdg_config; do
+    rm ${XDG_CONFIG_HOME}/${dir}
     ln -sf $(pwd)/$(basename ${dir}) ${XDG_CONFIG_HOME}/${dir}
 done
 cd $DOTFILES
@@ -125,14 +126,17 @@ for dir in $assholes_xdg_config; do
         has_dots=`find ./${dir_} -maxdepth 1 -type f -name "\.*" -not -name .keep -not -name .`
 
         if [[ $has_dots == "" ]]; then
+            rm "${HOME}/.${dir_}"
             ln -sf "${path}" "${HOME}/.${dir_}"
         else
             for file in $has_dots; do
                 dotfile=$(basename ${file})
+                rm "${HOME}/.${dotfile}"
                 ln -sf "${path}/${dotfile}" "${HOME}/${dotfile}"
             done
         fi
     else
+        rm "${HOME}/.${dir_}"
         ln -sf "${path}" "${HOME}/.${dir_}"
     fi
 done
