@@ -4,6 +4,7 @@
 Icon?\r
 
 homedir/zsh/history
+homedir/ssh/tmp
 
 configs/emacs
 configs/nvim/plugged
