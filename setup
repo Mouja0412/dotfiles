@@ -41,8 +41,7 @@ if [[ $(am_sudoable) -eq 1 ]]; then
 
     if [[ ${on_crux} -eq 1 ]]; then
         # Install `yay`, to avoid using Pacman
-        which yay /dev/null
-        if [[ $? -ne 0 ]]; then
+        if [[ command -v yay != "" ]]; then
             git clone https://aur.archlinux.org/yay
             cd yay && makepkg -sir; cd ..
             rm -rf yay
@@ -79,8 +78,7 @@ end tell
 EOD
         fi
 
-        which brew 1> /dev/null
-        if [[ $? -ne 0 ]]; then
+        if [[ command -v brew != "" ]]; then
             /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         fi
         brew update
@@ -94,11 +92,15 @@ EOD
 fi
 
 # check for `antibody`, install if not present
-which antibody 1> /dev/null
-if [[ $? -ne 0 ]]; then
+if [[ command -v antibody != "" ]]; then
     curl -sL git.io/antibody | sh -s
 fi
 # endregion
+
+function clean_link {
+    rm $2
+    ln -sf $1 $2
+}
 
 # region Applications which do support $XDG_CONFIG_HOME
 echo "Setting \`\${XDG_CONFIG_HOME}\` compliant configurations..."
@@ -108,8 +110,7 @@ cd $DOTFILES/configs
 supports_xdg_config=`find . -maxdepth 1 -type d -not -name .`
 
 for dir in $supports_xdg_config; do
-    rm ${XDG_CONFIG_HOME}/${dir}
-    ln -sf $(pwd)/$(basename ${dir}) ${XDG_CONFIG_HOME}/${dir}
+    clean_link $(pwd)/$(basename ${dir}) ${XDG_CONFIG_HOME}/${dir}
 done
 cd $DOTFILES
 # endregion
@@ -122,36 +123,23 @@ for dir in $assholes_xdg_config; do
     dir_="$(basename ${dir})"
     path="$(pwd)/${dir_}"
 
+    # TODO: condense this into `xargs` if possible
     if [[ -d ${dir_} ]]; then
         has_dots=`find ./${dir_} -maxdepth 1 -type f -name "\.*" -not -name .keep -not -name .`
 
         if [[ $has_dots == "" ]]; then
-            rm "${HOME}/.${dir_}"
-            ln -sf "${path}" "${HOME}/.${dir_}"
+            clean_link ${path} ${HOME}/.${dir_}
         else
             for file in $has_dots; do
                 dotfile=$(basename ${file})
-                rm "${HOME}/.${dotfile}"
-                ln -sf "${path}/${dotfile}" "${HOME}/${dotfile}"
+                clean_link ${path}/${dotfile} ${HOME}/${dotfile}
             done
         fi
     else
-        rm "${HOME}/.${dir_}"
-        ln -sf "${path}" "${HOME}/.${dir_}"
+        clean_link ${path} ${HOME}/.${dir_}
     fi
 done
 cd $DOTFILES
-# endregion
-
-# region ZSH configuration
-echo "Setting up \`zsh\` configuration..."
-source ~/.zprofile 2> /dev/null
-source ~/.zshrc 2> /dev/null
-
-antibody bundle < ${ANTIBODY_PLUGS}.txt 1> ${ANTIBODY_PLUGS}_${OS_}.sh
-
-source ~/.zprofile 2> /dev/null
-source ~/.zshrc 2> /dev/null
 # endregion
 
 # region Setup Doom / Emacs
@@ -164,5 +152,34 @@ ln -sf ${XDG_CONFIG_HOME}/emacs ~/.emacs.d
 
 # TODO: allow for `doom install` to be run on installation
 # FIX: currently hard-coding the fqp to the `doom` cmd
-yes | ~/.config/emacs/bin/doom install
+if [[ command -v doom != "" ]]; then
+    yes | ~/.config/emacs/bin/doom install
+fi
+# endregion
+
+# region Git Configuration
+cd ${DOTFILES}/configs/git
+echo "Setting up \`git\`..."
+git config --global user.name "John M"
+git config --global user.email "j@ionlights.com"
+
+rm -rf _ignores
+git clone git@github.com:github/gitignore _ignores
+yes | rm -r _ignores/.git
+
+cat ignore.custom > ignore
+cat ignore.build | xargs -I {} cat _ignores/{}.gitignore >> ignore
+git config --global core.excludesfile ${XDG_CONFIG_HOME}/git/ignore
+cd $DOTFILES
+# endregion
+
+# region ZSH configuration
+echo "Setting up \`zsh\` configuration..."
+source ~/.zprofile 2> /dev/null
+source ~/.zshrc 2> /dev/null
+
+antibody bundle < ${ANTIBODY_PLUGS}.txt 1> ${ANTIBODY_PLUGS}_${OS_}.sh
+
+source ~/.zprofile 2> /dev/null
+source ~/.zshrc 2> /dev/null
 # endregion

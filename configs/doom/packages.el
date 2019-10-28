@@ -11,9 +11,9 @@
 (package! powerthesaurus)
 (package! define-word)
 
-(package! conda)
+;;(package! conda)
 
-(package! ox-hugo)
+;;(package! ox-hugo)
 
 ;; (def-package! pdf-tools
 ;;   :if (display-graphic-p)

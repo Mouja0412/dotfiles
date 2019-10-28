@@ -32,7 +32,7 @@
         +all             ; catch all popups that start with an asterix
         +defaults)       ; default popup rules
        pretty-code       ; replace bits of code with pretty symbols
-       tabbar            ; FIXME an (incomplete) tab bar for Emacs
+       tabs              ; FIXME an (incomplete) tab bar for Emacs
        treemacs          ; a project drawer, like neotree but cooler
        unicode           ; extended unicode support for various languages
        vc-gutter         ; vcs diff in the fringe
@@ -100,7 +100,7 @@
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
-       csharp            ; unity, .NET, and mono shenanigans
+       ;;csharp            ; unity, .NET, and mono shenanigans
        data              ; config/data formats
        ;;erlang            ; an elegant language for a more civilized age
        ;;elixir            ; erlang done right
@@ -133,13 +133,13 @@
         +protocol)       ; Support for org-protocol:// links
        ;;perl              ; write code no one else can comprehend
        ;;php               ; perl's insecure younger brother
-       plantuml          ; diagrams for confusing people more
+       ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
        python            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;rest              ; Emacs as a REST client
-       ruby              ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
+       ;;ruby              ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
        ;;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        sh                ; she sells {ba,z,fi}sh shells on the C xor
@@ -162,13 +162,13 @@
        ;;irc              ; how neckbeards socialize
        ;;(rss +org)        ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought
-       (write            ; emacs as a word processor (latex + org + markdown)
-        +wordnut         ; wordnet (wn) search
-        +langtool)       ; a proofreader (grammar/style check) for Emacs
+       ;;(write            ; emacs as a word processor (latex + org + markdown)
+       ;; +wordnut         ; wordnet (wn) search
+       ;; +langtool)       ; a proofreader (grammar/style check) for Emacs
 
        :collab
        ;;floobits          ; peer programming for a price
-       impatient-mode    ; show off code over HTTP
+       ;;impatient-mode    ; show off code over HTTP
 
        :config
        ;; For literate config users. This will tangle+compile a config.org

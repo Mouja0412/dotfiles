@@ -21,9 +21,6 @@
   (setq ns-use-thin-smoothing t))
 
 ;;; Frames/Windows
-(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
-(when IS-MAC
-  (add-hook 'window-setup-hook #'toggle-frame-maximized))
 
 ;; Theme-ing
 ;; https://github.com/hlissner/emacs-doom-themes#install

@@ -6,5 +6,7 @@ Icon?\r
 homedir/zsh/history
 homedir/ssh/tmp
 
+configs/git/config
+configs/git/_ignores
 configs/emacs
 configs/nvim/plugged
