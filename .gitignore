@@ -5,6 +5,7 @@ Icon?\r
 
 homedir/zsh/history
 homedir/ssh/tmp
+homedir/ssh/known_hosts
 
 configs/git/config
 configs/git/_ignores

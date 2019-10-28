@@ -36,11 +36,11 @@
 (setq doom-font (font-spec :family "Fira Code" :size 12))
 
 ;; Conda
-(require 'conda)
-(conda-env-initialize-eshell)
-(conda-env-autoactivate-mode t)
-(custom-set-variables
-    '(conda-anaconda-home "/Users/ionlights/.conda/envs"))
+;; (require 'conda)
+;; (conda-env-initialize-eshell)
+;; (conda-env-autoactivate-mode t)
+;; (custom-set-variables
+;;     '(conda-anaconda-home "/Users/ionlights/.conda/envs"))
 
 ;; Line Numbering
 (setq display-line-numbers-type 'relative)
