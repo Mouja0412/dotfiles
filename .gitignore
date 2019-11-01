@@ -16,3 +16,5 @@ configs/git/_ignores
 configs/emacs
 configs/nvim/plugged
 configs/zsh/history
+configs/zsh/antibody_*
+!configs/zsh/antibody_plugins.txt
