@@ -1,22 +1,39 @@
+tap "bazelbuild/tap"
+tap "caskroom/fonts"
+tap "cjbassi/gotop"
+tap "getantibody/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "kryptco/tap"
-
 # Automatic configure script builder
 brew "autoconf"
+# Shell extension to jump to frequently used directories
+brew "autojump"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# Color-highlighted diff(1) output
-brew "colordiff"
-# Load/unload environment variables based on $PWD
-brew "direnv"
-# GNU Emacs text editor
-brew "emacs"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext", link: true
+# Interpreted, interactive, object-oriented programming language
+brew "python"
+# Color-highlighted diff(1) output
+brew "colordiff"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Maintain consistent coding style between multiple editors
+brew "editorconfig"
+# GNU Emacs text editor
+brew "emacs"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Alternative to top/htop
+brew "glances"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Improved top (interactive process viewer)
@@ -35,26 +52,55 @@ brew "nmap"
 brew "node"
 # Open client for Cisco AnyConnect VPN
 brew "openconnect"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # File browser
 brew "ranger"
 # Ruby version manager
 brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# Virtual Private Network (VPN) tool
+brew "tinc"
 # Terminal multiplexer
 brew "tmux"
+# Command-line interface to the freedesktop.org trashcan
+brew "trash-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Display word differences between text files
 brew "wdiff"
 # Internet file retriever
 brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Fast, scalable, multi-language and extensible build system
+brew "bazelbuild/tap/bazel"
+# A terminal based graphical activity monitor inspired by gtop and vtop
+brew "cjbassi/gotop/gotop"
 # Krypton command-line client, daemon, and SSH integration
 brew "kryptco/tap/kr"
-
+cask "docker"
+cask "emacs"
+cask "emacsclient"
+cask "julia"
 cask "keybase"
+cask "odrive"
+cask "skype"
+cask "tuntap"
+cask "vagrant"
+cask "vagrant-manager"
+cask "virtualbox"
 cask "wkhtmltopdf"
+cask "caskroom/fonts/font-noto-mono"
+cask "caskroom/fonts/font-noto-sans"

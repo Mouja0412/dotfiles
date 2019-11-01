@@ -1,10 +1,9 @@
 # Ignore cloned .gitignore repo
-_ignores/
+global-ignores/
 
 # Ignore placeholder files
 *.cloud*
 *.rsl*
-
 # Dropbox settings and caches
 .dropbox
 .dropbox.attr

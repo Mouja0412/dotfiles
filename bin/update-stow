@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-c=`pwd`
-
-cp ${c}/.stow-local-ignore $HOME/.stow-global-ignore
-
-# since patterns aren't absolute paths, `sed`` not needed
-# sed -i "" "s+%%dots%%+${c}+" $HOME/.stow-global-ignore

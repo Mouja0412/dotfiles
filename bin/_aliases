@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 alias e="$EDITOR"
+if [ "$(command -v nvim)" != "" ]; then
+    alias v="nvim"
+fi
 
 alias hop="ssh srv.hop"
 alias srv="ssh srv.ionlights"
@@ -8,19 +11,19 @@ alias nas="ssh nas.ionlights"
 alias mbp="ssh mbp"
 alias osx="ssh osx"
 
-alias sshcfg="e ~/.ssh/config"
+alias sshcfg="e ${CONF}/ssh/config"
 
-alias zrc="e ~/.zshrc && . ~/.zshrc"
-alias plugins="e ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh && . ~/.zshrc"
+alias zrc="e ${CONF}/zsh/.zshrc && source ${CONF}/zsh/.zshrc"
+alias plugins="e ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh && . ${HOME}/.zshrc"
 
-alias doom="~/.emacs.d/bin/doom"
+alias doom="${HOME}/.emacs.d/bin/doom"
 
-case $OS_ in
+case "${OS}" in
     "linux")
         alias ls="ls --color=always"
-    ;;
+        ;;
     "macos")
-    ;;
+        ;;
 esac
 alias l="ls -lhAF"
 alias ll="l"
@@ -32,10 +35,13 @@ ignoreRegex=".*\(Permission denied\)"
 ignoreRegex="${ignoreRegex}\|\(Operation not permitted\)"
 alias size="du -ch -d 1 2> >(grep -v \"${ignoreRegex}\") | sort -h"
 
-alias ta="tmux a -t"
-alias tn="tmux new -s"
-
 alias ca="conda activate"
+alias ce="conda env create -f"
 
 # alias rm="rmtrash"
 # alias rmdir="rmdirtrash"
+
+alias tmux="TERM=xterm-256color tmux -f ${CONF}/tmux/tmux.conf"
+
+alias ta="tmux a -t"
+alias tn="tmux new -s"

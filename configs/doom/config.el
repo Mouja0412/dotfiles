@@ -10,6 +10,7 @@
 ;; UI ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (add-hook 'text-mode-hook 'auto-fill-mode)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;;; Fonts
 (setq doom-font (font-spec :family "Fira Code" :size 12)

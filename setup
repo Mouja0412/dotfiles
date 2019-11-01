@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
     
-export DOTFILES="$HOME/dotfiles"
+export DOTFILES="${HOME}/dotfiles"
 
 # make the XDG_CONFIG_HOME directory if it doesn't exist
-export XDG_CONFIG_HOME="$HOME/.config"
-[[ -d $XDG_CONFIG_HOME ]] || mkdir -p $XDG_CONFIG_HOME
-
-cwd=$(pwd)
+export XDG_CONFIG_HOME="${HOME}/.config"
+[[ -d ${XDG_CONFIG_HOME} ]] || mkdir -p ${XDG_CONFIG_HOME}
 
 function am_sudoable {
     sudo -v 1> /dev/null
@@ -17,8 +15,8 @@ function am_sudoable {
 echo -n "Checking for \`sudo\`... "
 if [[ $(am_sudoable) -ne 0 ]]; then
     echo "Not able to \`sudo\`!"
-    if [[ $(uname -s) == "Linux" ]]; then
-        usermod -aG wheel $(whoami)
+    if [ "$(uname -s)" == "Linux" ]; then
+        usermod -aG wheel "$(whoami)"
     else
         echo "Manually add \`wheel\` to existing groups..."
     fi
@@ -41,7 +39,7 @@ if [[ $(am_sudoable) -eq 1 ]]; then
 
     if [[ ${on_crux} -eq 1 ]]; then
         # Install `yay`, to avoid using Pacman
-        if [[ command -v yay != "" ]]; then
+        if [ "$(command -v yay)" == "" ]; then
             git clone https://aur.archlinux.org/yay
             cd yay && makepkg -sir; cd ..
             rm -rf yay
@@ -78,7 +76,7 @@ end tell
 EOD
         fi
 
-        if [[ command -v brew != "" ]]; then
+        if [ "$(command -v brew)" == "" ]; then
             /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         fi
         brew update
@@ -86,74 +84,84 @@ EOD
     fi
             
     # change shell to ZSH
-    if [[ $(basename ${SHELL}) != "zsh" ]]; then
-        chsh -s `which zsh`
+    if [[ "$(basename ${SHELL})" != "zsh" ]]; then
+        chsh -s $(command -v zsh)
     fi
 fi
 
 # check for `antibody`, install if not present
-if [[ command -v antibody != "" ]]; then
+if [ "$(command -v antibody)" == "" ]; then
     curl -sL git.io/antibody | sh -s
 fi
 # endregion
 
 function clean_link {
-    rm $2
-    ln -sf $1 $2
+    echo "${1} -> ${2}"
+    rm ${2}
+    ln -sf ${1} ${2}
 }
 
 # region Applications which do support $XDG_CONFIG_HOME
 echo "Setting \`\${XDG_CONFIG_HOME}\` compliant configurations..."
-cd $DOTFILES/configs
+cd ${DOTFILES}/configs
 
 # apps that support $XDG_CONFIG_HOME
-supports_xdg_config=`find . -maxdepth 1 -type d -not -name .`
+supports_xdg_config=$(find . -maxdepth 1 -type d -not -name . | xargs basename)
 
 for dir in $supports_xdg_config; do
-    clean_link $(pwd)/$(basename ${dir}) ${XDG_CONFIG_HOME}/${dir}
+    clean_link "$(pwd)/$(basename ${dir})" "${XDG_CONFIG_HOME}/${dir}"
 done
-cd $DOTFILES
+cd ${DOTFILES}
 # endregion
 
 # region Applications which don't support $XDG_CONFIG_HOME
 echo "Setting \`\${XDG_CONFIG_HOME}\` non-compliant configurations..."
-cd $DOTFILES/homedir
-assholes_xdg_config=`find . -maxdepth 1 -not -name .keep -not -name .`
-for dir in $assholes_xdg_config; do
-    dir_="$(basename ${dir})"
-    path="$(pwd)/${dir_}"
+cd ${DOTFILES}/homedir
 
-    # TODO: condense this into `xargs` if possible
-    if [[ -d ${dir_} ]]; then
-        has_dots=`find ./${dir_} -maxdepth 1 -type f -name "\.*" -not -name .keep -not -name .`
-
-        if [[ $has_dots == "" ]]; then
-            clean_link ${path} ${HOME}/.${dir_}
-        else
-            for file in $has_dots; do
-                dotfile=$(basename ${file})
-                clean_link ${path}/${dotfile} ${HOME}/${dotfile}
-            done
-        fi
-    else
-        clean_link ${path} ${HOME}/.${dir_}
-    fi
+voodoo_linkage=$(find . -maxdepth 1 -name "\.*" -not \( -name . -or -name .keep \))
+for voodoo in ${voodoo_linkage}; do
+    clean_link "$(pwd)/$(basename ${voodoo})" "${HOME}/$(basename ${voodoo})"
 done
-cd $DOTFILES
+# for dir in $assholes_xdg_config; do
+#     dir_=$(basename "${dir}")
+#     path="$(pwd)/${dir_}"
+# 
+#     # TODO: condense this into `xargs` if possible
+#     if [[ -d ${dir_} ]]; then
+#         has_dots=$(find "./${dir_}" -maxdepth 1 \( -type f -o -type l \))
+# 
+#         if [[ $has_dots == "" ]]; then
+#             clean_link "${path}" "${HOME}/.${dir_}"
+#         else
+#             for file in $has_dots; do
+#                 if [ "${file}" == ".keep" ]; then
+#                     continue
+#                 fi
+#                 dotfile=$(basename ${file})
+#                 clean_link "${path}/${dotfile}" "${HOME}/${dotfile}"
+#             done
+#         fi
+#     else
+#         clean_link "${path}" "${HOME}/.${dir_}"
+#     fi
+# done
+cd ${DOTFILES}
 # endregion
 
 # region Setup Doom / Emacs
 # store outside the repo since `emacs` configs differ by OS and version
 echo "Setting up \`doom-emacs\`..."
 
-rm -rf ${XDG_CONFIG_HOME}/emacs 1> /dev/null
-git clone https://github.com/hlissner/doom-emacs ${XDG_CONFIG_HOME}/emacs
-ln -sf ${XDG_CONFIG_HOME}/emacs ~/.emacs.d
+if [[ -d ${XDG_CONFIG_HOME}/emacs ]]; then
+    git pull -q
+    if [[ $? -ne 0 ]]; then
+        ${XDG_CONFIG_HOME}/emacs/bin/doom upgrade
+    fi
+else
+    git clone https://github.com/hlissner/doom-emacs ${XDG_CONFIG_HOME}/emacs
+    ln -sf ${XDG_CONFIG_HOME}/emacs ~/.emacs.d
 
-# TODO: allow for `doom install` to be run on installation
-# FIX: currently hard-coding the fqp to the `doom` cmd
-if [[ command -v doom != "" ]]; then
-    yes | ~/.config/emacs/bin/doom install
+    yes | ${XDG_CONFIG_HOME}/bin/doom install
 fi
 # endregion
 
@@ -164,22 +172,24 @@ git config --global user.name "John M"
 git config --global user.email "j@ionlights.com"
 
 rm -rf _ignores
-git clone git@github.com:github/gitignore _ignores
+git clone https://github.com/github/gitignore _ignores
 yes | rm -r _ignores/.git
 
 cat ignore.custom > ignore
 cat ignore.build | xargs -I {} cat _ignores/{}.gitignore >> ignore
 git config --global core.excludesfile ${XDG_CONFIG_HOME}/git/ignore
-cd $DOTFILES
+cd ${DOTFILES}
 # endregion
 
 # region ZSH configuration
 echo "Setting up \`zsh\` configuration..."
-source ~/.zprofile 2> /dev/null
-source ~/.zshrc 2> /dev/null
+source ${HOME}/.zshenv
 
-antibody bundle < ${ANTIBODY_PLUGS}.txt 1> ${ANTIBODY_PLUGS}_${OS_}.sh
+source ${ZSH}/.zprofile 2> /dev/null
+source ${ZSH}/.zshrc 2> /dev/null
 
-source ~/.zprofile 2> /dev/null
-source ~/.zshrc 2> /dev/null
+antibody bundle < ${ANTIBODY_PLUGS}.txt 1> ${ANTIBODY_PLUGS}_${OS}.sh
+
+source ${ZSH}/.zprofile 2> /dev/null
+source ${ZSH}/.zshrc 2> /dev/null
 # endregion
