@@ -4,17 +4,14 @@ hosts
 !hosts.gpg
 *.pem
 
-.DS_Store
-Icon?\r
-
-homedir/zsh/history
-homedir/ssh/tmp
-homedir/ssh/known_hosts
-
 configs/git/config
 configs/git/_ignores
+
 configs/emacs
+
 configs/nvim/plugged
+
 configs/zsh/history
 configs/zsh/antibody_*
+configs/zsh/.zcompdump*
 !configs/zsh/antibody_plugins.txt
