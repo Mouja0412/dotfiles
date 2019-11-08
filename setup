@@ -33,7 +33,7 @@ on_debn=$(uname -a | grep -iE "debian|ubuntu" | wc -l)
 on_rhel=$(uname -a | grep -iE "fedora|centos" | wc -l)
 on_macs=$(uname -a | grep -iE "darwin"        | wc -l)
 
-if [[ $(am_sudoable) -eq 1 ]]; then
+if [[ $(am_sudoable) -ne 1 ]]; then
     # the `xargs ...` command is thanks to: https://askubuntu.com/a/660906/585721
     # Attempt to install packages semi-intelligently
 

@@ -4,6 +4,8 @@ hosts
 !hosts.gpg
 *.pem
 
+sync.btskey
+
 configs/git/config
 configs/git/_ignores
 

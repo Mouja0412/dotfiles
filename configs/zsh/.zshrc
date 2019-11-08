@@ -23,7 +23,7 @@ export ANTIBODY_PLUGS="${ZSH}/antibody_plugins"
 autoload -Uz compinit
 case $OS in
     "macos")
-        if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+        if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' "${ZSH}/.zcompdump") ]; then
             compinit -i
         else
             compinit -Ci
@@ -89,21 +89,4 @@ bindkey '^[[3~' delete-char
 bindkey '^[3;5~' delete-char
 #: delete-key ~ https://blogsourcepilif.me/2004/10/21/delete-key-in-zsh/
 
-#: autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && source /usr/local/etc/profile.d/autojump.sh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/conda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/conda/etc/profile.d/conda.sh" ]; then
-        source "/opt/conda/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/conda/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+source "${DOTS}/@${OS}/specifics"

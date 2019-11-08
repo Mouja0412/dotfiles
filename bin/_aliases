@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 alias e="$EDITOR"
-if [ "$(command -v nvim)" != "" ]; then
+if [ $(command -v nvim) ]; then
     alias v="nvim"
 fi
 
@@ -13,8 +13,8 @@ alias osx="ssh osx"
 
 alias sshcfg="e ${CONF}/ssh/config"
 
-alias zrc="e ${CONF}/zsh/.zshrc && source ${CONF}/zsh/.zshrc"
-alias plugins="e ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh && . ${HOME}/.zshrc"
+alias zrc="e ${ZSH}/.zshrc && source ${ZSH}/.zshrc"
+alias plugins="e ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh && . ${ZSH}/.zshrc"
 
 alias doom="${HOME}/.emacs.d/bin/doom"
 

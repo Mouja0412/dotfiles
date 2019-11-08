@@ -12,3 +12,9 @@ export SSH_ID="-i ${XDG_CONFIG_HOME}/ssh/j@ionlights.com.pem"
 
 alias ssh="command ssh ${SSH_CONFIG}"
 alias ssh-copy-id="command ssh-copy-id ${SSH_ID}"
+
+export PATH="/usr/local/sbin:$PATH"
+
+if [[ command -v conda ]]; then
+
+fi

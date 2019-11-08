@@ -1,11 +1,11 @@
-tap "bazelbuild/tap"
-tap "caskroom/fonts"
+tap "homebrew/cask-fonts"
 tap "cjbassi/gotop"
-tap "getantibody/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "kryptco/tap"
+
+brew "mas"
 # Automatic configure script builder
 brew "autoconf"
 # Shell extension to jump to frequently used directories
@@ -78,18 +78,17 @@ brew "tree"
 brew "wdiff"
 # Internet file retriever
 brew "wget"
-# Tools for the WireGuard secure network tunnel
-brew "wireguard-tools"
 # JavaScript package manager
 brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Fast, scalable, multi-language and extensible build system
-brew "bazelbuild/tap/bazel"
+
 # A terminal based graphical activity monitor inspired by gtop and vtop
 brew "cjbassi/gotop/gotop"
+
 # Krypton command-line client, daemon, and SSH integration
 brew "kryptco/tap/kr"
+
 cask "docker"
 cask "emacs"
 cask "emacsclient"
@@ -104,3 +103,16 @@ cask "virtualbox"
 cask "wkhtmltopdf"
 cask "caskroom/fonts/font-noto-mono"
 cask "caskroom/fonts/font-noto-sans"
+cask "discord"
+cask "slack"
+cask "1password"
+cask "1password-cli"
+cask "google-chrome"
+cask "brave-browser"
+cask "miniconda"
+cask "setapp"
+cask "notion"
+cask "flotato"
+cask "pdf-expert"
+cask "spotify"
+
