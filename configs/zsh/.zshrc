@@ -60,6 +60,10 @@ zstyle ':completion:*' group-name ''
 #: enable approx matches for completion
 zstyle ':completion:*' completer _expand _complete _ignored _approximate
 
+zstyle ':completion:*:manuals'    separate-sections true
+zstyle ':completion:*:manuals.*'  insert-sections   true
+zstyle ':completion:*:man:*'      menu yes select
+
 #: #############################################################################
 #: spaceship-prompt
 #: #############################################################################

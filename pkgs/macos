@@ -1,37 +1,39 @@
-tap "homebrew/cask-fonts"
+tap "bazelbuild/tap"
 tap "cjbassi/gotop"
+tap "getantibody/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "kryptco/tap"
-
-brew "mas"
 # Automatic configure script builder
 brew "autoconf"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext", link: true
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # Color-highlighted diff(1) output
 brew "colordiff"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Tool for managing dock items
+brew "dockutil"
 # Maintain consistent coding style between multiple editors
 brew "editorconfig"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext", link: true
 # GNU Emacs text editor
 brew "emacs"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
-# Alternative to top/htop
-brew "glances"
+# Distributed revision control system
+brew "git"
+# Platform built on V8 to build network applications
+brew "node"
+# Emoji guide for your commit messages
+brew "gitmoji"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
@@ -44,18 +46,16 @@ brew "hugo"
 brew "hunspell"
 # Generic library support script
 brew "libtool"
+# Mac App Store command-line interface
+brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
-brew "node"
 # Open client for Cisco AnyConnect VPN
 brew "openconnect"
 # Manage compile and link flags for libraries
 brew "pkg-config"
-# PDF rendering library (based on the xpdf-3.0 code base)
-brew "poppler"
 # File browser
 brew "ranger"
 # Ruby version manager
@@ -70,8 +70,6 @@ brew "stow"
 brew "tinc"
 # Terminal multiplexer
 brew "tmux"
-# Command-line interface to the freedesktop.org trashcan
-brew "trash-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Display word differences between text files
@@ -80,39 +78,72 @@ brew "wdiff"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
+# Tracks most-used directories to make cd smarter
+brew "z"
 # UNIX shell (command interpreter)
 brew "zsh"
-
 # A terminal based graphical activity monitor inspired by gtop and vtop
 brew "cjbassi/gotop/gotop"
-
 # Krypton command-line client, daemon, and SSH integration
 brew "kryptco/tap/kr"
-
+cask "1password-cli"
+cask "alfred"
+cask "balenaetcher"
+cask "bartender"
+cask "brave-browser"
+cask "discord"
 cask "docker"
 cask "emacs"
 cask "emacsclient"
+cask "firefox"
+cask "flotato"
+cask "flux"
+cask "font-fira-code"
+cask "font-fira-sans"
+cask "font-fontawesome"
+cask "font-hack"
+cask "font-iosevka"
+cask "font-merriweather"
+cask "font-noto-sans"
+cask "font-open-sans"
+cask "font-pt-mono"
+cask "font-pt-sans"
+cask "font-pt-serif"
+cask "google-chrome"
+cask "grammarly"
+cask "hyper"
+cask "iterm2"
 cask "julia"
 cask "keybase"
+cask "kite"
+cask "mailspring"
+cask "miniconda"
+cask "notion"
 cask "odrive"
+cask "origin"
+cask "pdf-expert"
+cask "private-internet-access"
+cask "resilio-sync"
+cask "runescape"
+cask "setapp"
+cask "sketchup"
 cask "skype"
-cask "tuntap"
+cask "slack"
+cask "spotify"
+cask "unetbootin"
 cask "vagrant"
 cask "vagrant-manager"
-cask "virtualbox"
+cask "visual-studio-code"
+cask "vlc"
 cask "wkhtmltopdf"
-cask "caskroom/fonts/font-noto-mono"
-cask "caskroom/fonts/font-noto-sans"
-cask "discord"
-cask "slack"
-cask "1password"
-cask "1password-cli"
-cask "google-chrome"
-cask "brave-browser"
-cask "miniconda"
-cask "setapp"
-cask "notion"
-cask "flotato"
-cask "pdf-expert"
-cask "spotify"
-
+cask "zoom"
+mas "1Password 7", id: 1333542190
+mas "Affinity Designer", id: 824171161
+mas "iStat Menus", id: 1319778037
+mas "Magnet", id: 441258766
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Pocket", id: 568494494
+mas "Spark", id: 1176895641
+mas "Telegram", id: 747648890

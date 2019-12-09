@@ -21,16 +21,16 @@ SPACESHIP_PROMPT_ORDER=(
 
 SPACESHIP_RPROMPT_ORDER=(
     conda     # conda
-    golang    # golang
-    ruby      # ruby
+    # golang    # golang
+    # ruby      # ruby
     julia     # julia
-    node      # node.js
-    dotnet    # .NET
+    # node      # node.js
+    # dotnet    # .NET
 )
 
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_CHAR_SYMBOL="-> "
+SPACESHIP_CHAR_SYMBOL="->"
 SPACESHIP_CHAR_SUFFIX=" "
 
 #: simplify for hyper.is prompt

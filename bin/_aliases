@@ -11,21 +11,22 @@ alias nas="ssh nas.ionlights"
 alias mbp="ssh mbp"
 alias osx="ssh osx"
 
-alias sshcfg="e ${CONF}/ssh/config"
+alias sshcfg="v ${CONF}/ssh/config"
 
-alias zrc="e ${ZSH}/.zshrc && source ${ZSH}/.zshrc"
-alias plugins="e ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh && . ${ZSH}/.zshrc"
+alias zrc="v ${ZSH}/.zshrc && source ${ZSH}/.zshrc"
+alias plugins="v ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh && source ${ZSH}/.zshrc"
 
 alias doom="${HOME}/.emacs.d/bin/doom"
 
 case "${OS}" in
     "linux")
-        alias ls="ls --color=always"
         ;;
     "macos")
+        alias ls="gls"
         ;;
 esac
-alias l="ls -lhAF"
+
+alias l="ls -lhAF --color=always --group-directories-first"
 alias ll="l"
 alias lr="l -r"
 alias ld="l -d */"

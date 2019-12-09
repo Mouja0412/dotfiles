@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 editors=("emacsclient" "emacs" "nvim" "vim" "vi" "nano")
+editors=("nvim" "vim" "vi" "nano")
 for editor in ${editors[@]}; do
     if [ "$(command -v ${editor})" != "" ]; then
         case ${editor} in
