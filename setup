@@ -50,7 +50,7 @@ if [[ $(am_sudoable) -ne 1 ]]; then
         xargs -a <(awk "! /^ *(#|$)/" $(cat pkgs/arch)) -r -- yay -Sy
 
     elif [[ ${on_debn} -eq 1 ]]; then
-        sudo apt-get update -y && suod apt-get upgrade -y
+        sudo apt-get update -y && sudo apt-get upgrade -y
         sudo apt-get install -y zsh
         xargs -a <(awk "! /^ *(#|$)/" $(cat pkgs/debian)) -r -- sudo apt-get install -y
 
@@ -106,7 +106,7 @@ echo "Setting \`\${XDG_CONFIG_HOME}\` compliant configurations..."
 cd ${DOTFILES}/configs
 
 # apps that support $XDG_CONFIG_HOME
-supports_xdg_config=$(find . -maxdepth 1 -type d -not -name . | xargs basename)
+supports_xdg_config=$(find . -maxdepth 1 -type d -not -name . | xargs basename -a)
 
 for dir in $supports_xdg_config; do
     clean_link "$(pwd)/$(basename ${dir})" "${XDG_CONFIG_HOME}/${dir}"
@@ -122,29 +122,6 @@ voodoo_linkage=$(find . -maxdepth 1 -name "\.*" -not \( -name . -or -name .keep 
 for voodoo in ${voodoo_linkage}; do
     clean_link "$(pwd)/$(basename ${voodoo})" "${HOME}/$(basename ${voodoo})"
 done
-# for dir in $assholes_xdg_config; do
-#     dir_=$(basename "${dir}")
-#     path="$(pwd)/${dir_}"
-# 
-#     # TODO: condense this into `xargs` if possible
-#     if [[ -d ${dir_} ]]; then
-#         has_dots=$(find "./${dir_}" -maxdepth 1 \( -type f -o -type l \))
-# 
-#         if [[ $has_dots == "" ]]; then
-#             clean_link "${path}" "${HOME}/.${dir_}"
-#         else
-#             for file in $has_dots; do
-#                 if [ "${file}" == ".keep" ]; then
-#                     continue
-#                 fi
-#                 dotfile=$(basename ${file})
-#                 clean_link "${path}/${dotfile}" "${HOME}/${dotfile}"
-#             done
-#         fi
-#     else
-#         clean_link "${path}" "${HOME}/.${dir_}"
-#     fi
-# done
 cd ${DOTFILES}
 # endregion
 

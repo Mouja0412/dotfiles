@@ -16,7 +16,7 @@ alias ssh-copy-id="command ssh-copy-id ${SSH_ID}"
 export PATH="/usr/local/sbin:$PATH"
 
 if [ $(command -v conda > /dev/null) ]; then
-
+    echo "" /dev/null
 fi
 
 export LC_COLLATE=C
