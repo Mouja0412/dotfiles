@@ -1,6 +1,0 @@
-# Ignore cloned .gitignore repo
-global-ignores/
-
-# Ignore placeholder files
-*.cloud*
-*.rsl*
