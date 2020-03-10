@@ -46,7 +46,7 @@ switch (hostname)
 case "spock*"
     eval /usr/local/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
 case "discovery*"
-    eval /opt/conda/condabin/conda "shell.fish" "hook" $argv | source
+    eval /opt/miniconda3/condabin/conda "shell.fish" "hook" $argv | source
 end
 # <<< conda initialize <<<
 

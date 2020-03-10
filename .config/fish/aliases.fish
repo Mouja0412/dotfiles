@@ -47,7 +47,7 @@ case "linux"
     balias ls "ls $ls_base_args"
 end
 
-balias l "ls"
+balias l "ls -l"
 balias la "l -A"
 balias lr "l -r"
 balias ld "l -d */"
