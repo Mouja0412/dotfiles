@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefs>
+    <property key="Apps_Panel_Pref">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ccmPreferences&gt;
+    &lt;globalPref&gt;
+        &lt;ccmVersion&gt;&lt;/ccmVersion&gt;
+        &lt;wasCC2016BannerCancelClicked&gt;0&lt;/wasCC2016BannerCancelClicked&gt;
+        &lt;wasCC2015_1_BannerCancelClicked&gt;0&lt;/wasCC2015_1_BannerCancelClicked&gt;
+        &lt;wasCurVersionUnApplicableBannerCancelClicked&gt;0&lt;/wasCurVersionUnApplicableBannerCancelClicked&gt;
+        &lt;smsSentCount&gt;0&lt;/smsSentCount&gt;
+        &lt;lastSmsCountResetTime&gt;1579039941&lt;/lastSmsCountResetTime&gt;
+        &lt;wasUpdateAllHidden&gt;0&lt;/wasUpdateAllHidden&gt;
+        &lt;lastVisitedCreativeField&gt;&lt;/lastVisitedCreativeField&gt;
+        &lt;UIPreferences&gt;&lt;/UIPreferences&gt;
+    &lt;/globalPref&gt;
+    &lt;prodPref&gt;
+        &lt;installLanguage&gt;en_US&lt;/installLanguage&gt;
+        &lt;installLocation&gt;&lt;/installLocation&gt;
+        &lt;removeOldVersions&gt;false&lt;/removeOldVersions&gt;
+        &lt;products&gt;&lt;/products&gt;
+        &lt;autoUpdatePreferences&gt;
+            &lt;autoUpdateDialogShown&gt;false&lt;/autoUpdateDialogShown&gt;
+            &lt;advancedSettingsExpanded&gt;false&lt;/advancedSettingsExpanded&gt;
+            &lt;globalAUImportPrefs&gt;true&lt;/globalAUImportPrefs&gt;
+            &lt;globalAURemoveOld&gt;false&lt;/globalAURemoveOld&gt;
+        &lt;/autoUpdatePreferences&gt;
+    &lt;/prodPref&gt;
+&lt;/ccmPreferences&gt;</property>
+</prefs>

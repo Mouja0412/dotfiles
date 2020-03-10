@@ -1,0 +1,36 @@
+{
+    "codeCellConfig": {
+        "autoClosingBrackets": true,
+        "fontFamily": "Fira Code",
+        "fontSize": null,
+        "lineHeight": 1.1,
+        "lineNumbers": true,
+        "lineWrap": "on",
+        "matchBrackets": true,
+        "readOnly": false,
+        "insertSpaces": true,
+        "tabSize": 4,
+        "wordWrapColumn": 88,
+        "rulers": [
+            80, 88, 120
+        ],
+        "codeFolding": true
+    },
+    "markdownCellConfig": {
+        "autoClosingBrackets": true,
+        "fontFamily": "Fira Code",
+        "fontSize": null,
+        "lineHeight": 1.1,
+        "lineNumbers": true,
+        "lineWrap": "on",
+        "matchBrackets": true,
+        "readOnly": false,
+        "insertSpaces": true,
+        "tabSize": 4,
+        "wordWrapColumn": 88,
+        "rulers": [
+            80, 88, 120
+        ],
+        "codeFolding": true
+    }
+}

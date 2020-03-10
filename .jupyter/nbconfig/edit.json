@@ -1,0 +1,14 @@
+{
+  "load_extensions": {
+    "ruler/edit": true
+  },
+  "ruler_column": [
+    "88"
+  ],
+  "ruler_color": [
+    "#0075a5"
+  ],
+  "ruler_linestyle": [
+    "solid"
+  ]
+}

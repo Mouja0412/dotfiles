@@ -1,0 +1,1883 @@
+touch ~/.z
+./@macos/dock
+open dotfiles/@macos/macos-terminal-themes/schemes/Galaxy.terminal
+open /Applications/Google\ Chrome.app
+command -v odrive
+brew search odrive
+ssh-add ~/.config/ssh/j@ionlights.com.pem.pub
+gpg ~/.config/ssh/j@ionlights.com.pem.gpg
+ls -la
+l odrive
+odrive
+ln -s ~/odrive/john.muchovej@gmail.com-drive ~/drive
+ln -s ~/odrive/j@ionlights.com-dropbox ~/dropbox
+sudo reboot -h
+sudo reboot -n
+brew search istats
+brew search istat
+brew search istat-menus
+rm -r /Applications/iStat\ Menus.app
+sudo rm -rf /Applications/iStat\ Menus.app
+brew cask install istat-menus
+brew search intel
+brew cask install intel-power-gadget
+dotfiles/@macos
+less programs
+chmod +x programs specifics
+./programs
+less specifics
+l plists
+l preferences
+l odrivebackup-2019-12-09-2129
+rm -r odrivebackup-2019-12-09-2129
+chmod 600 ~/.config/ssh/j@ionlights.com.pem.gpg
+chmod 600 ~/.config/ssh/j@ionlights.com.pem
+ssh -h
+command ssh -h
+man ssh
+ln -s ~/.config/ssh .ssh
+l .vscode
+l .vscode/argv.json
+less .vscode/argv.json
+l .vscode/extensions
+l .vscode/extensions/tootone.org-mode-0.5.0
+l -a .vscode/extensions/tootone.org-mode-0.5.0
+drive/research
+../mtom
+v envs/cpu.yml
+conda env create -f envs/cpu.yml
+cask
+~
+mkdir data/{mtom,forage}
+brew install step
+step-ca onboard RMhpc6BTtRt3dMhUAAAM
+step ca init --name "ionlights" --dns d.ionlights.com --address :443 && step-ca ~/.step/config/ca.json
+step-ca onboard 1vpO08ZkRQHMLtgzAAAO
+step ca init --name "ionlights" --dns c.ionlights.com --address :443 && step-ca ~/.step/config/ca.json
+ssh srv.passthrough
+ssh ionlights@d.ionlights.com -p 466
+ssh ionlights@66.42.87.192 -p 466
+ssh ionlights@66.42.87.192
+ssh -i ~/.config/ssh/j@ionlights.com.pem ionlights@66.42.87.192
+ssh root@66.42.87.192
+ssh ionlights@66.42.87.192 -i ~/.ssh/j@ionlights.com.pem
+command ssh d.ionlights.com -p 466
+step-ca onboard w9VE6-Rwxa4WKLsAAAAR
+ssh root@c.ionlights.com
+ping -6 -c2 c.ionlights.com
+nmap -6 -n c.ionlights.com
+nmap -6 -Pn c.ionlights.com
+ping -c2 c.ionlights.com
+cp -r configs/vscode homedir
+cp -r ~/.vscode/* homedir/vscode
+rm -r ~/.vscode
+cp ~/.vscode/settings.json ~/Library/Application\ Support/Code/User
+l homedir
+mv homedir/vscode homedir/.vscode
+rm ~/.vscode
+ln -s /Users/ionlights/dotfiles/homedir/.vscode ~/.vscode
+brew cask install steam
+open /Applications/SortedMac.app
+mv homedir/.vscode homedir/vscode
+mv homedir/.zshenv homedir/zshenv
+less setup
+rm .vscode
+rm .zshenv
+ln -s /Users/ionlights/dotfiles/homedir/vscode ~/.vscode
+ln -s /Users/ionlights/dotfiles/homedir/zshenv ~/.zshenv
+rm -r /Applications/Zoom.app
+brew cask install zoom
+brew cask ewinstall zoom
+brew cask reinstall zoom
+open
+open /Applications/Zoom.app
+nmap -Pn 192.168.1.200/24
+cat ~/.config/ssh/j@ionlights.com.pem.pub
+cat ~/.config/ssh/j@ionlights.com.pem.pub | pbcopy
+ssh root@192.168.1.200
+ta sys-admin
+private -h
+private
+ping -c2 192.1.168.200
+nmap -Pn 192.168.1.68/24
+v ~/.ssh/known_hosts
+basename
+basename -a
+find . -maxdepth 1 -type d -not -name . | xargs basename -a
+ssh d.ionlights.com -p 466
+ssh root@d.ionlights.com
+l ~/dotfiles/@macos/
+l ~/dotfiles/@macos/preferences
+dotfiles/@macos/preferences/l
+dotfiles/@macos/preferences/
+gpg hosts
+gpg hosts.gpg
+less hosts
+cp hosts /etc/hosts
+sudo cp hosts /etc/hosts
+cat hosts
+nvim ~/.config/ssh/config
+command -v ssh
+which ssh
+ssh -F ~/.config/ssh/config srv.passthrough
+ping -c2 router.ionlights
+s
+z dri
+drive
+l bot
+l bot/autobot
+rm ~/Downloads/degree-audit-1912.pdf
+ga todos.md
+gc -m "adding winter 2019 todos"
+gp
+conda env create -f envs/macos.yml
+autobot core -h
+autobot core semester-upkeep
+hop
+ping -c2 d.ionlights.com
+ping -c2 google.com
+nvim ~/.config/ssh/known_hosts
+ssh root@uss-enterprise
+ssh john@uss-enterprise
+ssh james@uss-enterprise
+jupyter notebook ../core/fa19
+open drive/ugrad/knights-of-distinction
+tn gt
+mkdir learning
+g clone github.com/Rachnog/Deep-Trading/
+g clone https://github.com/Rachnog/Deep-Trading/
+g clone https://github.com/KnowledgeLab/ground_truth.git uchicago
+g clone git@github.com:KnowledgeLab/ground_truth.git uchicago
+learning
+g clone https://github.com/ChadFulton/tsa-notebooks
+g clone https://github.com/intive-DataScience/tbats
+g clone https://github.com/pyro-ppl/pyro
+cp ~/Downloads/unzip-osf.py ~/data/ground-truth
+ulimit -n 4096
+jupyter lab --ip 0.0.0.0 --port 46601 --NotebookApp.token="" .
+unzip osfstorage-archive.zip
+z gro
+rm -r Cancelled Complete FAQ "Initial Data Packages" Pending "T&E inbox" "TA2 inbox"
+conda install tqdm
+pip install chardet
+ss
+l ~/.conda
+brew path
+brew -h
+brew cask install transmission-remote-gui
+brew uninstall transmission-remote-gui
+brew cask uninstall transmission-remote-gui
+conda install sklearn
+conda install scikit-learn
+conda install networkx
+conda install graphviz
+conda install pygraphviz
+step-ca onboard 0p41ud7cpwaUOlRoAAAn
+step ca init
+step ca $(step path)/config/ca.json
+step-ca $(step path)/config/ca.json
+step-ca certificate localhost srv.crt srv.key
+step ca certificate localhost srv.crt srv.key
+touch srv.go
+v srv.go
+go run srv.go&
+curl https://localhost:9443/hi
+step ca root root.crt
+open /Applications
+brew cask install private-internet-access
+brew cask reinstall private-internet-access
+/usr/local/Caskroom/private-internet-access/1.7-03949/Private\ Internet\ Access\ Installer.app
+open /usr/local/Caskroom/private-internet-access/1.7-03949/Private\ Internet\ Access\ Installer.app
+curl --cacert root.crt https://localhost:9443/hi
+ssh bae
+ping -c2 uss-discovery.lan1
+gpg sync.btskey.gpg
+cp -r ~/drive/research ~/resilio
+~/resilio
+rm -r data
+cp -r ~/drive/ucfai .
+cp -r ~/drive/forage .
+cp -r ~/drive/brand .
+cp -r ~/drive/ugrad .
+cp -r ~/drive/sys-admin .
+cp -r ~/drive/_todos .
+cp -r ~/drive/_arxiv .
+cp -r ~/drive/diy .
+conda activate base
+/usr/local/Caskroom/miniconda/base/condabin/conda install --name base pylint
+conda install ipython
+~/data
+l osf/TA2\ inbox/Answers\ from\ TA1
+less osf/TA2\ inbox/Answers\ from\ TA1/TA2A-TA1B-XXXX-Question3.txt
+less osf/TA2\ inbox/Answers\ from\ TA1/TA2A-TA1B-XXXX-Question4.txt
+rsync dotfiles uss-discovery:/home/ionlights/dotfiles
+rsync -av dotfiles uss-discovery:/home/ionlights/dotfiles
+rsync -av ~/dotfiles/configs/* uss-discovery:/home/ionlights/dotfiles/configs
+l ~/.config/git/ignore
+less ~/.config/git/ignore
+command -v ruby
+command ruby -e
+which ruby
+[[ $(command -v brew) == "" ]] && ruby -e https://git.io/pVOl
+[[ "$(command -v brew)" == "" ]] && ruby -e https://git.io/pVOl
+[ "$(command -v brew)" == "" ] && ruby -e https://git.io/pVOl
+[ "$(command -v brew)" == "" ] && ruby -e "$(curl -fssL https://git.io/pVOl)"
+[ "$(command -v brew)" == "" ]
+[[ "$(command -v brew)" == "" ]]
+[[ "$(command -v brew)" == "" ]] && ruby -e "$(curl -fsSL https://git.io/pVOl)"
+1 && echo
+[ "$(command -v brew)" ] && ruby -e "$(curl -fsSL https://git.io/pVOl)"
+xcode-select -p
+[ ! "$(command -v brew)" ] && ruby -e "$(curl -fsSL hhttps://git.io/pVOl)"
+[ ! $(command -v brew) ] && ruby -e "$(curl -fsSL hhttps://git.io/pVOl)"
+[ $(basename ${SHELL}) != "zsh" ]
+/Users/ionlights/.config/emacs
+[ $(git pull -q) ]
+$(git pull -q)
+git pull -q
+git pull
+[ ! $(git pull -q) ]
+doom upgrade
+uname -a | grep -iE "arch|manjaro"
+uname -a | grep -iE "darwin"
+uname -a | grep -oiE "darwin"
+uname -a | grep -oiE "arch|manjaro" | awk '{print tolower($0)}'
+uname -a | grep -oiE "darwin" | awk '{print tolower($0)}'
+uname -a | grep -oiE "darwin" -m1 | awk '{print tolower($0)}'
+uname -a | grep -oiE "darwin" -m 1 | awk '{print tolower($0)}'
+uname -a | grep -m1 -oiE "darwin" | awk '{print tolower($0)}'
+uname -a | grep -m 1 -oiE "darwin" | awk '{print tolower($0)}'
+uname -a | grep -m 1 -oiE "darwin"
+uname -a | grep -oiE "darwin" | head -1 | awk '{print tolower($0)}'
+sudo -v
+echo "$(sudo -v)"
+curl https://git.io/ionlights
+curl https://git.io/ -i -F "url=https://raw.githubusercontent.com/ionlights/dotfiles/master/setup" -F "code=ionlights"\
+
+curl https://git.io/ -i -F "url=https://raw.githubusercontent.com/ionlights/dotfiles/master/build" -F "code=ionlights"\
+
+less
+ping -c2 8.8.8.8
+nmap -sP 192.168.1.0/14
+ifconfig
+ifconfig | grep inet
+sudo ping -c2 uss-enterprise
+sudo nmap -sP 192.168.0.0/24
+ssh 192.168.0.144
+nmap -sn 192.168.0.*
+sudo nmap -sn 192.168.0.*
+sudo nmap -sn 192.168.0.0/24
+sudo nmap -sL 192.168.0.0/24
+sudo nmap -sL 192.168.0.0/24 | less
+nmap -sL 192.168.0.0/24
+nmap -sP 192.168.0.0/24
+nmap 192.168.0.0/24
+ping -c2 uss-enterprise
+drive/uss-enterprise
+scp eng/media/docker-compose.yml 192.168.0.20:/eng/media/
+sudo scp eng/media/docker-compose.yml ionlights@192.168.0.20:/eng/media/
+sudo scp eng/media/docker-compose.yml ionlights@192.168.0.20:/eng/media
+g init
+g remote add origin git@github.com:ionlights/uss-enterprise
+gaa; gc -m "adding initial setup"
+gp -u origin master
+nmap 192.168.0.20
+nmap 192.168.0.20 -p 32400
+brew cask install docker-compose
+brew install docker-compose
+brew link --overwrite docker-compose
+../drive
+mkdir sys
+mv sys-admin uss-discovery
+mkdir sys/deep-space-nine
+mv uss* sys
+mv sys sys-admin
+uss-enterprise/eng/media
+l ~/drive/uss-enterprise
+cp -r ~/drive/uss-enterprise/* .
+mkdir Series
+rm -r TVs
+Movies
+sudo rsync -av 192.168.0.20:/eng/media/Movies/_Star\ Wars .
+sudo rsync -av ionlights@192.168.0.20:/eng/media/Movies/_Star\ Wars .
+sudo rsync -av ionlights@192.168.0.20:"/eng/media/Movies/_Star Wars" .
+rsync -av 192.168.0.20:/eng/media/Movies/_Star\\\ Trek\\\ Reboot .
+ssh deep-space-nine
+x l
+ls -l _Star\ Trek\ Reboot
+ls -l _Star\ Trek\ Reboot*
+ls -lR _Star\ Trek\ Reboot
+rm -r Movies/_{downloads,incomplete,watch}
+rm -r Series/_{downloads,incomplete,watch}OA
+l flexget
+conda env lists
+conda install -c conda-forge numba
+eng/media
+id $(whoami)
+docker-compose run -d flexget
+docker exec -it media_flexget_run_85598f15a3be /bin/bash
+docker-compose restart -d flexget
+docker-compose logs flexget
+docker rm media_flexget_*
+docker ps -aq -h
+docker ps -aq -f "IMAGE=cpoppema*"
+docker ps -aq -f "image=cpoppema*"
+docker ps -f "image=cpoppema*"
+docker ps -f "{{ json }}"
+docker ps -f "{{ json .Name }}"
+docker ps -f "name=media_flexget*"
+docker ps -af "name=media_flexget*"
+docker stop $(docker ps -qaf "name=media_flexget*")
+docker rm $(docker ps -qaf "name=media_flexget*")
+docker ps -aq
+docker-compose help
+docker-compose imagesr
+docker-compose port
+docker exec -it flexget bash
+docker exec -it media_flexget_run_34c896796cf4 bash
+docker-compose ports flexget
+docker-compose port flexget
+docker-compose port 5050
+docker-compose port flexget 5050
+docker-compose run flexget
+/usr/local/Caskroom/miniconda/base/condabin/conda install --name ucfai-admin black
+/usr/local/Caskroom/miniconda/base/condabin/conda install --name ucfai-admin pylint
+tree -L 1 bot/autobot
+tree -L 2 autobot
+tree -L 1 autobot
+autobot core semester-upkeep fa19
+black -h
+autobot core semester-upkeep --all
+autobot core fa19 semester-upkeep -n rnns --overwrite
+autobot core fa19 --overwrite semester-upkeep -n rnns
+autobot core fa19 semester-upkeep -n rnns
+mv .github/README.md .
+gaa autobot/lib
+ga .github/README.md
+touch algorithms/{keras,pytorch,tensorflow}/.keep
+gaa autobot/configs
+gaa autobot/main.py
+gaa autobot/utils
+gaa autobot/meta
+gaa autobot/safety.py
+g rm --cached todos.md
+gaa autobot/ops.py
+which pip
+pip install pynvim neovim
+which python | pbcopy
+command -v python3
+pip -V
+g checkout -h
+g checkout -b ionlights-dir-flatten-and-single-exe
+gp origin ionlights-dir-flatten-and-single-exe
+gb h
+gb -d
+gr -h
+gb h -d
+g branch -D mistake ionlights-admin-rewrite ionlights-dir-flatten-and-single-exe
+gb -D origin/ionlights-admin-rewrite
+db -a
+g rm --cached runscripts
+g rm --cached -r runscripts
+g clone git@github.com:ionlights/dl-proposal-btom
+mv dl-proposal-btom ..
+g clone git@github.com:ionlights/bounded-space
+conda activate mtom
+/usr/local/Caskroom/miniconda/base/condabin/conda install --name mtom pylint
+~/resilio/research/mtom
+g rm --cached -rf statscripts
+g rm --cached -rf datascripts
+g rm --cached -rf runscripts
+conda install -c conda-forge cprofiler lineprofiler profiler
+conda install cprofiler lineprofiler profiler
+conda search profile
+conda install line_profiler
+pip install cprofiler
+tn brand
+z brand
+~/resilio/brand
+gr
+gr set-url origin git@github.com:ionlights/site
+g tree
+g mktree
+man g
+man git
+man git-remote
+man git-commit
+git log
+rm -r .git
+git init
+gr add origin git@github.com:ionlights/site
+touch Dockerfile
+touch hugo.def
+ta brand
+ssh hop
+command -v conda
+conda path
+brew info conda
+brew info miniconda
+brew cask info miniconda
+command python -V
+ping -c2 192.1.0.20
+ssh d.ionlights.com
+ping -c2 192.168.0.20
+sudo scp eng/james/WinKVM/installer.sh 192.168.0.20:/eng/james/WinKVM
+sudo htop
+ssh uss-enterprise
+python unzip-osf.py
+z re
+z uss
+z res ent
+z res eng
+z enter
+l eng/media/docker-compose.yml eng
+../sys-admin/uss-enterprise
+scp eng/james/WinKVM/installer.sh 192.168.0.20:/eng/james/WinKVM
+ssh 192.168.0.20
+zpool import
+sudo zpool import
+l /drives
+nvim ~/.config/rslsync/rslsync.conf
+systemctl restart rslsync --user
+ssh 102.86.0.250
+resilio/research/mtom
+conda config --set changeps1 false
+conda install pip
+nvim mtom/datagen/agent.py
+rm ~/data/mtom/5x5_g3_b0-3_WallWorld_meta-test_holdout/*
+python scripts/data-WallWorld.py -v -n 100 -w 3 -cpu 20
+nvim scripts/data-WallWorld.py
+python scripts/data-WallWorld.py -t -n 100000 -w 3
+g branch -h
+gaa mtom
+ga mtom.def
+ga mtom.gpu.def
+ga envs
+gaa logs/.keep -f
+gaa setup.py
+gaa .gitignore LICENSE README.md
+rm *.pkl
+g rm --cached notebooks/*
+g rm --cached notebooks/
+g rm --cached -r notebooks
+g rm --cached -rf notebooks
+l statscripts
+zp spaceship
+git rm -h
+g rm -n mtom/worlds/blackout\ \(conflict\).py
+g rm -n --cached mtom/worlds/blackout\ \(conflict\).py
+g rm --cached mtom/worlds/blackout\ \(conflict\).py
+gc -m "touchups for parallel datagen"
+g pull maxkw ionlights-integration
+g remote prune maxkw
+g remote prune origin
+g push maxkw ionlights-neurips-finalizing
+l .git/refs/
+chmod +x -R .git/refs
+chmod -R +x .git/refs
+l .git/refs
+l .git/refs/heads
+rm .git/refs/heads/ionlights-neurips-finalizing.cloud
+g fetch
+nvim .git/refs/heads/ionlights-integration
+nvim .git/refs/heads/ionlights-neurips-finalizing
+g fetch maxkw
+g pull maxkw ionlights-neurips-finalizing
+gp maxkw ionlights-neurips-finalizing
+gp maxkw ionlights-neurips-finalizing -f
+gb ionlights-cogsci
+g checkout ionlights-cogsci
+g remote
+gaa scripts
+gaa scripts -f
+gc -m "consolidating scripts"
+gp maxkw ionlights-cogsci
+rm .git/refs/remotes/maxkw/ionlights-neurips-finalizing.cloud
+gr prune origin
+gr prune maxkw
+gb -a
+gb -d ionlights-integration
+nvim .
+pip install pynvim
+nvim
+z ucf
+z re uc
+z res
+ucfai
+l supplementary
+l supplementary/fa19
+l supplementary/fa19/2019-09-16-programming-math-camp
+Needs\ revision
+less TA2A-TA1B-0561-RR-RevisionRequest.txt
+../Data/CDF/Instances/Instance0/Runs/run-0/
+ta tm
+ta mt
+unzip RelationshipDataTable-TA2A_TA1B_0621.tsv.zip
+l ~/resilio/research
+mv ~/resilio/research/coref_summ ~/resilio/research/coref-summ
+z grou
+z res gt
+z resear groud
+z resear grou
+z resil res gr
+p2.prescribe
+mkdir topcoder
+nvim p2.prescribe-qs.rtf
+doom init
+doom qs
+doom help
+doom install
+doom refresh
+z d g
+z data gr
+TA2\ inbox
+osf/TA2\ inbox/Answers\ from\ TA1/
+less TA2A-TA1B-XXXX-Question3.txt TA2A-TA1B-XXXX-Question4.txt
+z res res gt
+z res res g
+p2.prescribe/topcoder
+unzip *
+ls | xargs -I {} unzip {}
+rm __MACOSX
+rm -r __MACOSX
+zfs set quota=32.7T impulse-drive
+sudo zfs set quota=32.7T impulse-drive
+~/.config
+git clone https://github.com/syl20bnr/spacemacs
+ln -s ~/.config/spacemacs ~/.emacs.d
+gotop
+python scripts/data-WallWorld.py -t -n 100000 -w 3 -cpu 20
+tn mtom
+which tmux
+yay -S tmux
+command tmux
+alias tmux="TERM='xterm-256color' command tmux -f /drives/impulse/users/ionlights/dotfiles/configs/tmux/tmux.conf"
+unset tmux
+unalias tmux
+command -v tmux
+tmux -l
+tmux ls
+nvim /drives/impulse/users/ionlights/dotfiles/configs/tmux/tmux.conf
+g clone git@github.com:tmux-plugins/tpm ~${CONF}/tmux/plugins/tpm
+l /drives/impulse/users/ionlights/dotfiles/homedir/tmux
+mkdir -p ~/.tmux/plugins
+g clone git@github.com:tmux-plugins/tpm ~/.tmux/plugins/tpm
+g clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux -f /drives/impulse/users/ionlights/dotfiles/configs/tmux/tmux.conf new -s mtom
+tmux -u -f /drives/impulse/users/ionlights/dotfiles/configs/tmux/tmux.conf new -s mtom
+export CUDA_VISIBLE_DEVICES=""
+python scripts/data-WallWorld.py -t -n 200000 -w 3 -cpu 20
+l ~/data/mtom
+du -h ~/data/mtom
+l /groups/forage
+mount /dev/backup/forage /backup/forage
+fsck -i /dev/backup/forage
+fsck -p /dev/backup/forage
+sudo fsck -p /dev/backup/forage
+sudo fsck -fp /dev/backup/forage
+z for
+rm -rf .git etc containers bin groups .DS_Store .gitignore* Icon$'\r' README.md
+l uss-discovery
+pw
+~/resilio/sys-admin/
+uss-enterprise/e
+uss-enterprise/
+gr set-url origin git@github.com:ionlights/uss-discovery
+brew upgrade
+docker pull jojomi/hugo:v0.62.0
+docker pull jojomi/hugo:0.62.0
+docker pull jojomi/hugo:0.60.0
+ta ucf
+tn ucfai
+resilio/ucfai
+mkdir hugo.ucfai.org
+rm -r hugo.ucfai.org
+g clone https://github.com/sourcethemes/academic-kickstart hugo.ucfai.org
+gr set-url origin git@github.com:ucfai/ucfai.github.io
+gb hugo-migration
+gc hugo-migration
+gb
+touch docker-compose.yml
+rm -r .forestry
+rm -r academic.Rproj
+gaa; gc -m "initial hugo migration commit"
+g submodule
+~/resilio/ucfai/hugo.ucfai.org
+rm README.md
+touch README.md
+mv docker-compose.yml docker-compose.yaml
+rm docker-compose.yaml
+gaa; gc -m "rewrite README and add docker-compose"
+gaa; gc -m "forgot to add port to readme"
+gaa; gc -m "suggest running container w/ log attached"; gp
+gaa; gc -m "suggest running container w/ log attached"; gp origin hugo-migration
+admin
+ta for
+fsck /dev/backup/forage
+sudo fsck /dev/backup/forage
+sudo e2fsck /dev/backup/forage
+docker pull linuxserver/jackett
+docker pull linuxserver/radarr
+docker pull linuxserver/sonarr
+docker create --name=jackett -e PUID=501 -e PGID=20 -e TZ=America/New_York -p 9117:9117 linuxserver/jackett
+docker ps- a
+docker start --name=jackett -e PUID=501 -e PGID=20 -e TZ=America/New_York -p 9117:9117 linuxserver/jackett
+docker run --name=jackett -e PUID=501 -e PGID=20 -e TZ=America/New_York -p 9117:9117 linuxserver/jackett
+touch .env
+id -u $(whoami)
+id -g $(whoami)
+echo "PUID=$(id -u $(whoami))"
+echo "PUID=$(id -u $(whoami))" >> .env
+echo "PGID=$(id -g $(whoami))" >> .env
+mv docker/flexget/config.yaml docker/flexget/config.yml
+../uss-discovery
+~/resilio/sys-admin/uss-discovery
+docker ps-
+curl -I deluge:58846
+curl -I http://localhost:58846
+curl -I http://localhost:58846/ -X POST
+curl -I http://localhost:58846/ -X GET
+ta mtom -u
+sudo mkfs.ext4 /dev/backup/forage
+sudo mount /dev/backup/forage /backup/forage
+l /backup/forage
+mount /groups/forage/cache
+mkdir /groups/forage/cache
+sudo mkdir /groups/forage/cache
+zpool list
+zpool export warp-drive
+zpool import warp-drve
+zpool import warp-drive
+sudo zpool import warp-drive
+sudo mount /dev/nvme1n1p1 /groups/forage/cache
+ls /drives/impulse/forage
+lsblk
+sudo mdadm --examine /dev/nvme1n1p1
+sudo mdadm -A -R /dev/md10 /dev/nvme1n1p1
+sudo mdadm -A -R /dev/md10 /dev/nvme1n1p1 /dev/nvme2n1p1
+sudo mdadm -A -R /dev/md127 /dev/nvme1n1p1 /dev/nvme2n1p1
+sudo mdadm -
+sudo mdadm -h
+sudo mdadm -A -R /dev/md127 /dev/nvme1n1p1
+sudo fdisk -l /dev/nvme1n1
+l /dev/disk/by-id
+sudo zpool create -f warp-drive nvme-WDS100T2X0C-00L350_182426801627 nvme-WDS100T2X0C-00L350_182426801598
+sudo zpool list
+zfs set mountpoint=/drives/warp warp-drive
+sudo zfs set mountpoint=/drives/warp warp-drive
+zfs create -h
+sudo zfs create -h
+sudo zfs create -V 1T warp-drive/forage
+l /drives/warp/fo
+l /drives/warp
+sudo zfs get mountpoint warp-drive/forage
+sudo zfs set mountpoint=/drives/warp/forage warp-drive/forage
+sudo zfs mount -h
+sudo zfs mount warp-drive
+sudo zfs mount warp-drive/forage
+zfs get type warp-drive/forage
+sudo zfs destroy warp-drive/forage
+sudo zfs create -o mountpoint=/drives/warp/forage -o quota=1T warp-drive/forage
+z forage
+~/resilio/forage
+l src
+l src/utils
+l notebooks
+preproc
+l envs
+less envs/gpu.yml
+ce envs/gpu.yml
+conda update
+conda update python
+jupyter lab --ip 0.0.0.0 --port 46610 --NotebookApp.token="" .
+zp aliases
+tn forage
+conda update pip
+pip install s3cmd
+s3cmd -h
+s3cmd --configure
+sudo mkdir -p /drives/impulse/forage/data
+s3cmd --requester-pays get s3://arxiv/pdf/arXiv_pdf_manifest.xml
+mv arXiv_pdf_manifest.xml /drives/impulse/forage/data
+sudo mv arXiv_pdf_manifest.xml /drives/impulse/forage/data
+conda install tables
+conda install pytables
+mkdir /drives/impulse/forage/data/archive
+mkdir /drives/impulse/forage/data/extract
+conda update pandas
+conda update tqdm
+python -c "import pandas; print(pandas.__version__)"
+conda install tqdm=4.33.0
+conda install pandas=0.24.0
+sudo zfs list
+l /drives/impulse/forage/data/archive
+l /drives/impulse/forage/data/extract
+mv /drives/impulse/forage/data/* /drives/impulse/forage/
+s3cmd --requester-pays get s3://arxiv/pdf/archive/arXiv_pdf_1805_004.tar
+;
+mkdir data
+s3cmd --requester-pays get s3://arxiv/pdf/arXiv_pdf_1805_004.tar
+s3cmd --requester-pays get s3://arxiv/pdf/arXiv_pdf_1805_004.tar archive/arXiv_pdf_1805_004.tar
+l /drives/impulse/forage/
+l ../notebooks
+touch docker/deluge/web.conf
+touch docker/deluge/hostlist.conf
+docker-compose restart deluge
+docker-compose logs -f deluge
+docker-compose logs -f flexget
+bot/autobot/templates/banners
+conda install imgkit
+imgkit
+wkhtmltoimage --quiet --debug-javascript --enable-javascript --javascripy-delay 400 --no-stop-slow-scripts event.html
+wkhtmltoimage -q --debug-javascript --enable-javascript --javascripy-delay 400 --no-stop-slow-scripts event.html event.png
+/usr/local/bin/python3 -m pip install -U pylint --user
+gtotop -psm
+/drives/impulse/forage
+python scripts/data-WallWorld.py -t -n 300000 -w 3 -cpu 20
+python scripts/data-WallWorld.py -t -n 300000 -w 3 -cpu 24
+ta forage
+du -h archive
+l archive | wc -l
+python
+ca forage
+ca forage-admin
+conda install pandas
+conda update python=3.8
+conda install python=3.8
+scp uss-discovery:~ionlights/.s3cfg ~
+bo
+open .
+ta ground-truth
+z gr
+p3.explain
+ca ground-truth
+/usr/local/bin/python3 -m pip install -U black --user
+autobot -h
+autobot core semester-upkeep -h
+conda list
+conda update nbconvert
+conda update -c conda-forge nbconvert
+conda list | grep nbc
+pip install -e
+gaa config
+gaa assets
+gaa layouts
+gaa static
+gc -m "adding documentation layout, restructured homepage"
+g pull origin hugo-migration
+source /usr/local/Caskroom/miniconda/base/bin/activate
+conda activate ucfai-admin
+~/resilio/ucfai
+autobot core semeseter-setup
+autobot core semester-setup
+autobot intelligence semester-setup
+autobot supplementary semester-setup
+l core
+gaa sp20
+gc -m "adding spring 2020"
+g stash
+g checkout bbbe54d
+g switch bbbe54d
+g switch -c bbbe54d
+g pull origin maser
+g pull origin master
+../supplementary
+rm **/.*.cloud
+rm **/*.cloud
+man git-diff
+g diff fa19/2019-09-16-programming-math-camp/2019-09-16-programming-math-camp.ipynb
+gaa
+gc -m "updating prog-math-camp and adding sp20"
+nvim fa19/2019-09-16-programming-math-camp/2019-09-16-programming-math-camp.solution.ipynb
+nvim fa19/2019-09-16-programming-math-camp/2019-09-16-programming-math-camp.ipynb
+less supplementary/fa19/2019-09-16-programming-math-camp/2019-09-16-programming-math-camp.json
+conda install jupyter
+jupyter notebook --ip 0.0.0.0 --port 46610 --NotebookApp.token="" .
+gaa fa19
+gc -m "fixing fa19 changes; prep to integrate changes"
+hugo.ucfai.org
+docker-compose log-h
+docker-compose images
+docker-compose exeec hugo-ucfai-org sh
+docker-compose exec 2e567d69d5c5 sh
+docker-compose exec hugo-ucfai-org sh
+docker-compose logs -f hugo-ucfai-org
+docker-compose exec flexget bash
+docker-compose exec hugo bash
+docker-compose exec hugo sh
+../bot/autobot/utils/ucfai_exporter.py
+../bot/autobot/utils
+black ucfai_exporter.py
+python scripts/data-WallWorld.py -v -n 100 -w 3 -cpu 10
+python scripts/data-WallWorld.py -t -n 1000 -w 3 -cpu 10
+ssh
+nmap -sP 192.168.1.0/24
+python scripts/data-WallWorld.py -t -n 100 -w 3 -cpu 10
+brew search ngrok
+brew cask install ngrok
+ngrok -h
+ngrok authtoken
+ngrok http 46601
+l scripts
+yay -S ngrok
+jupyter lab --ip 0.0.0.0 --port 46601 --NotebookApp.token="" --NotebookApp.allow_remote_access=True .
+jupyter notebook --port 46601 --NotebookApp.token="" --NotebookApp.allow_remote_access=True .
+ngrok http 8234
+yay -S nginx
+nginx status
+tn ngrok
+ngrok https 80
+ngrok authtoken 1W8NaJJIvHltJjnOc0D9LrVCWAq_27Lp9SaUjNZYUVsxeVKen
+ngrok tcp 22 -remote-addr=1.tcp.ngrok.io:28172 -subdomain=ionlights
+ngrok tcp 22 -remote-addr=1.tcp.ngrok.io:28172 -subdomain=ionlights.ngrok.io
+ngrok tcp 22 -remote-addr=1.tcp.ngrok.io:28172
+ngrok tcp 22
+ssh 0.tcp.ngrok.io -p 16563
+ngrok tcp --remote-addr=1.tcp.ngrok.io:28172 22
+ngrok tcp --remote-addr=1.tcp.ngrok.io:28127 22
+ssh s.ionlights.com -p 28127
+python scripts/data-WallWorld.py -v -n 100 -w 2 -cpu 20
+l data/mtom
+l mtom
+which mtom
+python scripts/data-WallWorld.py -v -n 100 -w 2 -cpu 10
+z ufai
+ca ucfai-admin
+black ../bot/autobot/utils/meetings.py
+l content/core/fa19/
+mv content/core/fa19/regression.md content/core/fa19/ideal-nb2md-output.md
+l content/core/fa19/applications
+rmdir content/core/fa19/*
+autobot core fa19 semester-upkeep --all
+l content/core/fa19
+kaggle -h
+kaggle k pull -k
+kaggle k list -h
+black ../bot/autobot
+python scripts/data-WallWorld.py -t -n 100 -w 2 -cpu 10
+gaa autobot/apis
+gaa autobot/templates
+which conda
+conda -h
+conda info
+conda info | grep "base"
+conda info | grep "base environment"
+conda info | grep "base environment" | cut -d " "
+conda info | grep "base environment" > cut -d " " -n 2
+conda info | grep "base environment" | cut -d " " -n 2
+conda info | grep "base environment" # | cut -d " " -n 2
+conda info | grep "base environment" | grep -w "/base"
+conda info | grep -w "/base"
+conda info | grep -w "base"
+conda info | grep -w "\/base"
+conda info | grep -wi "\/base"
+conda info | grep -wi "/base"
+conda info | grep -wE "/base"
+conda info | grep -wE "\/base"
+conda info | grep -wE "envs"
+conda info | grep -wE "/envs"
+conda info | grep -wE "envs" | head -1
+conda env list
+nvim ~/.config/nvim/init.vim
+pip install neovim
+nvim ~/.config/tmux/tmux.conf
+ln -s ~/.config/tmux ~/.tmux
+rm /Users/ionlights/.local/share/nvim/rplugin.vim
+nvim /Users/ionlights/.local/share/nvim/rplugin.vim
+tmux show-option -qvgs escape-time
+command tmux show-option -qvgs escape-time
+brew cask install bluejeans
+brew cask install blue-jeans
+/usr/local/Caskroom/blue-jeans/2.18.0.260/BlueJeansInstaller.app
+open '/usr/local/Caskroom/blue-jeans/2.18.0.260/BlueJeansInstaller.app
+open /usr/local/Caskroom/blue-jeans/2.18.0.260/BlueJeansInstaller.app
+mkdir -p /Users/ionlights/logs/mtom/Expt2aSingleMDP
+mkdir -p /Users/ionlights/logs/mtom/Expt2bManyMDP
+python scripts/runs-WallWorld-WallWorld.py -t 100 -v 10 -r 1 -s 5 -b 3 -g 3 -n test
+python scripts/runs-WallWorld-WallWorld.py -t 100 -v 10 -r 1 -s 5 -b 3 -g 3 -n retest
+../ucfai.org
+gaa content
+g statu
+g restore themes/academic
+gp origin hugo-migration
+~/drive/ucfai/bot
+z re ucf
+z res bot
+l /Users/ionlights/logs/mtom/Expt2aSingleMDP/0007-retest-train00100-test0010-reps001
+l /Users/ionlights/logs/mtom/Expt2aSingleMDP/0007-retest-train00100-test0010-reps001/ckpts
+python scripts/data-WallWorld.py -t -n 300 -w 2 -cpu 10
+conda -V
+python scripts/runs-WallWorld-WallWorld.py -t 300 -v 10 -r 1 -s 5 -b 3 -g 3 -n retest -pt 0007-retest-train00100-test0010-reps001
+python scripts/runs-WallWorld-BakerWorld.py -t 100 -v 10 -r 1 -s 5 -b 2 -g 3 -n 2wall-initial
+python scripts/runs-WallWorld-WallWorld.py -t 100 -v 10 -r 1 -s 5 -b 2 -g 3 -n 2wall-initial
+python scripts/runs-WallWorld-WallWorld.py -t 300 -v 10 -r 1 -s 5 -b 2 -g 3 -n test-ckpts -pt 0016-2wall-initial-train00100-test0010-reps001
+black scripts/runs-WallWorld-WallWorld.py
+hostname
+whoami
+ngrok http 80
+ngrok http 80 --domain=d.ionlights.com
+ngrok http 80 --hostname=d.ionlights.com
+docker pull jlesage/nginx-proxy-manager
+docker run -d --name=nginx-proxy-manager -p 8181:881 -p 8080:8080 -p 4443:4443 resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager:/config:rw jlesage/nginx-proxy-manager
+docker run -d --name=nginx-proxy-manager -p 8181:881 -p 8080:8080 -p 4443:4443 -v resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager:/config:rw jlesage/nginx-proxy-manager
+mkdir -p resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager
+docker run -d --name=nginx-proxy-manager -p 8181:881 -p 8080:8080 -p 4443:4443 -v ./resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager:/config:rw jlesage/nginx-proxy-manager
+docker run -d --name=nginx-proxy-manager -p 8181:881 -p 8080:8080 -p 4443:4443 -v ./resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager:/config jlesage/nginx-proxy-manager
+docker run -d --name=nginx-proxy-manager -p 8181:8181 -p 8080:8080 -p 4443:4443 -v ./resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager:/config:rw jlesage/nginx-proxy-manager
+docker run -d --namee=nginx-proxy-manager -p 8181:8181 -p 8080:8080 -p 4443:4443 jlesage/nginx-proxy-manager
+docker run -d --nam=nginx-proxy-manager -p 8181:8181 -p 8080:8080 -p 4443:4443 jlesage/nginx-proxy-manager
+z dis
+z sys
+l nginx
+less nginx/proxy-manager/log/nginx/error.log
+docker pull jc21/nginx-proxy-manager
+tn sys-admin
+resilio/sys-admin/uss-discovery/etc
+rmdir nginx/proxy-manager/config.json
+touch nginx/proxy-manager/config.json
+nvim nginx/proxy-manager/config.json
+resilio/
+mkdir toptal
+mkdir ds-screening
+l ~/dr
+l ~/drive
+l ~/drive/
+l ~/drive/toptal
+cp -rp ~/drive/toptal/* .
+rm ds-screening
+rm -r ds-screening
+screening-ds
+rm data/medical-appointments.csv
+cat ~/.ssh/j@ionlights.com.pem.pub | pbcopy
+ls -l
+ls -l nginx
+ls -l nginx/proxy-manager
+docker-compose pull
+docker-compsoe up
+l nginx/proxy-manager
+sudo chown -R ionlights:ionlights .
+l nginx/proxy-manager/mysql
+l nginx/proxy-manager/mysql/aria_log_control
+less nginx/proxy-manager/mysql/aria_log_control
+rm -r nginx/proxy-manager/*
+python scripts/data-WallWorld.py -t -n 25000 -w 2 -cpu 20
+python scripts/data-WallWorld.py -t -n 50000 -w 2 -cpu 20
+python scripts/runs-WallWorld-WallWorld.py -t 2500 -v 10 -r 1 -s 5 -b 2 -g 3 -n initial
+python scripts/runs-WallWorld-WallWorld.py -t 25000 -v 0 -r 1 -s 5 -b 2 -g 3 -n initial
+docker-compose stop
+docker-compose
+docker rm jackett
+~/resilio/ucfai/ucfai.org
+docker-compose rm
+docker stop hugo-ucfai-org
+docker rm hugo-ucfai-org
+docker-compose logs -f hugo
+ssh uss-
+l ~/logs/mtom/Expt2aSingleMDP/0224-initial-train25000-test0000-reps001
+l /Users/ionlights/logs/mtom/Expt2aSingleMDP/0017-test-ckpts-train00300-test0010-reps001
+conda list | grep joblib
+python scripts/data-WallWorld.py -t -n 100000 -w 2 -cpu 24
+ping -c2 uss-discovery
+ssh 192.168.1.65
+python scripts/runs-WallWorld-WallWorld.py -t 25000 -v 0 -r 1 -s 5 -b 2 -g 3 -n testing-parallel-reads
+python scripts/runs-WallWorld-WallWorld.py -t 300 -v 0 -r 1 -s 5 -b 2 -g 3 -n test-parallel-reads
+less scripts/runs-WallWorld-WallWorld.py
+python scripts/runs-WallWorld-WallWorld.py -t 25000 -v 0 -r 1 -s 5 -b 2 -g 3 -n parallel-reads
+python scripts/runs-WallWorld-WallWorld.py -t 25000 -v 0 -r 1 -s 5 -b 2 -g 3 -n parallel-reads-2-cpus
+conda env create -n ucfai python=3.8
+conda create -n ucfai python=3.8
+ca ucfai
+g clone git@github.com:ucfai/bot autobot
+autobot
+rm -r algorithms
+l logs
+rm setup.py
+rm __init__.py
+rm scripts
+rm -r scripts
+rm -r envs
+rm Dockerfile
+mv autobot/* .
+mv utils tasks
+conda install invoke
+mkdir repos
+repos
+gs -h
+mv repos groups
+g clone https://github.com/ucfai/ucfai.github.io ucfai.org
+rm autobot
+rmdir autobot
+gb invoke-migration
+g checkout invoke-migration
+gaa; gc -m "beginning invoke migration"
+conda install nbconvert nbformat
+conda install python=3.7
+conda install nbgrader pandas numpy
+conda install -c conda-forge nbgrader pandas numpy
+pip install imgkit
+invoke --list
+invoke banners.cover-image -h!
+invoke banners.cover-image -h
+invoke -h
+conda install -c conda-forge black
+black tasks/meta/meeting.py
+inv banners.cover-image -l
+black tasks/banners.py
+inv banners.cover-image -h
+inv
+inv -h
+inv -l
+inv main
+mkdir groups
+groups
+cd groups
+g submodule add https://github.com/ucfai/gbm
+g submodule add https://github.com/ucfai/intelligence
+g submodule add https://github.com/ucfai/data-science
+g submodule add https://github.com/ucfai/supplementary
+g submodule add https://github.com/ucfai/core
+g submodule add https://github.com/ucfai/ucfai.github.io ucfai.org
+rm -r logs
+mv README.md .github
+pip install -h
+pip install -t pip-bot git+https://github.com/ucfai/bot
+l pip-bot
+l pip-bot/bin/autobot
+l pip-bot/autobot/
+head -1 envs/macos.yml| cut -d ":" -f 2
+head -1 envs/macos.yml| cut -d ": " -f 2
+head -1 envs/macos.yml| cut -d ":" -f 2 | strip
+head -1 envs/macos.yml| cut -d ":" -f 2 | tr -d "[:space:]"
+l /Users/ionlights/logs/mtom/Expt2aSingleMDP/
+l ~/logs/mtom/Expt2aSingleMDP/
+l ~/logs/mtom/Expt2aSingleMDP/0228-parallel-reads-2-cpus-train25000-test0000-reps001
+python scripts/runs-WallWorld-WallWorld.py -t 50000 -v 0 -r 1 -s 5 -b 2 -g 3 -n paralell-reads-2-cpus -pt 0228-parallel-reads-2-cpus-train25000-test0000-reps001
+docker-compose build autobot-development
+docker rmi a861fe91c724 c5e72651318c 895d48192c89
+docker-compose run autobot-development -h
+docker rmi db1cb19732f0 a861fe91c724 c5e72651318c 895d48192c89 0fbf31326a14
+g submodule update --init --recursive
+docker-compose run autobot-development /bin/bash
+chmod +x scripts/docker
+env
+chmod +x docker/entrypoint
+[ -d ".git" ]
+[ -d .git ]
+[ -d .git == 1]
+[ -d .git -eq 1 ]
+[[ -d .git -eq 1 ]]
+docker
+cd docker
+[ -d "groups/core/.git" ]
+wc -c "group"
+man wc
+dc
+man dc
+echo ${#"test"}
+name="test"
+echo ${#name}
+max=[[ ${#name} -gt 2 ]] && 4
+max=$([[ ${#name} -gt 2 ]] && 4)
+max=$([[ ${#name} -gt 2 ]] && echo 4)
+max
+echo max
+echo $max
+python scripts/data-WallWorld.py -t -n 100000 -w 2 -cpu 20
+command -v autobot
+[[ ! "$(command -v autobot)" ]]
+[[ "$(command -v autobot)" ]]
+docker-compose run autobot-development
+g -h
+g status -uno
+gr status
+gr diff
+g diff origin/master
+g diff origin/master 1> /dev/null 2> /dev/null
+gdiff=$(g diff origin/master)
+[ ${#gdiff} > 0 ]
+[ ${#gdiff} == 0 ]
+[ ${#gdiff} = 0 ]
+echo ${#gdiff}
+[ ${#gdiff} -eq 0 ]
+../bot
+l docker/groups/core
+l docker/groups/gbm
+g submodule -h
+g submodule deinit groups/*
+g submodule deinit -f groups/*
+g submodule deinit -f ucfai.org
+less .gitmodules
+g submodule foreach -h
+g submodule foreach --recursive deinit
+nvim .gitmodules
+ga .gitmodules
+nvim .git/config
+git rm --cached groups/*
+git rm --cached ucfai.org
+git rm --cached groups
+rm groups
+rm -rf .git/modules/groups
+rm -rf .git/modules/ucfai.org
+gaa algorithms
+gaa logs
+ga autobot/apis/nbconvert.py
+ga autobot/utils/syllabus.py
+gaa docker
+ga docker/ucfai.org/.gitkeep
+touch docker/groups/.gitkeep
+ga -f docker/groups/.gitkeep
+rm -rf ucfai.org
+rm -rf groups
+l docker/ucfai.org
+rm -rf docker/ucfai.org/.git
+l docker/groups/core/
+l docker/groups/intelligence
+basename /ucfai.org
+docker/ucfai.org
+python scripts/data-WallWorld.py -t -n 200000 -w 2 -cpu 20
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 1 -s 5 -b 2 -g 3 -n paralell-reads-2-cpus -pt 0229-parallel-reads-2-cpus-train25000-test0000-reps001
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 1 -s 5 -b 2 -g 3 -n paralell-reads-2-cpus -pt 0229-parallel-reads-2-cpus-train50000-test0000-reps001
+gaa .github
+gaa Dockerfile
+gaa docker/
+gaa envs
+ls
+docker-compose list
+rm .gitmodules
+gaa .gitmodules
+gaa README.md
+gb refacor-dirs-add-docker
+g checkout refacor-dirs-add-docker
+gb -h
+gb -m refacor-dirs-add-docker refactor-dirs-add-docker
+gp origin refactor-dirs-add-docker
+gaa docker-compose.yml
+ga docker/entrypoint
+gb document-docker
+g checkout document-docker
+gp origin document-docker
+rm ucfai.org
+rm -r ucfai.org
+touch docker/ucfai.org/.gitkeep
+ga -f docker/ucfai.org/.gitkeep
+gc -m "adding docker/ucfai.org directory"
+export KAGGLE_CONFIG_DIR=$HOME/resilio/ucfai/bot
+fa19
+2019-09-18-regression
+less kernel-metadata.json.j2
+rm kernel-metadata.json.j2
+pip install kaggle
+less kernel-metadata.json
+kaggle k -wp ucfaibot/core-fa19-regression
+chmod 600 /Users/ionlights/resilio/ucfai/bot/kaggle.json
+kaggle kernels list
+kaggle k pull -wp ucfaibot/core-fa19-regression
+kaggle k -h
+kaggle k pull -h
+kaggle k pull -w ucfaibot/core-fa19-regression
+kaggle k status -h
+kaggle k status ucfaibot/core-fa19-regression
+echo $?
+l /tmp
+l /tmp/
+kaggle k pull -p /tmp ucfaibot/core-fa19-regression
+kaggle k push -h
+ipython
+bot
+jjautobot core fa19 semester-upkeep -n regression
+autobot core fa19 semester-upkeep -n regression
+gaa autobot
+gb kaggle-diffs
+g checkout kaggle-diffs
+gp origin kaggle-diffs
+g checkout master
+ta gt
+ta toptal
+tn toptal
+gp +origin master
+gp -f origin master
+l data
+data
+unzip catchjoe.zip
+rm catchjoe.zip
+gs
+gaa data
+gr set-url origin git@git.toptal.com:Peter-Hussami/john-muchovej-ds
+gr get-url origin
+gr get-url origin -h
+gr get-url origin --al
+gr get-url origin --all
+gr get-url --all origin
+g logs
+g log
+g config --local user.email john.muchovej@toptal.com
+g config -h
+g config --local -l
+gr set-url -h
+gr set-url --push origin git@git.toptal.com:Peter-Hussami/john-muchovej-ds
+gp origin +master
+systemctl enable nginx --now
+systemctl status nginx
+nvim /etc/nginx/nginx.conf
+systemctl restart nginx
+sudo systemctl restart nginx
+sudo systemctl status nginx
+sudoedit /etc/nginx/nginx.conf
+sudo systemctl status firewall
+sudo systemctl status firewalld
+firewall-config
+firewall-config -h
+firewall-cmd -h
+firewall-cmd --list
+firewall-cmd --list-all
+sudo firewall-cmd --list-all
+firewall-cmd --get-active-zones
+sudo firewall-cmd --get-active-zones
+sudo firewall-cmd --list-all-zones
+sudo firewall-cmd --get-zone public
+sudo firewall-cmd --get-zones public
+sudo firewall-cmd --get-zones
+sudo firewall-cmd --zone=public --add-port 80/tcp
+sudo firewall-cmd --zone=public --add-port 443/tcp
+docker-compose --remove-orphans
+docker-compose rm --remove-orphans
+docker-compose down --remove-orphans
+docker-compose run autobot-development bash
+z ucfai
+core
+g diff
+g diff --name-only HEAD HEAD~1
+gb --al
+gb --all
+g diff --name-only master master
+g diff --name-only master HEAD
+g diff --name-only master HEAD~1
+ta ucfai
+conda list | grep memory
+conda install memory-profiler
+python -m memory_profiler scripts/runs-WallWorld-WallWorld.py -t 65000 -v 0 -r 1 -s 5 -b 2 -g 3 -n parallel-reads-2-cpus -pt 0229-parallel-reads-2-cpus-train50000-test0000-reps001
+mprof run -M python scripts/runs-WallWorld-WallWorld.py -t 65000 -v 0 -r 1 -s 5 -b 2 -g 3 -n parallel-reads-2-cpus -pt 0229-parallel-reads-2-cpus-train50000-test0000-reps001
+pip install memory-profiler line-profile
+pip install memory-profiler line-profiler
+mprof plot
+python -V
+conda install black
+rm -r ._*
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 1 -s 5 -b 2 -g 3 -n parallel-reads-2-cpus -pt 0229-parallel-reads-2-cpus-train50000-test0000-reps001
+black .
+python scripts/runs-WallWorld-WallWorld.py -t 100 -v 0 -r 1 -s 5 -b 2 -g 3 -n custom-loader
+python scripts/runs-WallWorld-WallWorld.py -t 1000 -v 0 -r 1 -s 5 -b 2 -g 3 -n custom-loader
+../
+ucfai.org
+../bot/
+docker-compose run autobot-hugo bash
+docker-compose run autobot-hugo /bin/bash
+docker-compose run autobot-hugo /bin/sh
+tree -L 1
+rm autobot.egg-info
+rm -r autobot.egg-info
+tree -L 2
+g pull
+ssh uss-discovery
+mkdir -h
+mkdir --help
+man mkdir
+mkdir -p resilio
+l resilio
+resilio/ucfai/bot
+nvim docker/env.yml
+docker-compose up --no-cache
+docker-compose up --build -h
+docker-compose up --build
+docker-compose build autobot-development --no-cache
+docker-compose build autobot-development -h
+docker-compose build -h
+conda env create -f docker/env.yml
+systemctl restart docker
+docker-compose build --no-cache autobot-development
+sudo systemctl restart docker
+ssh x.ionlights.com -p 28127
+ta ngok
+ta ngrok
+ngrok http 81 --hostname=d.ionlights.com
+docker network
+docker network prune
+docker network rm host bridge none
+docker network ls
+docker-compsoe network
+docker-compose network
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 1 -s 5 -b 2 -g 3 -n parallel-using-custom-loader -pt 0229-parallel-reads-2-cpus-train50000-test0000-reps001
+docker-compose up
+gss
+ga -f docker/volume.groups/.gitkeep
+ga -f docker/volume.ucfai.org/.gitkeep
+nvim .gitignore
+ga .gitignore
+ga docker
+ga docker/container.*
+gc
+g status
+ga docker-compose.yml
+ga docker/README.md
+gc -m "validated docker containers; updated README"
+gp origin master
+docker-compose -h
+docker-compose start hugo-autobot
+docker-compose start autobot-hugo
+docker-compsoe top
+docker-compose restart autobot-hugo
+nvim docker-compose.yml
+docker-compose build --no-cache
+docker-compose build
+l docker/volume.groups
+docker/volume.ucfai.org
+g checkout hugo-migration
+docker-compose restart
+docker-compose log -f autobot-hugo
+docker-compose logs -f autobot-hugo
+l docker/volume.ucfai.org
+docker-compose down
+docker-compose up -d
+ioreg
+system_profiler
+sudo system_profiler
+system_profiler | grep -i "card reader"
+ioreg -p IOUSB
+ioreg -p IOUSB -w0
+ioreg -p IOUSB -w0 -l
+docker-compose build autobot-reader
+black
+black autobot
+l /dev
+l /dev/ptyp0
+diskutil list
+sudo diskutil list
+l /dev/fsevents
+python scripts/data-WallWorld.py -t -n 200000 -w 2 -cpu 18
+docker/container.reader
+conda env create -f env.yml
+export CUDA_VISIBLE_DEVICES="1"
+z mtom
+ca mtom
+python scripts/runs-WallWorld-WallWorld.py -t 50000 -v 0 -r 5 -s 5 -b 2 -g 3 -n back-to-singlethread -pt 0229-parallel-reads-2-cpus-train50000-test0000-reps001
+ca reader
+../../autobot/utils/reader.py
+../../autobot/utils/
+python reader.py
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout | grep 056
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout | grep 056.+.pkl
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout | grep 056???.pkl
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout | grep -E "056\d{3}\.pkl"
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout | grep -E "056*.pkl"
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout | grep 056*.pkl
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout | grep 056.*.pkl
+l ~/data/mtom/5x5_g3_b0-2_WallWorld_train_holdout | grep 056637.pkl
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 1 -s 5 -b 2 -g 3 -n back-to-singlethread -pt 0229-parallel-reads-2-cpus-train50000-test0000-reps001
+python scripts/data-WallWorld.py -t -n 200000 -w 2 -cpu 22
+python scripts/data-WallWorld.py -t -n 300000 -w 2 -cpu 18
+python scripts/data-WallWorld.py -h
+python scripts/data-WallWorld.py -t -n 56340 -w 2 -cpu 2 -s 56330
+python scripts/data-WallWorld.py -t -n 56340 -w 2 -cpu 2 -s 56330 -o
+python scripts/runs-WallWorld-WallWorld.py -t 85000 -v 0 -r 1 -s 5 -b 2 -g 3 -n back-to-singlethread -pt 0229-parallel-reads-2-cpus-train50000-test0000-reps001
+l ~/logs/mtom/Expt2aSingleMDP
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 1 -s 5 -b 2 -g 3 -n back-to-singlethread -pt 0258-back-to-singlethread-train85000-test0000-reps001
+uss-discovery
+drives/impulse/media
+docker-compose top
+cp ~/.config/git/ignore
+cp ~/.config/git/ignore ~/.gitignore
+rm ~/.ssh
+cp -r ~/.config/ssh/* ~/.ssh
+cp -r ~/.config/ssh ~/.ssh
+mkdir ~/.ssh
+l -P
+l -H
+l -x
+l ~/.ssh
+ls ~/.config/zsh
+l ~/.config/zsh
+l ~/.config/zsh/
+cp ~/.config/zsh/.zshrc .
+cp ~/.config/zsh/.zprofile .
+l ~/dotfiles/mackup/Library
+l ~/dotfiles/mackup/Library/Application\ Support
+l ~/dotfiles/mackup/Library/Application\ Support/Code
+l ~/dotfiles/mackup/Library/Preferences
+ca
+rm cut
+l ~/.con
+l ~/dotfiles
+rm ~/.tmux
+cp ~/.config/tmux ~/.tmux
+cp -r ~/.config/tmux ~/.tmux
+l ~/.tmux
+cp ~/.tmux/tmux.conf ~/.tmux.conf
+l ~/dotfiles/mackup/.config/git
+l ~/dotfiles/mackup/.config/git/ignore
+rm -r ~/dotfiles/mackup/.config/git
+rm ~/.config/git
+mkdir ~/.config/git
+cp ~/.gitignore ~/.config/git/ignore
+cp ~/.gitconfig ~/.config/git/config
+rm .gitignore
+l ~/dotfiles/mackup/
+rm ~/dotfiles/mackup/.gitconfig
+v ~/.editorconfig
+brew bundle list --all
+brew services
+brew services cleanup
+sudo brew services cleanup
+brew livecheck
+brew update
+mkdir ~/.mackup
+touch ~/.mackup/homebrew-bundle.cfg
+mv ~/.mackup/homebrew-bundle.cfg ~/.mackup/brew-bundle.cfg
+v ~/.mackup/brew-bundle.cfg
+mackup list
+mackup list | grep brew
+mkdir -p ~/.config/brew
+brew backup
+l ~/dotfiles/mackup/.config
+nvim ~/.mackup/brew-bundle.cfg
+cp ~/.mackup/brew-bundle.cfg ~/.mackup/brew-bundle.cfg
+cp ~/.mackup/brew-bundle.cfg ~/.mackup/doom.cfg
+nvim ~/.mackup/doom.cfg
+ls ~/.config/doom
+ls ~/.config/doom/
+ls -L ~/.config/doom
+man gls
+v ~/.mackup/doom.cfg
+l ~/.config/emacs
+mackup list | grep ranger
+l .vim
+l .vim/
+cp ~/.mackup/brew-bundle.cfg ~/.mackup/conda.cfg
+nvim ~/.mackup/conda.cfg
+nvim ~/.condarc
+nvim ~/.conda
+ranger ~/.conda
+nvim ~/.mackup/kite.cfg
+cp ~/.mackup/brew-bundle.cfg ~/.mackup/kite.cfg
+l ~/.kite
+l ~/.kite/settings.json
+tmux sys
+ta sys
+ranger ~/.kite
+l ~/.odrive
+l ~/.odrive/product.conf
+less ~/.odrive/product.conf
+l ~/.julia
+l ~/.ipython
+l ~/.ipython/
+l ~/.fzf
+l ~/.matplotlib
+l ~/.matplotlib/fontlist-v310.json
+less ~/.matplotlib/fontlist-v310.json
+cp ~/.mackup/brew-bundle.cfg ~/.mackup/kaggle.cfg
+v ~/.mackup/kaggle.cfg
+l ~/.kaggle
+less ~/Library/Application\ Support/Code
+less ~/Library/Application\ Support/Code/
+l ~/.vscode
+l ~/.vscode/
+l ~/.vscode/extensions
+l ~/Library/Application\ Support/Code/User
+l ~/Library/Application\ Support/Code/User/globalStorage
+l ~/Library/Application\ Support/Code/User/snippets
+l ~/Library/Application\ Support/Code/User/snippets/
+l ~/Library/Application\ Support/Code/Backups
+l ~/Library/Application\ Support/Code/Cache
+l ~/Library/Application\ Support/Code/
+l ~/Library/Application\ Support/Code/Workspaces
+nvim ~/.mackup/vscode.cfg
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 2 -s 5 -b 2 -g 3 -n avoided-weird-eof -pt 0258-back-to-singlethread-train100000-test0000-reps001
+l ~/logs/mtom/Expt2aSingleMDP | tail
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 2 -s 5 -b 2 -g 3 -n avoided-weird-eof -pt 0259-back-to-singlethread-train100000-test0000-reps001
+v ~/.mackup.cfg
+l ~/dotfiles/
+l dotfiles/mackup
+l ~/dotfiles/mackup
+l ~/resilio/dotfiles/backup
+l ~/.config/htop
+l ~/.config/htop/
+rm ~/.config/htop
+rm ~/.config/doom
+l ~/.config
+l ~/.config/brew
+l ~/.config/ranger
+l ~/.config/ranger/
+l ~/.config/tmux
+l ~/.config/tmux/
+wget -O ~/.emacs https://raw.githubusercontent.com/plexus/chemacs/master/.emacs\
+
+l ~/.emacs.d
+l ~/.emacs.d/
+rm ~/.emacs.d
+cp ~/.mackup/brew-bundle.cfg ~/.mackup/emacs.cfg
+nvim ~/.mackup/emacs.cfg
+rm ~/.mackup/emacs.cfg
+touch ~/.emacs-profiles.el
+touch ~/.emacs-profile
+nvim ~/.emacs
+brew install mr
+z bot
+../core
+../intelligence
+../data-science; mr register
+../supplementary; mr register
+../gbm; mr register
+../ucfai.org; mr register
+rm *.md
+rm 2019-09-18-regression.ipynb
+rm jekyll.ucfai.org
+rm -r jekyll.ucfai.org
+rm pip-bot
+rm -r pip-bot
+l autobot
+rm -r autobot
+rm -rf autobot
+rm -r auth
+research
+mtom
+mr register -h
+mr -h
+man mr
+rm mprofile_20200112133*
+chmod -x *.md
+chmod -x LICENSE .gitignore
+ground-truth
+dl-proposal-btom
+../correctness
+../coref-summ; mr register
+../points-of-correspondance; mr register
+../bounded-space mr register
+../bounded-space; mr register
+l ..
+rm ../ground-truth.code-workspace
+toptal
+../screening-ai; mr register
+l screening
+l .git
+l .git/objects
+l .git/objects/info
+g clone git@git.toptal.com:screening/john-muchovej
+rm -r screening-ai
+g clone git@git.toptal.com:technical-screening/john-muchovej-2 screening-ai
+g clone git@git.toptal.com:screening/john-muchovej-2 screening-ai
+screening-ai; mr register
+../screening-ds; mr register
+dotfiles
+brand
+rm Icon$'\r'
+site
+mr register
+ll
+sys-admin
+rm *.crt
+rm srv.*
+cp ~/dotfiles/* ~/resilio/dotfiles
+cp -r ~/dotfiles/* ~/resilio/dotfiles
+brew search heroku
+brew tap brew tap heroku/brew
+brew tap heroku/brew
+brew install heroku
+heroku autocomplete --refresh-cache
+brew bundle dump --describe --all --file=$HOME/.config/brew/Brewfile
+brew bundle dump --describe --all --file=$HOME/.config/brew/Brewfile --force
+heroku plugins:install heroku-repo
+heroku plugins:install api
+heroku plugins:install heroku-slugs
+heroku plugins:install heroku-kafka
+heroku plugins:install heroku-builds
+heroku plugins:install heroku-papertrail
+mkdir ~/.heroku
+heroku plugins -h
+heroku plugins --core
+heroku plugins:update
+heroku login
+l ~/.heroku
+l ~/.heroku/
+l ~/.heroku/plugins
+touch ~/.heroku/plugins
+touch ~/.heroku/accounts
+l | grep -i ^l
+l | grep -i l
+rm .mackup/emacs.cfg
+l | grep -v ^l
+brew install fzf
+$(brew --prefix)/opt/fzf/install\
+
+rm -r .fzf
+rm -rf .fzf
+l .fzf.zsh
+less .fzf.zsh
+$(brew --prefix)/opt/fzf/install
+less ~/.zshrc
+l ~ .kaggle
+l ~ .kaggle/
+l ~/.kaggle/
+diff dotfiles resilio/dotfiles
+diff dotfiles/* resilio/dotfiles/*
+diff -h
+diff --help
+diff -r dotfiles resilio/dotfiles
+diff -r dotfiles resilio/dotfiles | grep -v ".git"
+l ~/..
+l /home/linuxbrew
+l /home/linuxbrew/.linuxbrew
+rm -r /home/linuxbrew
+rm -rf /home/linuxbrew
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"\
+
+sudo rm -rf /home/linuxbrew
+echo ~ionlights
+rm /home/ionlights
+sudo rm /home/ionlights
+l /home
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+brew tap homebrew/livecheck
+brew tap homebrew/caskroom
+brew tap homebrew/cask
+brew search bundle
+brew install bundle
+brew install brew-bundle
+brew bundle -h
+du -h
+du -h -d 1 /
+sudo du -h -d 1 /
+sudo du -h -d 1 /Users/ionlights
+sudo du -h -d 1 /Users/ionlights/Downloads
+rm Downloads/Star\ Wars\ The\ Clone\ Wars
+rm -r Downloads/Star\ Wars\ The\ Clone\ Wars
+rm Downloads/SAMPLE\ -\ DO\ NOT\ SUBMIT\ -\ Knight-Hennessy\ Scholars\ Letter\ of\ Reference\ Form.pdf.download
+rm r Downloads/SAMPLE\ -\ DO\ NOT\ SUBMIT\ -\ Knight-Hennessy\ Scholars\ Letter\ of\ Reference\ Form.pdf.download
+rm -r Downloads/SAMPLE\ -\ DO\ NOT\ SUBMIT\ -\ Knight-Hennessy\ Scholars\ Letter\ of\ Reference\ Form.pdf.download
+brew install mackup
+rm .gitconfig
+rm .bash_history
+du -h -d 1 / | sort -h
+du -h -d 1 /Users/ionlights | sort -h
+sudo du -h -d 1 /Users/ionlights | sort -h
+g clone https://github.com/hlissner/doom-emacs Applications/doom-emacs
+g clone https://github.com/syl20bnr/spacemacs Applications/spacemacs
+ln -s ~/dotfiles/backup/.mackup.cfg .
+l .config
+rm .config/{doom,git,htop,nvim,ssh,zsh,tmux}
+nvim scripts/runs-WallWorld-WallWorld.py
+mv ~/data ~/Data
+mv ~/logs ~/Logs
+l ~/Logs
+mv ~/Logs/logs/* ~/Logs
+rmdir ~/Logs/logs
+mv ~/Data/data/* ~/Data
+l ~/Data/data
+mv ~/Data/data/.sync ~/Data
+rmdir
+rmdir ~/Data/data
+docker pull ml-tooling/ml-workspace
+docker login
+systemctl status docker
+docker pull mltooling/ml-workspace
+docker pull mltooling/ml-hub
+zrc
+l ~
+ta mtom
+l ~/Logs/mtom/Expt2aSingleMDP/ | tail
+du -h -d 1
+du -h -d 1 ~/Logs/mtom/Expt2aSingleMDP
+du -h -d 1 ~/Logs/mtom/Expt2aSingleMDP | sort
+du -h -d 1 ~/Logs/mtom/Expt2aSingleMDP | sort -V
+man sort
+l ~/Logs/mtom/Expt2aSingleMDP
+man ls
+l -s ~/Logs/mtom/Expt2aSingleMDP/
+du -csh -d 1 ~/Logs/mtom/Expt2aSingleMDP
+du -csh ~/Logs/mtom/Expt2aSingleMDP
+du -csh ~/Logs/mtom/Expt2aSingleMDP/
+du -csh ~/Logs/mtom/Expt2aSingleMDP/*
+..
+c
+resilio/forage/preproc
+src/downloaders
+systemctl status rslsync --user
+less arxiv.py
+v arxiv.py
+touch _arxiv.py
+v _arxiv.py
+python _arxiv.py
+docker ps -a
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi 0f0a5422fa54 217d81d099cd dc0abec60e9e 527e6e267121 87d3b1e0301f
+docker images
+docker images -h
+docker images --format
+docker images | sort
+df -h
+docker path
+docker --help
+docker system --h
+docker system df
+docker system prune
+docker system info
+lsblk -f
+man diff
+mv ~/data/forage/arXiv_pdf_manifest.xml /drives/impulse/forage/arXiv_pdf_manifest.xml
+mv ~/data/forage/arxiv_pdf.h5 /drives/impulse/forage/arxiv_pdf.h5
+mv ~/data/forage/archive/* /drives/impulse/forage/archive
+echo $LOGS_DIR
+echo $DATA_DIR
+du -h ~/data
+l ~/Data
+export DATA_DIR=$HOME/Data
+export LOGS_DIR=$HOME/Logs
+l /drives/impulse/users/ionlights/Data/forage
+cp -r ~/data/forage/* /drives/impulse/forage
+l $DATA_DIR/forage
+l /drives/impulse/forage
+l /drives/impulse/forage/data
+l /drives/impulse/forage/archive
+sudo chown -R :forage /drives/impulse/forage
+sudo chmod g+rws -R /drives/impulse/forage
+l /drives/impulse/users/ionlights/data/forage
+diff /drives/impulse/forage/ ~ionlights/data/forage
+diff -r /drives/impulse/forage/ ~ionlights/data/forage
+sudo -s
+gotop -psm
+htop
+man du
+du -ch ~
+du -csh ~
+du -cShh ~
+du -sh -d 1 ~
+. ~/.zshrc
+ca forage-preproc
+z down
+nvim ~/.s3cfg
+mackup backup
+which python
+mackup restore
+less ~/.s3cfg
+l ~/dotfiles/backup/
+v ~/.s3cfg
+python arxiv.py
+l ~/data
+l ~/data/forage
+l ~/data/forage/archive
+rm -r ~/data
+pwd
+l ~/Documents
+mv ~/resilio/ucfai ~/Documents
+du -ch -d 1 .
+sudo chown -R :ionlights ~ionlights
+sudo chown -R :ionlights ~ionlights ~
+zfs list
+find . -maxdepth 1 -type d -size $LOGS_DIR/mtom/Expt2aSingleMDP
+man find
+find ~/foo -mindepth 1 -maxdepth 1 -type d -exec du -ks {} + | awk '$1 <= 1' | cut -f 2-\
+
+du -h -d 1 ~
+l resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager/mysql
+l resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager/
+sudo chmod g+rws -R /drives/impulse/ionlights
+l ~/Downloads\ \(1\)
+l ~/Downloads\ \(1\)/Downloads
+l ~/Downloads\ \(1\)/
+l ~/Downloads\ \(1\)/.sync
+l ~/Downloads\ \(1\)/.sync/Archive
+du -h -d 1 ~/Downloads*
+du -h -d 1 ~/Downloads\ \(1\)
+du -h -d 1 ~/Downloads\ \(1\)/.sync
+du -h -d 1 ~/Downloads\ \(1\)/.sync/Archive
+which rm
+export PATH=/drives/impulse/users/ionlights/.linuxbrew/bin:$PATH
+export PATH=$HOME/.linuxbrew/bin:$PATH
+yay -S rmtrash
+rm -r ~/Downloads\ \(1\)/.sync/Archive/Star\ Wars\ The\ Clone\ Wars
+sudo chmod g+rws -R /Users/ionlights
+l .local
+l .local/state
+l .local/share
+l .local/share/Trash
+l .local/share/Trash/files
+l .local/share/Trash/info
+man rmtrash
+rmtrash -h
+rmtrash --help
+trash-put --help
+trash-empty --help
+trash-empty
+ls '/drives/impulse/users/ionlights/resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager
+l /drives/impulse/users/ionlights/resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager
+l /drives/impulse/users/ionlights/resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager/myseql
+l /drives/impulse/users/ionlights/resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager/mysql
+l /drives/impulse/users/ionlights/resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager/mysql 0a
+sudo chmod +x -R '/drives/impulse/users/ionlights/resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager
+sudo chmod +x -R /drives/impulse/users/ionlights/resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager
+l /drives/impulse/users/ionlights/resilio/sys-admin/uss-discovery/etc/nginx/proxy-manager/mysql -a
+mv resilio/ugrad Documents/
+mkdir _to-diff
+mv work _to-diff/
+mv projects _to-diff/
+mv ugrad _to-diff/
+l dotfiles
+du -ch -d 1 ~/dotfiles
+du -ch -d 1 ~/dotfiles/.sync/Archive
+mv drives _to-diff/
+mv odrive _to-diff/
+mv projects.old _to-diff/
+mv papers-books _to-diff/
+mv dropbox _to-diff
+mv Dropbox/ _to-diff
+rm .setup
+rm -r .setup
+mv resilio/brand Documents/
+mv resilio/forage Documents/
+mv resilio/research Documents/
+mv resilio/books Documents
+l Documents
+mv resilio/papers Documents
+mv resilio/sys-admin Documents
+mv resilio/toptal Documents
+rm .targetcli
+rm -r .targetcli
+l .nv
+rm .odrive-agent
+rm -r .odrive-agent
+l Downloads\ \(1\)
+diff -r Downloads Downloads\ \(1\)
+l Downloads
+rm Downloads/lmfao-1564859496799-s-1vcpu-1gb-nyc3-01.raw
+man cp
+cp -na Downloads/* Downloads
+du -ch -d 1 ~
+cd
+find $LOGS_DIR/mtom/Expt2aSingleMDP -mindepth 1 -maxdepth 1 -type d -exec du -ks {} + | awk '$1 <= 1' | cut -f 2-\
+
+man z
+z --help
+z -h
+z -l
+rm ~/.z
+touch .z
+Documents/research/mtom
+find $LOGS_DIR/mtom/Expt2aSingleMDP -mindepth 1 -maxdepth 1 -type d -exec du -ks {} + | awk '$1 <= 1' | cut -f 2- | xargs -I {} rm -r {}
+l ~/.local/share/Trash
+l ~/.local/share/Trash/files
+find $LOGS_DIR/mtom/Expt2aSingleMDP -mindepth 1 -maxdepth 1 -type d -exec du -ks {} + | awk '$1 <= 1' | cut -f 2 | xargs -I {} rm -r {}
+find $LOGS_DIR/mtom/Expt2aSingleMDP -mindepth 1 -maxdepth 1 -type d -exec du -ks {} + | awk '$1 <= 1'
+find $LOGS_DIR/mtom/Expt2aSingleMDP -mindepth 1 -maxdepth 1 -type d -exec du -ks {} + | awk '$1 <= 1' | cut -f 2
+l $LOGS_DIR/mtom/Expt2aSingleMDP
+du -ch -d 1 $LOGS_DIR/mtom/Expt2aSingleMDP
+find $LOGS_DIR/mtom/Expt2aSingleMDP -mindepth 1 -maxdepth 1 -type d -exec du -ks {} + | awk '$1 <= 1' | cut -f 2-
+find $LOGS_DIR/mtom/Expt2aSingleMDP -mindepth 1 -maxdepth 1 -type d -exec du -ks {} + | awk '$1 <= 100' | cut -f 2-
+export CUDA_VISIBLE_DEVICES="0"
+nvidia-smi
+pip install -e .
+python scripts/runs-WallWorld-WallWorld.py -t 100000 -v 0 -r 5 -s 5 -b 2 -g 3 -n prep-for-cogsci
+echo $ZDOTDIR
+l
+less .zshenv
+: 1579391150:0;. ~/.zshtc
+: 1579391164:0;watch -n 1 nvidia-smi

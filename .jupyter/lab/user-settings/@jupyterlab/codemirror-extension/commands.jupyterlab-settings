@@ -1,0 +1,18 @@
+{
+    // CodeMirror
+    // @jupyterlab/codemirror-extension:commands
+    // Text editor settings for all CodeMirror editors.
+    // ************************************************
+
+    // Key Map
+    // Configures the keymap to use
+    "keyMap": "vim",
+
+    // Scroll behavior
+    // Whether to scroll past the end of text document
+    "scrollPastEnd": true,
+
+    // Style Active Line
+    // Value is boolean, or { nonEmpty: boolean }
+    "styleActiveLine": true
+}

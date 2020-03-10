@@ -1,0 +1,20 @@
+authtoken: 1W8NaJJIvHltJjnOc0D9LrVCWAq_27Lp9SaUjNZYUVsxeVKen
+region: us
+console_ui: true
+tunnels:
+  ssh:
+    proto: tcp
+    addr: 22
+    remote_addr: 1.tcp.ngrok.io:28127
+  jupyter-research:
+    proto: http
+    addr: 46620
+    subdomain: research.ionlights
+  jupyter-forage:
+    proto: http
+    addr: 46630
+    subdomain: forage.ionlights
+  resilio:
+    proto: http
+    addr: 46640
+    subdomain: resilio.ionlights

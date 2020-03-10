@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+alias e="$EDITOR"
+if [ $(command -v nvim) ]; then
+    alias v="nvim"
+fi
+
+alias hop="ssh srv.hop"
+alias srv="ssh srv.ionlights"
+alias nas="ssh nas.ionlights"
+alias mbp="ssh mbp"
+alias osx="ssh osx"
+
+alias sshcfg="v ${HOME}/.ssh/config"
+
+alias zrc="v ${HOME}/.zshrc && source ${HOME}/.zshrc"
+alias plugins="v ${ANTIBODY_PLUGS}.txt && antibody bundle < ${ANTIBODY_PLUGS}.txt > ${ANTIBODY_PLUGS}_${OS_}.sh && source ${HOME}/.zshrc"
+
+alias doom="${HOME}/Applications/doom/bin/doom"
+
+ls_base_args="-hFv --color --group-directories-first"
+case "${OS}" in
+    "linux")
+        alias ls="ls ${ls_base_args}"
+        ;;
+    "macos")
+        alias ls="gls ${ls_base_args}"
+        ;;
+esac
+
+alias l="ls -l"
+alias la="l -A"
+alias lr="l -r"
+alias ld="l -d */"
+
+
+ignoreRegex=".*\(Permission denied\)"
+ignoreRegex="${ignoreRegex}\|\(Operation not permitted\)"
+alias size="du -ch -d 1 2> >(grep -v \"${ignoreRegex}\") | sort -h"
+
+alias ca="conda activate"
+alias ce="conda env create -f"
+
+alias rm="rmtrash"
+alias rmdir="rmdirtrash"
+
+# alias tmux="TERM=xterm-256color tmux -u -f ${CONF}/tmux/tmux.conf"
+alias tmux="TERM='xterm-256color' command tmux -u -f $HOME/.tmux.conf"
+
+alias ta="tmux a -t"
+alias tn="tmux new -s"

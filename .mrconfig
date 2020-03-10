@@ -1,0 +1,45 @@
+
+[resilio/ucfai/bot]
+checkout = git clone 'git@github.com:ucfai/bot' 'bot'
+
+[resilio/ucfai/core]
+checkout = git clone 'git@github.com:ucfai/core' 'core'
+
+[resilio/ucfai/intelligence]
+checkout = git clone 'git@github.com:ucfai/intelligence' 'intelligence'
+
+[resilio/ucfai/data-science]
+checkout = git clone 'git@github.com:ucfai/data-science' 'data-science'
+
+[resilio/ucfai/supplementary]
+checkout = git clone 'git@github.com:ucfai/supplementary' 'supplementary'
+
+[resilio/ucfai/ucfai.org]
+checkout = git clone 'git@github.com:ucfai/ucfai.github.io' 'ucfai.org'
+
+[resilio/research/mtom]
+checkout = git clone 'git@github.com:ionlights/false-belief-planning' 'mtom'
+
+[resilio/research/ground-truth]
+checkout = git clone 'git@github.com:maxkw/groundtruth' 'ground-truth'
+
+[resilio/research/dl-proposal-btom]
+checkout = git clone 'git@github.com:ionlights/dl-proposal-btom' 'dl-proposal-btom'
+
+[resilio/research/correctness]
+checkout = git clone 'git@github.com:loganlebanoff/correct_summarization' 'correctness'
+
+[resilio/research/points-of-correspondance]
+checkout = git clone 'git@github.com:loganlebanoff/coref_summ.git' 'points-of-correspondance'
+
+[resilio/research/bounded-space]
+checkout = git clone 'git@github.com:ionlights/bounded-space' 'bounded-space'
+
+[resilio/toptal/screening-ai]
+checkout = git clone 'git@git.toptal.com:screening/john-muchovej-2' 'screening-ai'
+
+[resilio/toptal/screening-ds]
+checkout = git clone 'git@git.toptal.com:Peter-Hussami/john-muchovej-ds' 'screening-ds'
+
+[resilio/brand/site]
+checkout = git clone 'git@github.com:ionlights/site' 'site'

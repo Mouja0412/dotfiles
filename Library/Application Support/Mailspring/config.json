@@ -1,0 +1,220 @@
+{
+  "*": {
+    "env": "production",
+    "core": {
+      "themes": [
+        "ui-light"
+      ],
+      "disabledPackages": [
+        "message-view-on-github",
+        "personal-level-indicators",
+        "phishing-detection",
+        "nylas-private-salesforce",
+        "github-contact-card",
+        "keybase",
+        "composer-markdown",
+        "composer-scheduler",
+        "composer-mail-merge",
+        "send-and-archive",
+        "main-calendar"
+      ],
+      "workspace": {
+        "mode": "split",
+        "showUnreadForAllCategories": true,
+        "use24HourClock": true
+      },
+      "keymapTemplate": "Gmail",
+      "theme": "ui-taiga",
+      "tutorial": {
+        "seen": [
+          "ThreadSearchBar",
+          "ActivityListButton",
+          "ModeToggle",
+          "ToolbarSnooze",
+          "LinkTrackingButton",
+          "OpenTrackingButton",
+          "SendLaterButton",
+          "SendRemindersComposerButton",
+          "SendRemindersPopoverButton"
+        ]
+      },
+      "reading": {
+        "detailedHeaders": true,
+        "detailedNames": true,
+        "restrictMaxWidth": true
+      },
+      "notifications": {
+        "countBadge": "hide"
+      }
+    },
+    "askedAboutAppMove": true,
+    "addedToDock": true,
+    "identity": {
+      "id": "ba98d17c-f837-49d0-9eca-ed6b7d6bb3a1",
+      "firstName": "John",
+      "lastName": "Muchovej",
+      "emailAddress": "j+dev@ionlights.com",
+      "object": "identity",
+      "createdAt": "2018-09-21T06:41:54.000Z",
+      "stripePlan": "ProAnnual",
+      "stripePlanEffective": "ProAnnual",
+      "stripeCustomerId": "cus_De0LG0FShueaWU",
+      "stripePeriodEnd": "2021-02-18T21:31:43.000Z",
+      "featureUsage": {
+        "snooze": {
+          "quota": 99999,
+          "period": "weekly",
+          "usedInPeriod": 0,
+          "featureLimitName": "pro"
+        },
+        "send-later": {
+          "quota": 99999,
+          "period": "weekly",
+          "usedInPeriod": 0,
+          "featureLimitName": "pro"
+        },
+        "thread-sharing": {
+          "quota": 99999,
+          "period": "weekly",
+          "usedInPeriod": 0,
+          "featureLimitName": "pro"
+        },
+        "link-tracking": {
+          "quota": 99999,
+          "period": "weekly",
+          "usedInPeriod": 2,
+          "featureLimitName": "pro"
+        },
+        "open-tracking": {
+          "quota": 99999,
+          "period": "weekly",
+          "usedInPeriod": 2,
+          "featureLimitName": "pro"
+        },
+        "contact-profiles": {
+          "quota": 20,
+          "period": "weekly",
+          "usedInPeriod": 1,
+          "featureLimitName": "pro"
+        },
+        "send-reminders": {
+          "quota": 99999,
+          "period": "weekly",
+          "usedInPeriod": 0,
+          "featureLimitName": "pro"
+        },
+        "translation": {
+          "quota": 800,
+          "period": "weekly",
+          "usedInPeriod": 0,
+          "featureLimitName": "pro"
+        }
+      }
+    },
+    "accounts": [
+      {
+        "id": "3d902808",
+        "metadata": [],
+        "name": "John Muchovej",
+        "provider": "gmail",
+        "emailAddress": "john.muchovej@gmail.com",
+        "settings": {
+          "imap_allow_insecure_ssl": false,
+          "imap_host": "imap.gmail.com",
+          "imap_port": 993,
+          "imap_security": "SSL / TLS",
+          "imap_username": "john.muchovej@gmail.com",
+          "refresh_client_id": "662287800555-0a5h4ii0e9hsbpq0mqtul7fja0jhf9uf.apps.googleusercontent.com",
+          "smtp_allow_insecure_ssl": false,
+          "smtp_host": "smtp.gmail.com",
+          "smtp_port": 587,
+          "smtp_security": "STARTTLS",
+          "smtp_username": "john.muchovej@gmail.com"
+        },
+        "label": "john.muchovej@gmail.com",
+        "autoaddress": {
+          "type": "bcc",
+          "value": ""
+        },
+        "aliases": [
+          "John Muchovej <john@muchovej.com>",
+          "John Muchovej <muchovej@mit.edu>",
+          "John Muchovej <john.muchovej@knights.ucf.edu>",
+          "John M <j@ionlights.com>",
+          "John Muchovej <john.muchovej@toptal.com>"
+        ],
+        "syncState": "ok",
+        "__cls": "Account"
+      }
+    ],
+    "accountsVersion": 35,
+    "mailto": {
+      "prompted-about-default": true
+    },
+    "signatures": {
+      "initial": {
+        "id": "initial",
+        "title": "j@ionlights.com and john.muchovej@toptal.com",
+        "body": "<style>\nlink {\n  display: none;\n}\ninput:enabled:read-write:-webkit-any(:focus,\n:hover)::-webkit-clear-button {\n  opacity: 1;\n  pointer-events: auto;\n}\ninput[type=\"search\" i]:enabled:read-write:-webkit-any(:focus,\n:hover)::-webkit-search-cancel-button {\n  opacity: 1;\n  pointer-events: auto;\n}\ninput:enabled:read-write:-webkit-any(:focus,\n:hover)::-webkit-inner-spin-button {\n  opacity: 1;\n  pointer-events: auto;\n}\ninput[type=\"button\" i]:active,\ninput[type=\"submit\" i]:active,\ninput[type=\"reset\" i]:active,\ninput[type=\"file\" i]:active::-webkit-file-upload-button,\nbutton:active {\n  border-style: inset;\n}\ninput[type=\"button\" i]:active:disabled,\ninput[type=\"submit\" i]:active:disabled,\ninput[type=\"reset\" i]:active:disabled,\ninput[type=\"file\" i]:active:disabled::-webkit-file-upload-button,\nbutton:active:disabled {\n  border-style: outset;\n}\noption:-internal-spatial-navigation-focus {\n  outline: black dashed 1px;\n  outline-offset: -1px;\n}\ninput::-webkit-calendar-picker-indicator:hover {\n  background-color: #eee;\n}\ninput:enabled:read-write:-webkit-any(:focus,\n:hover)::-webkit-calendar-picker-indicator,\ninput::-webkit-calendar-picker-indicator:focus {\n  opacity: 1;\n  pointer-events: auto;\n}\nselect:-internal-list-box:focus option:checked {\n  background-color: -internal-active-list-box-selection !important;\n  color: -internal-active-list-box-selection-text !important;\n}\n:focus {\n  outline: auto 5px -webkit-focus-ring-color;\n}\nhtml:focus,\nbody:focus,\ninput[readonly]:focus {\n  outline: none;\n}\napplet:focus,\nembed:focus,\niframe:focus,\nobject:focus {\n  outline: none;\n}\ninput:focus,\ntextarea:focus,\nkeygen:focus,\nselect:focus {\n  outline-offset: -2px;\n}\ninput[type=\"button\" i]:focus,\ninput[type=\"checkbox\" i]:focus,\ninput[type=\"file\" i]:focus,\ninput[type=\"hidden\" i]:focus,\ninput[type=\"image\" i]:focus,\ninput[type=\"radio\" i]:focus,\ninput[type=\"reset\" i]:focus,\ninput[type=\"search\" i]:focus,\ninput[type=\"submit\" i]:focus,\ninput[type=\"file\" i]:focus::-webkit-file-upload-button {\n  outline-offset: 0;\n}\na:-webkit-any-link {\n  color: -webkit-link;\n  text-decoration: underline;\n  cursor: auto;\n}\na:-webkit-any-link:active {\n  color: -webkit-activelink;\n}\n@media print {\n  * {\n    -webkit-columns: auto !important;\n  }\n}\n</style>\n\n<div id=\"ionlights-signature\" style=\"display: block;\">\n<span style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">Best,</span> <br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">\n<span style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">John </span> <br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">\n\n<br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\"> <strong style=\"font-weight: bold; font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">John Muchovej</strong>\n<br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\"> <span style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">Researcher, Data Scientist</span>\n\n<hr id=\"contact-divider\" style=\"display: block; -webkit-margin-before: 0.5em; -webkit-margin-after: 0.5em; -webkit-margin-start: auto; -webkit-margin-end: auto; border-style: inset; border-width: 1px; font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont; border-top: 1px dashed gray; min-width: 250px; max-width: 300px; margin: 0.6em 0 0.2em 0;\">\n\n<a href=\"mailto:j@ionlights.com\" style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont; font-size: 0.9em; margin-right: 0.5em;\">j@ionlights.com</a>\n<a href=\"tel:+16175759866\" style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont; font-size: 0.9em; margin-right: 0.5em;\">+16175759866</a>\n<br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">\n<a href=\"http://ionlights.com\" style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont; font-size: 0.9em; margin-right: 0.5em;\"> http://ionlights.com</a>\n</div>",
+        "data": {
+          "title": "Sent from Mailspring, the best free email app for work"
+        }
+      },
+      "local-64394f33-9e70": {
+        "id": "local-64394f33-9e70",
+        "title": "muchovej@mit.edu and john.muchovej@knights.ucf.edu",
+        "body": "<style>\nlink {\n  display: none;\n}\ninput:enabled:read-write:-webkit-any(:focus,\n:hover)::-webkit-clear-button {\n  opacity: 1;\n  pointer-events: auto;\n}\ninput[type=\"search\" i]:enabled:read-write:-webkit-any(:focus,\n:hover)::-webkit-search-cancel-button {\n  opacity: 1;\n  pointer-events: auto;\n}\ninput:enabled:read-write:-webkit-any(:focus,\n:hover)::-webkit-inner-spin-button {\n  opacity: 1;\n  pointer-events: auto;\n}\ninput[type=\"button\" i]:active,\ninput[type=\"submit\" i]:active,\ninput[type=\"reset\" i]:active,\ninput[type=\"file\" i]:active::-webkit-file-upload-button,\nbutton:active {\n  border-style: inset;\n}\ninput[type=\"button\" i]:active:disabled,\ninput[type=\"submit\" i]:active:disabled,\ninput[type=\"reset\" i]:active:disabled,\ninput[type=\"file\" i]:active:disabled::-webkit-file-upload-button,\nbutton:active:disabled {\n  border-style: outset;\n}\noption:-internal-spatial-navigation-focus {\n  outline: black dashed 1px;\n  outline-offset: -1px;\n}\ninput::-webkit-calendar-picker-indicator:hover {\n  background-color: #eee;\n}\ninput:enabled:read-write:-webkit-any(:focus,\n:hover)::-webkit-calendar-picker-indicator,\ninput::-webkit-calendar-picker-indicator:focus {\n  opacity: 1;\n  pointer-events: auto;\n}\nselect:-internal-list-box:focus option:checked {\n  background-color: -internal-active-list-box-selection !important;\n  color: -internal-active-list-box-selection-text !important;\n}\n:focus {\n  outline: auto 5px -webkit-focus-ring-color;\n}\nhtml:focus,\nbody:focus,\ninput[readonly]:focus {\n  outline: none;\n}\napplet:focus,\nembed:focus,\niframe:focus,\nobject:focus {\n  outline: none;\n}\ninput:focus,\ntextarea:focus,\nkeygen:focus,\nselect:focus {\n  outline-offset: -2px;\n}\ninput[type=\"button\" i]:focus,\ninput[type=\"checkbox\" i]:focus,\ninput[type=\"file\" i]:focus,\ninput[type=\"hidden\" i]:focus,\ninput[type=\"image\" i]:focus,\ninput[type=\"radio\" i]:focus,\ninput[type=\"reset\" i]:focus,\ninput[type=\"search\" i]:focus,\ninput[type=\"submit\" i]:focus,\ninput[type=\"file\" i]:focus::-webkit-file-upload-button {\n  outline-offset: 0;\n}\na:-webkit-any-link {\n  color: -webkit-link;\n  text-decoration: underline;\n  cursor: auto;\n}\na:-webkit-any-link:active {\n  color: -webkit-activelink;\n}\n@media print {\n  * {\n    -webkit-columns: auto !important;\n  }\n}\n</style>\n\n<div id=\"ionlights-signature\" style=\"display: block;\">\n<span style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">Best,</span> <br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">\n<span style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">John </span> <br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">\n\n<br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\"> <strong style=\"font-weight: bold; font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">John Muchovej</strong>\n<br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\"> <span style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">Research Assistant, CoCoSci@MIT</span>\n<br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\"> <span style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">Research Assistant, UCF NLP Group</span>\n\n<hr id=\"contact-divider\" style=\"display: block; -webkit-margin-before: 0.5em; -webkit-margin-after: 0.5em; -webkit-margin-start: auto; -webkit-margin-end: auto; border-style: inset; border-width: 1px; font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont; border-top: 1px dashed gray; min-width: 250px; max-width: 300px; margin: 0.6em 0 0.2em 0;\">\n\n<a href=\"mailto:j@ionlights.com\" style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont; font-size: 0.9em; margin-right: 0.5em;\">j@ionlights.com</a>\n<a href=\"tel:+16175759866\" style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont; font-size: 0.9em; margin-right: 0.5em;\">+16175759866</a>\n<br style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont;\">\n<a href=\"http://ionlights.com\" style=\"font-family: 'Fira Sans', 'Open Sans', -apple-system, BlinkMacSystemFont; font-size: 0.9em; margin-right: 0.5em;\"> http://ionlights.com</a>\n</div>",
+        "data": {
+          "title": "Sent from Mailspring, the best free email app for work"
+        }
+      },
+      "local-bb54594e-6b62": {
+        "id": "local-bb54594e-6b62",
+        "title": "default",
+        "body": "<table cellPadding=\"0\" cellSpacing=\"0\"><tbody><tr><td style=\"vertical-align:top\"></td><td><div><strong>John Muchovej</strong></div><div style=\"font-size:0.9em;min-width:200px;max-width:400px;margin-top:4px;padding-top:4px\"><div><div><a style=\"color:rgb(89, 125, 238)\" href=\"mailto:john@muchovej.com\">john@muchovej.com</a></div><div></div><div><a style=\"color:rgb(89, 125, 238)\" href=\"https://john.muchovej.com\">https://john.muchovej.com</a></div><div></div></div></div></td></tr></tbody></table>",
+        "data": {
+          "title": "",
+          "name": "John Muchovej",
+          "websiteURL": "https://john.muchovej.com",
+          "photoURL": "",
+          "email": "john@muchovej.com",
+          "phone": "",
+          "address": "",
+          "tintColor": "rgb(89, 125, 238)",
+          "instagramURL": "",
+          "twitterHandle": "",
+          "linkedinURL": "",
+          "facebookURL": "",
+          "templateName": "SignatureC"
+        }
+      }
+    },
+    "defaultSignatures": {
+      "j@ionlights.com": "local-bb54594e-6b62",
+      "muchovej@mit.edu": "local-bb54594e-6b62",
+      "john.muchovej@knights.ucf.edu": "local-bb54594e-6b62",
+      "john.muchovej@toptal.com": "local-bb54594e-6b62",
+      "john.muchovej@gmail.com": "local-bb54594e-6b62",
+      "john@muchovej.com": "local-bb54594e-6b62"
+    },
+    "mailspring": {
+      "disabledCalendars": [
+        "nPRJAAJh4FBCo5KonhBAbgXuCi1uD9baXzQubMDKa",
+        "BCi6QGSDSs6h12D3dBAo82dFBQ9zQmwGE4fdgQrqs",
+        "5D8Wr1qhMKfuJWAm9eZp89nh4sV1L9E4NQgZDqWof",
+        "bUob7y2Kb39goW62U9VqUjZbsegsaEv35sEBqhrmh",
+        "8GydbminWA1mBLxE6MapeFjWA1SRhmPS1h31sWzdr",
+        "4JjcK9Bp3KuixU8MUWAKN8znGMvrJiZa31bf8gKoh",
+        "V6cTMVS8z3akwJsSMRo9X7j1ijWDGoF9dj4sBx1LN"
+      ]
+    },
+    "plugins": {
+      "link-tracking": {
+        "defaultOn": true
+      },
+      "open-tracking": {
+        "defaultOn": true
+      }
+    }
+  }
+}

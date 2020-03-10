@@ -1,19 +1,12 @@
-!bin
+# MacOS Specific
+!Library
 
-hosts
-!hosts.gpg
+# Linux Specific
+
+# .ssh
 *.pem
 
+# Resilio Sync
 sync.btskey
-
-configs/git/config
-configs/git/_ignores
-
-configs/emacs
-
-configs/nvim/plugged
-
-configs/zsh/history
-configs/zsh/antibody_*
-configs/zsh/.zcompdump*
-!configs/zsh/antibody_plugins.txt
+.sync
+*.rsl*
