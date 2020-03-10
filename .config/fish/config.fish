@@ -19,11 +19,19 @@ for e in $editors
     break
 end
 
-switch (uname -r)
+switch (uname)
 case "Darwin"
     set -gx OS "macos"
+    if not fisher ls plugin-brew
+        fisher add oh-my-fish/plugin-brew
+    end
 case "Linux"
     set -gx OS "linux"
+    if not fisher ls plugin-linuxbrew
+        fisher add oh-my-fish/plugin-linuxbrew
+    end
+case "*"
+    echo "Not sure what to do here..."
 end
 
 #: aliases.fish
