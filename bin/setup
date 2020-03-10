@@ -1,0 +1,51 @@
+#!/usr/bin/bash
+
+flavor=$(uname)
+
+echo "Brew installation..."
+# on MacOS this will install `xcode-select` as well
+if [ "$(command -v brew)" == ""]; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
+
+echo "OS-specific setup..."
+case "${flavor}" in
+    "Linux")
+        # if there's a need to scale this, consider checking/parsing `/etc/os-release`
+        #   or `/etc/lsb-release`
+        if sudo true; then  # I only use Arch Linux
+            sudo usermod -aG wheel $(whoami)
+            pacman -S git  # ensure git is installed
+            git clone https://aur.archlinux.org/yay
+            cd yay && makepkg -sir && cd ..
+            rm -rf yay
+            yay -Syyu  # update/upgrade
+            yay -S zsh fish  # install alternate shells
+        if
+
+        alias brew="$HOME/.linuxbrew/bin/brew"
+        brewfile_prefix="linux"
+        ;;
+    "Darwin")
+        brewfile_prefix="macos"
+        ;;
+esac
+
+brew bundle install --file=$HOME/.config/packages/${brewfile_prefix}.Brewfile
+
+echo "Mackup setup..."
+brew install mackup
+cp .mackup.cfg ~/.mackup.cfg
+mackup restore
+
+echo "Finishing touch..."
+case "${flavor}" in
+    "Linux")
+        ;;
+    "Darwin")
+        sh @macos/dock
+        sh @macos/programs
+        ;;
+esac
+
+chsh -s $(which fish) $(whoami)  # set to fish

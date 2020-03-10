@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+defaults delete com.apple.dock
+killall Dock
+
+sleep 5  # this is totally arbitrary, unsure why...
+defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-others -array
+defaults write com.apple.dock other-apps -array
+
+killall Dock
+
+if ! command -v dockutil 1> /dev/null; then
+    brew install dockutil
+fi
+
+dockutil --add "/System/Applications/Utilities/Activity Monitor.app"
+dockutil --add "/System/Applications/System Preferences.app"
+
+dockutil --add "" --type spacer --section apps
+
+# all the Google apps here need Flotato, figure out a way to check for them/automate that
+dockutil --add "/Applications/Google Drive.app"
+dockutil --add "/Applications/Google Calendar.app"
+dockutil --add "/Applications/Gmail.app"
+dockutil --add "/Applications/PDF Expert.app"
+
+dockutil --add "" --type spacer --section apps --label "browser"
+
+dockutil --add "/Applications/Google Chrome.app"
+
+dockutil --add "" --type spacer --section apps --label "dev"
+
+dockutil --add "/Applications/Notion.app"
+dockutil --add "/Applications/Emacs.app"
+dockutil --add "/Applications/iTerm.app"
+dockutil --add "/Applications/Visual Studio Code.app"
+
+dockutil --add "" --type spacer --section apps --label "media"
+
+dockutil --add "/Applications/Spotify.app"
+dockutil --add "/System/Applications/Messages.app"
+dockutil --add "/Applications/Discord.app"
+dockutil --add "/Applications/Slack.app"
+
+killall Dock
+
+defaults write com.apple.dock tilesize -int 16
+defaults write com.apple.dock minimize-to-application -int 1
+defaults write com.apple.dock launchanim -int 1
+defaults write com.apple.dock mod-count -int 7
+
+killall Dock
