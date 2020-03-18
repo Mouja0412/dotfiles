@@ -48,17 +48,14 @@ if not functions -q fisher
 end
 
 #; Anaconda, modified to play nicely on my own systems
+#;   use `conda init` to get an idea for args
 switch (hostname)
 case "spock*"
-    # >>> conda initialize >>>
-    # !! Contents within this block are managed by 'conda init' !!
+    #; base on `conda init`
     eval /usr/local/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
-    # <<< conda initialize <<<
 case "discovery*"
-    # >>> conda initialize >>>
-    # !! Contents within this block are managed by 'conda init' !!
-    eval /opt/miniconda3/base/bin/conda "shell.fish" "hook" $argv | source
-    # <<< conda initialize <<<
+    #; base on `conda init`
+    eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 end
 
 
