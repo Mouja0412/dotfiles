@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Tron (rainglow)",
     "editor.fontFamily": "\"Fira Code\", Menlo, Monaco",
     "editor.fontLigatures": true,
     "scm.defaultViewMode": "tree",
@@ -74,11 +74,15 @@
         "nbformat",
         "networkx",
         "numpy",
+        "ondisk",
         "plotly",
         "scikit",
         "seaborn",
         "tqdm",
-        "ucfai's"
+        "ucfai",
+        "ucfai's",
+        "ucfaibot",
+        "youtube"
     ],
     "workbench.startupEditor": "newUntitledFile",
     "python.dataScience.exportWithOutputEnabled": true,
@@ -1278,5 +1282,11 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredDarkColorTheme": "Tron (rainglow)",
+    "workbench.preferredHighContrastColorTheme": "Tron Contrast (rainglow)",
+    "workbench.preferredLightColorTheme": "Tron Light (rainglow)",
+    "editor.fontSize": 14,
+    "debug.console.fontSize": 14,
+    "terminal.integrated.fontSize": 14
 }
