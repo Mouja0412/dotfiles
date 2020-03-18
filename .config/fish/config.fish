@@ -50,12 +50,7 @@ end
 #; Anaconda, modified to play nicely on my own systems
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-switch (hostname)
-case "spock*"
-    eval /usr/local/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
-case "discovery*"
-    eval /opt/miniconda3/condabin/conda "shell.fish" "hook" $argv | source
-end
+eval /usr/local/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
 #: env.fish
