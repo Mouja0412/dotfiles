@@ -63,7 +63,7 @@
 ;;; config.el ends here
 
 ;; Projectile
-(setq projectile-project-search-path '("~/odrive/"))
+(setq projectile-project-search-path '("~/Documents/"))
 (setq projectile-sort-order 'recently-active)
 (setq projectile-completion-system 'ivy)
 
