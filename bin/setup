@@ -25,7 +25,7 @@ case "${flavor}" in
             rm -rf yay
             yay -Syyu  # update/upgrade
             yay -S zsh fish  # install alternate shells
-        if
+        fi
 
         alias brew="$HOME/.linuxbrew/bin/brew"
         brewfile_prefix="linux"
